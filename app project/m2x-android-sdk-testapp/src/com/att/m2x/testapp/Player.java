@@ -63,13 +63,13 @@ public class Player extends Activity implements OnClickListener {
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
 
 	}
+		
     	private void loadFeeds() {
 
     		Feed.getFeed(this, null, "1809ad358b8d17350bc8d95bb8d5b519",new Feed.FeedListener() {
 				public void onSuccess(Feed feed) {
 					myFeed = feed;
 		    		Stream.getStream(Player.this, null, myFeed.getId(), "tags",new Stream.StreamListener() {
-    					private Stream tagStream;
 
     					public void onSuccess(Stream stream) {
     						tagStream = stream;
