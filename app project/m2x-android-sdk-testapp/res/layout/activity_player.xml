@@ -15,7 +15,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="19dp"
-        android:text="Who&apos;s it"
+        android:text="WHO&apos;S IT?"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
@@ -28,41 +28,11 @@
         android:text="No one"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_below="@+id/tvWhosIt"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:text="Points"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <TextView
-        android:id="@+id/tvPoints"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:text="0"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <Button
-        android:id="@+id/bMaps"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tvPoints"
-        android:layout_marginTop="20dp"
-        android:layout_toRightOf="@+id/textView1"
-        android:text="Maps" />
-
-    <Button
-        android:id="@+id/bStats"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/bMaps"
-        android:layout_below="@+id/bMaps"
-        android:text="Stats" />
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
