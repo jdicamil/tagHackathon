@@ -21,21 +21,27 @@ SoftwareSerial bluetooth(bluetoothTx, bluetoothRx);
 
 void setup()
 {
-  pinMode(buttonPin, INPUT); //declare pushbutton as input
-    // Begin the serial monitor at 9600bps
+  pinMode(A3, OUTPUT);
+  digitalWrite(A3, LOW);
+  pinMode(9, INPUT_PULLUP);
+  
 
   
 }
 
 void loop()
 {
-  buttonState = digitalRead(buttonPin);
-  if (buttonState == HIGH){
-  Serial.begin(115200);  // The Bluetooth Mate defaults to 115200bps
-  Serial.println("hello world");
-  delay(1000);
-  }else{
-    buttonState == LOW;
+  
+  if(digitalRead(9) == LOW)
+  {
+    Serial.begin(115200); 
+    Serial.println("Tagged");
+     delay(25);
+     while(digitalRead(9) == LOW) ;
   }
+   // The Bluetooth Mate defaults to 115200bps
+  
+ 
+  
   // and loop forever and ever!
 }

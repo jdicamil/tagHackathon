@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="datasource_symbol_background">#FF0000</color>
+    <color name="batch_symbol_background">#00FF00</color>
+    <color name="blueprint_symbol_background">#0000FF</color>
+</resources>
