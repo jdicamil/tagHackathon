@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+....<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="http://js.arcgis.com/3.8/js/esri/css/esri.css">
+    <script src="http://js.arcgis.com/3.8/"></script>
+    <link rel="stylesheet" type="text/css" href="http://serverapi.arcgisonline.com/jsapi/arcgis/3.0/js/dojo/dijit/themes/claro/claro.css">
+     <script type="text/javascript">
+              var djConfig = {
+              parseOnLoad: true
+              };
+          </script>
+          <script type="text/javascript" src="http://serverapi.arcgisonline.com/jsapi/arcgis/?v=3.0"></script>
+          <link rel="stylesheet" type="text/css" href="http://serverapi.arcgisonline.com/jsapi/arcgis/2.3/js/esri/dijit/css/Popus.css">
+          <script type="text/javascript" src="src/heatmap/js"></script>
+          <script type="text/javascript" src="src/heatmap-arcgis.js"></script>
+          <script type="text/javascript">
+              dojo.require("esri.map");
+              dojo.require("esri.layers.FeatureLayer");
+
+              // Variables
+              var map;
+              var heatLayer;
+              var featureLayer;
+
+              // get the features within the current extent from the feature layer
+
+              function getFeatures() {
+                  // set up query
+                  var query = new esri.tasks.Query();
+                  // only within extent
+                  query.geometry = map.extent;
+                  // give me all of them!
+                  query.where = "1=1";
+                  // make sure I get them back in my spatial reference
+                  query.outSpatialReference = map.spatialReference;
+                  // get em!
+                  featureLayer.queryFeatures(query, function (featureSet) {
+                      var data = [];
+                      // if we get results back
+                      if (featureSet && featureSet.features && featureSet.featur
+                        es.length > 0) {
+                          // set data to featuers
+                        data = featureSet.features;
+                      }
+                      // set heatmap data
+                      heatLayer.setData(data);
+                  }; 
+              }
+              
+              // Init
+              function init() {
+                window.prettyPrint && prettyPrint();
+                // initial extent of map
+                var initExtent = new esri.geometry.Extent({
+                    xmas: -13624229.32056175,
+                    xmin: -136252120.886837104,
+                    ymas: 4548374.604660432,
+                    ymin: 4547966.144290476,
+                    "spatialReference": {
+                        "wkid": 102100
+                    }
+                });
+                // create map
+                map = new esri.Map("map", {
+                    extent: initExtent, 
+                    sliderStyle: "small"
+                });
+                // Add the topographic layer to the map. Veiw the ArcGIS Online site for 
+                // for services http://arcgisonline/home/search.html?t=content&f=typekeywords:service
+                var basemap = new esri.layers.ArcGISTiledMapServiceLayer("http://
+                  server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer");
+                map.addLayer(basemap);
+                // once map is loaded
+                dojo.connect(map, 'onLoad', function (theMap) {
+                  //resize the map when the broser resizes
+                  dojo.connect(dijit.byId('map'), 'resize', map, map.resize);
+
+                  // create heat layer
+                  heatLayer = new HeatmapLayer({
+                       config: {
+                        "useLocalMaximum": true,
+                        "radius": 90,
+                        "gradient": {
+                            0.45: "rgb(000,000,255)",
+                            0.55: "rgb(000,255,255)",
+                            0.65: "rgb(000,255,000)",
+                            0.95: "rgb(255,255,000)",
+                            1.00: "rgb(255,000,000)",
+                        }
+                    }, 
+                    "map": map,
+                    "domNodeId": "heatLayer",
+                    "opacity": 0.85
+                });
+                // add heat layer to map
+                map.addLayer(heatLayer);
+                // resize map
+                map.resize();
+                // create feature layer to get the points from 
+                featureLayer = new esri.layers.FeatureLayer("http://servicesbeta.esri.com/arcgis/rest/services/SanFrancisco/SFStreetTreesRendered/MapServer/0", {
+                    mode: esri.layers.FeatureLayer.MODO_ONDEMAND,
+                    visible: false
+                });
+              });
+              }
+              // call init on load of dojo
+              dojo.addOnLoad(init);
+          </script>
+</head>
+<body>
+
+<div id="heatmapArea" class="well" style="width:610px;padding:0;height:400px;
+cursor:pointer;position:relative;">
+    <div id="heatLayer"></div>
+    <div id="map"></div>
+</div>
+</body>
+</html>
+
+<!--
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<title></title>
+<style>
+  html, body, #mapDiv {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+  }
+</style>
+ <script type="text/javascript">
+            var djConfig = {
+                parseOnLoad: true
+            };
+        </script>
+<link rel="stylesheet" href="http://js.arcgis.com/3.8/js/esri/css/esri.css">
+<script src="http://js.arcgis.com/3.8/"></script>
+<script type="text/javascript" src="src/heatmap.js"></script>
+<script type="text/javascript" src="src/heatmap-arcgis.js"></script>
+<script>
+require(["esri/map"], function(Map) { 
+    console.log("Hello World!");
+});
+</script> 
+<script>
+  require(["esri/map", "dojo/domReady!"], function(Map) { 
+  // code to create the map and add a basemap will go here 
+  });
+
+  var map;
+    require(["esri/map", "dojo/domReady!"], function(Map) { 
+      map = new Map("map", {
+      center: [-56.049, 38.485],
+      zoom: 3,
+      basemap: "streets"
+      });
+    });
+
+  var config = {
+      "radius": 30,
+      "element": "heatmapEl",
+      "visible": true,
+      "opacity": 40,
+      "gradient": { 0.45: "rgb(0,0,255)", 0.55: "rgb(0,255,255)", 0.65: "rgb(0,255,0)", 0.95: "yellow", 1.0: "rgb(255,0,0)" }
+  };
+
+  var heatmap = heatmapFactory.create(config);
+
+  // set a dataset
+  heatmap.store.setDataSet({ max: 10, data: [{x: 10, y: 20, count: 5}, {x: 15, y: 25, count: 20}, {x: 5, y: 30, count: 10} ]});
+
+  // add a single datapoint
+  heatmap.store.addDataPoint(10, 20);
+
+  // export the dataset
+  var dataSet = heatmap.store.exportDataSet();
+
+</script>
+
+
+
+</head>
+<body class="well">
+<div id="heatmapArea" class="well" style="width:610px;padding:0;height:400px;cursor:pointer;position:relative;">
+    <div id="heatLayer"></div>
+    <div id="map"></div>
+</div>
+</body>
+</html>  -->
