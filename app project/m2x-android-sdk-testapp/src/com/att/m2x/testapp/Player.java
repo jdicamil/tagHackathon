@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -23,7 +24,7 @@ public class Player extends Activity {
 
 	WebView webView;
 	TextView name;
-
+	MediaPlayer sound;
 	public final static String TAG = "Player";
 
 	TextView whosIt, Points;
@@ -65,6 +66,8 @@ public class Player extends Activity {
 
 		// Get local Bluetooth adapter
 		mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+		sound = MediaPlayer.create(this, R.raw.sound);
+		
 
 	}
 
@@ -191,6 +194,7 @@ public class Player extends Activity {
 				String writeMessage = new String(writeBuf);
 				break;
 			case MESSAGE_READ:
+				sound.start();
 				byte[] readBuf = (byte[]) msg.obj;
 				// construct a string from the valid bytes in the buffer
 				String readMessage = new String(readBuf, 0, msg.arg1);
