@@ -14,8 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.BluetoothChat;
-
+package com.att.m2x.testapp;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
