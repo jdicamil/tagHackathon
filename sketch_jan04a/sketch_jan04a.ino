@@ -13,25 +13,29 @@
 
 int bluetoothTx = 2;  // TX-O pin of bluetooth mate, Arduino D2
 int bluetoothRx = 3;  // RX-I pin of bluetooth mate, Arduino D3
+int buttonPin = 9; // choose the input pin (for a pushbutton)
+int buttonState = 0;
+char incomingBytpe; //incoming data
 
 SoftwareSerial bluetooth(bluetoothTx, bluetoothRx);
 
 void setup()
 {
+  pinMode(buttonPin, INPUT); //declare pushbutton as input
     // Begin the serial monitor at 9600bps
 
-  Serial.begin(115200);  // The Bluetooth Mate defaults to 115200bps
   
-  while(1){
-  Serial.println("hello world");
-  int Jonathan = 5;
-  Serial.print(Jonathan);
-  delay(1000);
-  }
 }
 
 void loop()
 {
-
+  buttonState = digitalRead(buttonPin);
+  if (buttonState == HIGH){
+  Serial.begin(115200);  // The Bluetooth Mate defaults to 115200bps
+  Serial.println("hello world");
+  delay(1000);
+  }else{
+    buttonState == LOW;
+  }
   // and loop forever and ever!
 }
