@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, SwitchMapActivitiesActivity!</string>
+    <string name="app_name">SwitchMapActivities</string>
+    <string name="button1Text">Go to Map 2</string>
+    <string name="button2Text">Go to Map 1</string>
+
+</resources>

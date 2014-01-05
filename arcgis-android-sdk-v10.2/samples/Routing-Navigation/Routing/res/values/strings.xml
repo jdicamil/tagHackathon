@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">RoutingTask Sample</string>
+    <string name="app_name">RoutingTask Sample</string>
+    <string name="route_label">Press and hold map to route to that point\nClick segments for more information</string>
+</resources>

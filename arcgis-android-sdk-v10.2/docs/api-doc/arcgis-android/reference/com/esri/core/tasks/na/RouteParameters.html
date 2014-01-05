@@ -1,0 +1,3886 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="shortcut icon" type="image/x-icon" href="../../../../../../favicon.ico" />
+<title>
+
+  RouteParameters |
+
+
+  ArcGIS Android 10.2.0 API
+
+</title>
+<link href="../../../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
+<link href="../../../../../../assets/customizations.css" rel="stylesheet" type="text/css" />
+<script src="../../../../../../assets/search_autocomplete.js" type="text/javascript"></script>
+<script src="../../../../../../assets/jquery-resizable.min.js" type="text/javascript"></script>
+<script src="../../../../../../assets/doclava-developer-docs.js" type="text/javascript"></script>
+<script src="../../../../../../assets/prettify.js" type="text/javascript"></script>
+<script type="text/javascript">
+  setToRoot("../../../../../../");
+</script>
+<script src="../../../../../../assets/doclava-developer-reference.js" type="text/javascript"></script>
+<script src="../../../../../../navtree_data.js" type="text/javascript"></script>
+<script src="../../../../../../assets/customizations.js" type="text/javascript"></script>
+<noscript>
+  <style type="text/css">
+    html,body{overflow:auto;}
+    #body-content{position:relative; top:0;}
+    #doc-content{overflow:visible;border-left:3px solid #666;}
+    #side-nav{padding:0;}
+    #side-nav .toggle-list ul {display:block;}
+    #resize-packages-nav{border-bottom:3px solid #666;}
+  </style>
+</noscript>
+</head>
+
+<body class="" itemscope itemtype="http://schema.org/Article">
+
+<div id="header">
+    <div id="headerLeft">
+   		<span id="masthead-title">ArcGIS Android 10.2.0 API</span>
+    </div>
+    <div id="headerRight">
+        
+  <div id="search" >
+      <div id="searchForm">
+          <form accept-charset="utf-8" class="gsc-search-box" 
+                onsubmit="return submit_search()">
+            <table class="gsc-search-box" cellpadding="0" cellspacing="0"><tbody>
+                <tr>
+                  <td class="gsc-input">
+                    <input id="search_autocomplete" class="gsc-input" type="text" size="33" autocomplete="off"
+                      title="search developer docs" name="q"
+                      value="search developer docs"
+                      onFocus="search_focus_changed(this, true)"
+                      onBlur="search_focus_changed(this, false)"
+                      onkeydown="return search_changed(event, true, '../../../../../../')"
+                      onkeyup="return search_changed(event, false, '../../../../../../')" />
+                  <div id="search_filtered_div" class="no-display">
+                      <table id="search_filtered" cellspacing=0>
+                      </table>
+                  </div>
+                  </td>
+                  <td class="gsc-search-button">
+                    <input type="submit" value="Search" title="search" id="search-button" class="gsc-search-button" />
+                  </td>
+                  <td class="gsc-clear-button">
+                    <div title="clear results" class="gsc-clear-button">&nbsp;</div>
+                  </td>
+                </tr></tbody>
+              </table>
+          </form>
+      </div><!-- searchForm -->
+  </div><!-- search -->
+    </div><!-- headerRight -->
+</div><!-- header -->
+
+
+  <div class="g-section g-tpl-240" id="body-content">
+    <div class="g-unit g-first side-nav-resizable" id="side-nav">
+      <div id="swapper">
+        <div id="nav-panels">
+          <div id="resize-packages-nav">
+            <div id="packages-nav">
+              <div id="index-links"><nobr>
+                <a href="../../../../../../reference/packages.html"  >Package Index</a> | 
+                <a href="../../../../../../reference/classes.html" >Class Index</a></nobr>
+              </div>
+              <ul>
+                
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/android/action/package-summary.html">com.esri.android.action</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/android/map/package-summary.html">com.esri.android.map</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/android/map/ags/package-summary.html">com.esri.android.map.ags</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/android/map/bing/package-summary.html">com.esri.android.map.bing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/android/map/event/package-summary.html">com.esri.android.map.event</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/android/map/ogc/package-summary.html">com.esri.android.map.ogc</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/android/map/osm/package-summary.html">com.esri.android.map.osm</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/android/map/popup/package-summary.html">com.esri.android.map.popup</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/android/oauth/package-summary.html">com.esri.android.oauth</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/ags/package-summary.html">com.esri.core.ags</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/gdb/package-summary.html">com.esri.core.gdb</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/geometry/package-summary.html">com.esri.core.geometry</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/io/package-summary.html">com.esri.core.io</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/map/package-summary.html">com.esri.core.map</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/map/bing/package-summary.html">com.esri.core.map.bing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/map/popup/package-summary.html">com.esri.core.map.popup</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/portal/package-summary.html">com.esri.core.portal</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/renderer/package-summary.html">com.esri.core.renderer</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/symbol/package-summary.html">com.esri.core.symbol</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/symbol/advanced/package-summary.html">com.esri.core.symbol.advanced</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/table/package-summary.html">com.esri.core.table</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/package-summary.html">com.esri.core.tasks</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/ags/package-summary.html">com.esri.core.tasks.ags</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/ags/find/package-summary.html">com.esri.core.tasks.ags.find</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/ags/geocode/package-summary.html">com.esri.core.tasks.ags.geocode</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/ags/geoprocessing/package-summary.html">com.esri.core.tasks.ags.geoprocessing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/ags/identify/package-summary.html">com.esri.core.tasks.ags.identify</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/ags/na/package-summary.html">com.esri.core.tasks.ags.na</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/ags/query/package-summary.html">com.esri.core.tasks.ags.query</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/gdb/package-summary.html">com.esri.core.tasks.gdb</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/geocode/package-summary.html">com.esri.core.tasks.geocode</a></li>
+    <li class="selected api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/na/package-summary.html">com.esri.core.tasks.na</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/oauth/package-summary.html">com.esri.core.tasks.oauth</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/query/package-summary.html">com.esri.core.tasks.query</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/tilecache/package-summary.html">com.esri.core.tasks.tilecache</a></li>
+              </ul><br/>
+            </div> <!-- end packages -->
+          </div> <!-- end resize-packages -->
+          <div id="classes-nav">
+            <ul>
+              
+    <li><h2>Interfaces</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/na/NAFeatures.html">NAFeatures</a></li>
+          <li class="selected api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html">RouteParameters</a></li>
+      </ul>
+    </li>
+              
+    <li><h2>Classes</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/na/AttributeParameter.html">AttributeParameter</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/na/AttributeParameterValue.html">AttributeParameterValue</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/na/ClosestFacilityParameters.html">ClosestFacilityParameters</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/na/ClosestFacilityResult.html">ClosestFacilityResult</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/na/ClosestFacilityTask.html">ClosestFacilityTask</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/na/CostAttribute.html">CostAttribute</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/na/DirectionsEvent.html">DirectionsEvent</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/na/DirectionsString.html">DirectionsString</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/na/NAFeaturesAsFeature.html">NAFeaturesAsFeature</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/na/NAFeaturesAsLayer.html">NAFeaturesAsLayer</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/na/NAMessage.html">NAMessage</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/na/NAParameters.html">NAParameters</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/na/NAResult.html">NAResult</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/na/NetworkDescription.html">NetworkDescription</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/na/RestrictionAttribute.html">RestrictionAttribute</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/na/Route.html">Route</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteDirection.html">RouteDirection</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteResult.html">RouteResult</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteTask.html">RouteTask</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/na/ServiceAreaParameters.html">ServiceAreaParameters</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/na/ServiceAreaResult.html">ServiceAreaResult</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/na/ServiceAreaTask.html">ServiceAreaTask</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/na/StopGraphic.html">StopGraphic</a></li>
+      </ul>
+    </li>
+              
+    <li><h2>Enums</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/na/AttributeUnits.html">AttributeUnits</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/na/DirectionsLengthUnit.html">DirectionsLengthUnit</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/na/DirectionsOutputType.html">DirectionsOutputType</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/na/DirectionsStringType.html">DirectionsStringType</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/na/NADistanceUnit.html">NADistanceUnit</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/na/NAOutputLine.html">NAOutputLine</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/na/NAOutputPolygon.html">NAOutputPolygon</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/na/NATimeOfDayUsage.html">NATimeOfDayUsage</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/na/NATravelDirection.html">NATravelDirection</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteManeuverType.html">RouteManeuverType</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/na/UTurnRestriction.html">UTurnRestriction</a></li>
+      </ul>
+    </li>
+              
+              
+            </ul><br/>
+          </div><!-- end classes -->
+        </div><!-- end nav-panels -->
+        <div id="nav-tree" style="display:none">
+          <div id="index-links"><nobr>
+            <a href="../../../../../../reference/packages.html"  >Package Index</a> | 
+            <a href="../../../../../../reference/classes.html" >Class Index</a></nobr>
+          </div>
+        </div><!-- end nav-tree -->
+      </div><!-- end swapper -->
+    </div> <!-- end side-nav -->
+    <script>
+      if (!isMobile) {
+        $("<a href='#' id='nav-swap' onclick='swapNav();return false;' style='font-size:10px;line-height:9px;margin-left:1em;text-decoration:none;'><span id='tree-link'>Use Tree Navigation</span><span id='panel-link' style='display:none'>Use Panel Navigation</span></a>").appendTo("#side-nav");
+        chooseDefaultNav();
+        if ($("#nav-tree").is(':visible')) {
+          init_default_navtree("../../../../../../");
+        } else {
+          addLoadEvent(function() {
+            scrollIntoView("packages-nav");
+            scrollIntoView("classes-nav");
+          });
+        }
+        $("#swapper").css({borderBottom:"2px solid #aaa"});
+      } else {
+        swapNav(); // tree view should be used on mobile
+      }
+    </script>
+
+
+
+<div class="g-unit" id="doc-content">
+
+<div id="api-info-block">
+
+
+
+
+<div class="sum-details-links">
+
+</div><!-- end sum-details-links -->
+<div class="api-level">
+  
+  
+  
+
+</div>
+</div><!-- end api-info-block -->
+
+
+<!-- ======== START OF CLASS DATA ======== -->
+
+<div id="jd-header">
+    public
+     
+     
+    
+    interface
+<h1 itemprop="name">RouteParameters</h1>
+
+
+
+  
+  
+  
+
+
+</div><!-- end header -->
+
+<div id="naMessage"></div>
+
+<div id="jd-content" class="api apilevel-">
+<table class="jd-inheritance-table">
+
+
+    <tr>
+         	
+        <td colspan="1" class="jd-inheritance-class-cell">com.esri.core.tasks.na.RouteParameters</td>
+    </tr>
+    
+
+</table>
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Class Overview</h2>
+<p itemprop="articleBody">Interface for specifying parameters for a solve operations. An instance of this interface can be obtained through the
+ <code><a href="../../../../../../reference/com/esri/core/tasks/na/RouteTask.html#retrieveDefaultRouteTaskParameters()">retrieveDefaultRouteTaskParameters()</a></code> method.</p>
+
+
+
+
+
+</div><!-- jd-descr -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Summary</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="pubmethods" class="jd-sumtable"><tr><th colspan="12">Public Methods</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#dispose()">dispose</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Cleanup any resources that the settings object might be holding.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            String[]</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#getAccumulateAttributeNames()">getAccumulateAttributeNames</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Return the accumulate attribute names e.g.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/esri/core/tasks/na/AttributeParameterValue.html">AttributeParameterValue[]</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#getAttributeParameterValues()">getAttributeParameterValues</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Return the attribute parameter values e.g.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            String</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#getDirectionsLanguage()">getDirectionsLanguage</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the language of the output directions e.g.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/esri/core/tasks/na/DirectionsLengthUnit.html">DirectionsLengthUnit</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#getDirectionsLengthUnit()">getDirectionsLengthUnit</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the unit of measurement for the length of directions results.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            String</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#getDirectionsStyleName()">getDirectionsStyleName</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the directions style name e.g.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#getFindBestSequence()">getFindBestSequence</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the current setting for reordering stops (Traveling Salesman Problem).</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#getIgnoreInvalidLocations()">getIgnoreInvalidLocations</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns whether or not invalid stops should be ignored.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            String</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#getImpedanceAttributeName()">getImpedanceAttributeName</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Return the impedance attribute name.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/esri/core/geometry/SpatialReference.html">SpatialReference</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#getOutSpatialReference()">getOutSpatialReference</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Return the output spatial reference.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            Double</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#getOutputGeometryPrecision()">getOutputGeometryPrecision</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the precision of the output geometry.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/esri/core/geometry/Unit.EsriUnit.html">Unit.EsriUnit</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#getOutputGeometryPrecisionUnits()">getOutputGeometryPrecisionUnits</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the enumeration value of the unit of measurement on the output geometry precision (Miles, Meters, etc.).</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/esri/core/tasks/na/NAOutputLine.html">NAOutputLine</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#getOutputLines()">getOutputLines</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the enumeration value for the output shape type e.g.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/esri/core/tasks/na/NAFeatures.html">NAFeatures</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#getPointBarriers()">getPointBarriers</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the point barriers.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/esri/core/tasks/na/NAFeatures.html">NAFeatures</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#getPolygonBarriers()">getPolygonBarriers</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the polygon barriers.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/esri/core/tasks/na/NAFeatures.html">NAFeatures</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#getPolylineBarriers()">getPolylineBarriers</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the polyline barriers.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#getPreserveFirstStop()">getPreserveFirstStop</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the current setting for preserving the first stop when reordering stops for optimality (TSP).</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#getPreserveLastStop()">getPreserveLastStop</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the current setting for preserving the last stop when reordering stops for optimality (TSP).</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/esri/core/tasks/na/UTurnRestriction.html">UTurnRestriction</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#getRestrictUTurns()">getRestrictUTurns</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the enumeration value for the u-turn policy e.g.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            String[]</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#getRestrictionAttributeNames()">getRestrictionAttributeNames</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the names of set restriction attributes e.g.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            Date</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#getStartTime()">getStartTime</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the start date/time of the route.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/esri/core/tasks/na/NAFeatures.html">NAFeatures</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#getStops()">getStops</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the stops to route between.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            Boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#getUseHierarchy()">getUseHierarchy</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the solver hierarchy setting.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#getUseTimeWindows()">getUseTimeWindows</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns whether or not time windows should be used.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#hashCode()">hashCode</a></span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#isReturnDirections()">isReturnDirections</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns whether or not directions should be returned in the event of a successful solve.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#isReturnPointBarriers()">isReturnPointBarriers</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the setting for returning point barriers on the results object.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#isReturnPolygonBarriers()">isReturnPolygonBarriers</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the setting for returning polygon barriers on the results object.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#isReturnPolylineBarriers()">isReturnPolylineBarriers</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Get the setting for returning polyline barriers on the results object.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#isReturnRoutes()">isReturnRoutes</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns whether or not routes (an individual route has a geometry and a collection of attributes) should be
+ returned in the event of a successful solve.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#isReturnStops()">isReturnStops</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns whether or not input stops should be returned on the result object.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#isReturnZ()">isReturnZ</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Get the setting for returning z values.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#setAccumulateAttributeNames(java.lang.String[])">setAccumulateAttributeNames</a></span>(String[] accumulateAttributeNames)</nobr>
+        
+        <div class="jd-descrdiv">Set the accumulate attributes e.g.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#setAttributeParameterValues(com.esri.core.tasks.na.AttributeParameterValue[])">setAttributeParameterValues</a></span>(<a href="../../../../../../reference/com/esri/core/tasks/na/AttributeParameterValue.html">AttributeParameterValue[]</a> attributeParameterValues)</nobr>
+        
+        <div class="jd-descrdiv">Set the attribute parameter values e.g.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#setDirectionsLanguage(java.lang.String)">setDirectionsLanguage</a></span>(String directionsLanguage)</nobr>
+        
+        <div class="jd-descrdiv">Set the directions language e.g.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#setDirectionsLengthUnit(com.esri.core.tasks.na.DirectionsLengthUnit)">setDirectionsLengthUnit</a></span>(<a href="../../../../../../reference/com/esri/core/tasks/na/DirectionsLengthUnit.html">DirectionsLengthUnit</a> directionsLengthUnit)</nobr>
+        
+        <div class="jd-descrdiv">Set the unit of measurement for the length of directions e.g.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#setDirectionsStyleName(java.lang.String)">setDirectionsStyleName</a></span>(String directionsStyleName)</nobr>
+        
+        <div class="jd-descrdiv">Set the directions style name e.g.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#setFindBestSequence(java.lang.Boolean)">setFindBestSequence</a></span>(Boolean findBestSequence)</nobr>
+        
+        <div class="jd-descrdiv">Set whether or not to reorder the stops for optimality (Traveling Salesman Problem).</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#setIgnoreInvalidLocations(java.lang.Boolean)">setIgnoreInvalidLocations</a></span>(Boolean ignoreInvalidLocations)</nobr>
+        
+        <div class="jd-descrdiv">Set whether or not to ignore invalid locations while routing.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#setImpedanceAttributeName(java.lang.String)">setImpedanceAttributeName</a></span>(String impedanceAttributeName)</nobr>
+        
+        <div class="jd-descrdiv">Set the impedance attribute.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#setOutSpatialReference(com.esri.core.geometry.SpatialReference)">setOutSpatialReference</a></span>(<a href="../../../../../../reference/com/esri/core/geometry/SpatialReference.html">SpatialReference</a> outSpatialReference)</nobr>
+        
+        <div class="jd-descrdiv">Set the output spatial reference.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#setOutputGeometryPrecision(java.lang.Double)">setOutputGeometryPrecision</a></span>(Double outputGeometryPrecision)</nobr>
+        
+        <div class="jd-descrdiv">Set the precision of the output geometry.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#setOutputGeometryPrecisionUnits(com.esri.core.geometry.Unit.EsriUnit)">setOutputGeometryPrecisionUnits</a></span>(<a href="../../../../../../reference/com/esri/core/geometry/Unit.EsriUnit.html">Unit.EsriUnit</a> outputGeometryPrecisionUnits)</nobr>
+        
+        <div class="jd-descrdiv">Set the enumeration value of the unit of measurement on the output geometry precision (Miles, Meters, etc.).</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#setOutputLines(com.esri.core.tasks.na.NAOutputLine)">setOutputLines</a></span>(<a href="../../../../../../reference/com/esri/core/tasks/na/NAOutputLine.html">NAOutputLine</a> outputLines)</nobr>
+        
+        <div class="jd-descrdiv">Sets the enumeration value for the output shape type e.g.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#setPointBarriers(com.esri.core.tasks.na.NAFeatures)">setPointBarriers</a></span>(<a href="../../../../../../reference/com/esri/core/tasks/na/NAFeatures.html">NAFeatures</a> pointBarriers)</nobr>
+        
+        <div class="jd-descrdiv">Sets the point barriers.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#setPolygonBarriers(com.esri.core.tasks.na.NAFeatures)">setPolygonBarriers</a></span>(<a href="../../../../../../reference/com/esri/core/tasks/na/NAFeatures.html">NAFeatures</a> polygonBarriers)</nobr>
+        
+        <div class="jd-descrdiv">Sets the polygon barriers.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#setPolylineBarriers(com.esri.core.tasks.na.NAFeatures)">setPolylineBarriers</a></span>(<a href="../../../../../../reference/com/esri/core/tasks/na/NAFeatures.html">NAFeatures</a> polylineBarriers)</nobr>
+        
+        <div class="jd-descrdiv">Set the polyline barriers.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#setPreserveFirstStop(java.lang.Boolean)">setPreserveFirstStop</a></span>(Boolean preserveFirstStop)</nobr>
+        
+        <div class="jd-descrdiv">Set whether or not to preserve the first stop when reordering stops for optimality (TSP).</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#setPreserveLastStop(java.lang.Boolean)">setPreserveLastStop</a></span>(Boolean preserveLastStop)</nobr>
+        
+        <div class="jd-descrdiv">Set whether or not to preserve the last stop when reordering stops for optimality (TSP).</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#setRestrictUTurns(com.esri.core.tasks.na.UTurnRestriction)">setRestrictUTurns</a></span>(<a href="../../../../../../reference/com/esri/core/tasks/na/UTurnRestriction.html">UTurnRestriction</a> restrictUTurns)</nobr>
+        
+        <div class="jd-descrdiv">Set the u-turn restriction policy e.g.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#setRestrictionAttributeNames(java.lang.String[])">setRestrictionAttributeNames</a></span>(String[] restrictionAttributeNames)</nobr>
+        
+        <div class="jd-descrdiv">Set the names of the restriction attributes e.g.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#setReturnDirections(boolean)">setReturnDirections</a></span>(boolean returnDirections)</nobr>
+        
+        <div class="jd-descrdiv">Set whether or not to return driving directions in the event of a successful solve.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#setReturnPointBarriers(boolean)">setReturnPointBarriers</a></span>(boolean returnBarriers)</nobr>
+        
+        <div class="jd-descrdiv">Set whether or not to return point barriers on the result object.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#setReturnPolygonBarriers(boolean)">setReturnPolygonBarriers</a></span>(boolean returnPolygonBarriers)</nobr>
+        
+        <div class="jd-descrdiv">Set whether or not to return polygon barriers on the results object.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#setReturnPolylineBarriers(boolean)">setReturnPolylineBarriers</a></span>(boolean returnPolylineBarriers)</nobr>
+        
+        <div class="jd-descrdiv">Set whether or not to return polyline barriers on the results object.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#setReturnRoutes(boolean)">setReturnRoutes</a></span>(boolean returnRoutes)</nobr>
+        
+        <div class="jd-descrdiv">Set whether or not to return routes (a single route has a geometry and a collection of attributes) in the event of
+ a successful solve.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#setReturnStops(boolean)">setReturnStops</a></span>(boolean returnStops)</nobr>
+        
+        <div class="jd-descrdiv">Set whether or not to return stops on the results object.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#setReturnZ(boolean)">setReturnZ</a></span>(boolean returnZ)</nobr>
+        
+        <div class="jd-descrdiv">Set whether or not to return z values.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#setStartTime(java.util.Date)">setStartTime</a></span>(Date startTime)</nobr>
+        
+        <div class="jd-descrdiv">Set the desired start date/time of the solve.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#setStops(com.esri.core.tasks.na.NAFeatures)">setStops</a></span>(<a href="../../../../../../reference/com/esri/core/tasks/na/NAFeatures.html">NAFeatures</a> stops)</nobr>
+        
+        <div class="jd-descrdiv">Set the stops to be routed between.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#setUseHierarchy(java.lang.Boolean)">setUseHierarchy</a></span>(Boolean useHierarchy)</nobr>
+        
+        <div class="jd-descrdiv">Set whether or not to solve using a hierarchy.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#setUseTimeWindows(java.lang.Boolean)">setUseTimeWindows</a></span>(Boolean useTimeWindows)</nobr>
+        
+        <div class="jd-descrdiv">Set whether or not to use time windows on the solve.</div>
+  
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+
+</div><!-- jd-descr (summary) -->
+
+<!-- Details -->
+
+
+
+
+
+
+
+
+<!-- XML Attributes -->
+
+
+<!-- Enum Values -->
+
+
+<!-- Constants -->
+
+
+<!-- Fields -->
+
+
+<!-- Public ctors -->
+
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<!-- Protected ctors -->
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+<!-- Public methdos -->
+
+<h2>Public Methods</h2>
+
+
+
+<A NAME="dispose()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">dispose</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Cleanup any resources that the settings object might be holding. Note, this is only applicable for offline routing
+ and calling dispose() will invalidate the settings object.
+</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="getAccumulateAttributeNames()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        String[]
+      </span>
+      <span class="sympad">getAccumulateAttributeNames</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Return the accumulate attribute names e.g. "Minutes", "Miles", etc. Accumulate attributes are useful when more
+ information other than the default impedance attribute is required.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>A collection of accumulate attribute names.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getAttributeParameterValues()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        <a href="../../../../../../reference/com/esri/core/tasks/na/AttributeParameterValue.html">AttributeParameterValue[]</a>
+      </span>
+      <span class="sympad">getAttributeParameterValues</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Return the attribute parameter values e.g. Vehicle Weight, Vehicle Height, Preferential settings for tollroads,
+ etc.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>A collection of attribute parameter values.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getDirectionsLanguage()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        String
+      </span>
+      <span class="sympad">getDirectionsLanguage</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the language of the output directions e.g. "en-US".</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The directions language.</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getDirectionsLengthUnit()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        <a href="../../../../../../reference/com/esri/core/tasks/na/DirectionsLengthUnit.html">DirectionsLengthUnit</a>
+      </span>
+      <span class="sympad">getDirectionsLengthUnit</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the unit of measurement for the length of directions results.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>Directions length unit of measurement.</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getDirectionsStyleName()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        String
+      </span>
+      <span class="sympad">getDirectionsStyleName</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the directions style name e.g. NACampus, NANavigation, etc.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The directions style name.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getFindBestSequence()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        boolean
+      </span>
+      <span class="sympad">getFindBestSequence</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the current setting for reordering stops (Traveling Salesman Problem).</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>true if stops should be optimally reordered.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getIgnoreInvalidLocations()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        boolean
+      </span>
+      <span class="sympad">getIgnoreInvalidLocations</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns whether or not invalid stops should be ignored.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>true if an invalid stop should be ignored.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getImpedanceAttributeName()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        String
+      </span>
+      <span class="sympad">getImpedanceAttributeName</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Return the impedance attribute name. This is the attribute that the route is optimized for, e.g. "TravelTime" or
+ "Distance".</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The name the of the impedance attribute.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getOutSpatialReference()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        <a href="../../../../../../reference/com/esri/core/geometry/SpatialReference.html">SpatialReference</a>
+      </span>
+      <span class="sympad">getOutSpatialReference</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Return the output spatial reference. All route geometries will be returned in this spatial reference in the even of
+ a successful solve.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The output spatial reference.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getOutputGeometryPrecision()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        Double
+      </span>
+      <span class="sympad">getOutputGeometryPrecision</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the precision of the output geometry. Precision is useful for reducing the response size while sacrificing
+ route shape quality.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The output precision.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getOutputGeometryPrecisionUnits()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        <a href="../../../../../../reference/com/esri/core/geometry/Unit.EsriUnit.html">Unit.EsriUnit</a>
+      </span>
+      <span class="sympad">getOutputGeometryPrecisionUnits</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the enumeration value of the unit of measurement on the output geometry precision (Miles, Meters, etc.).</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The enumeration value of the the unit of measurement.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getOutputLines()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        <a href="../../../../../../reference/com/esri/core/tasks/na/NAOutputLine.html">NAOutputLine</a>
+      </span>
+      <span class="sympad">getOutputLines</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the enumeration value for the output shape type e.g. straight line shape, true shape, or no shape.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The enumeration value for the output shape type.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getPointBarriers()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        <a href="../../../../../../reference/com/esri/core/tasks/na/NAFeatures.html">NAFeatures</a>
+      </span>
+      <span class="sympad">getPointBarriers</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the point barriers.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The collection of point barriers.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getPolygonBarriers()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        <a href="../../../../../../reference/com/esri/core/tasks/na/NAFeatures.html">NAFeatures</a>
+      </span>
+      <span class="sympad">getPolygonBarriers</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the polygon barriers.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>A collection of polygon barriers.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getPolylineBarriers()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        <a href="../../../../../../reference/com/esri/core/tasks/na/NAFeatures.html">NAFeatures</a>
+      </span>
+      <span class="sympad">getPolylineBarriers</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the polyline barriers.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>A collection of polyline barriers.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getPreserveFirstStop()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        boolean
+      </span>
+      <span class="sympad">getPreserveFirstStop</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the current setting for preserving the first stop when reordering stops for optimality (TSP). Note, this
+ settings only applies when FindBestSequence = true.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>true if the first stop should be preserved when reordering stops for optimality.
+</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">See Also</h5>
+      <ul class="nolist"><li><code><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#setFindBestSequence(java.lang.Boolean)">setFindBestSequence(Boolean)</a></code></li>
+      </ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getPreserveLastStop()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        boolean
+      </span>
+      <span class="sympad">getPreserveLastStop</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the current setting for preserving the last stop when reordering stops for optimality (TSP). Note, this
+ settings only applies when FindBestSequence = true.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>true if the first stop should be preserved when reordering stops for optimality.
+</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">See Also</h5>
+      <ul class="nolist"><li><code><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#setFindBestSequence(java.lang.Boolean)">setFindBestSequence(Boolean)</a></code></li>
+      </ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getRestrictUTurns()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        <a href="../../../../../../reference/com/esri/core/tasks/na/UTurnRestriction.html">UTurnRestriction</a>
+      </span>
+      <span class="sympad">getRestrictUTurns</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the enumeration value for the u-turn policy e.g. no u-turns, u-turns at stops, etc.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>An enumeration value representing the u-turn policy.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getRestrictionAttributeNames()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        String[]
+      </span>
+      <span class="sympad">getRestrictionAttributeNames</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the names of set restriction attributes e.g. "Oneway".</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>A collection of restriction attribute names.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getStartTime()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        Date
+      </span>
+      <span class="sympad">getStartTime</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the start date/time of the route.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>null if the a start time was not set, otherwise the start date/time.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getStops()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        <a href="../../../../../../reference/com/esri/core/tasks/na/NAFeatures.html">NAFeatures</a>
+      </span>
+      <span class="sympad">getStops</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the stops to route between.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>NAFeatures object containing the stops, whose graphics can be directly accessed using
+         <code><a href="../../../../../../reference/com/esri/core/tasks/na/NAFeaturesAsFeature.html#getFeatures()">getFeatures()</a></code>
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getUseHierarchy()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        Boolean
+      </span>
+      <span class="sympad">getUseHierarchy</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the solver hierarchy setting. A hierarchical solve tends to prefer higher-order streets such a freeways.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>True if hierarchy is enabled.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getUseTimeWindows()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        boolean
+      </span>
+      <span class="sympad">getUseTimeWindows</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns whether or not time windows should be used. Time windows allow for specification of arrival and departure
+ times on individual stops.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>true if time windows should be used.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="hashCode()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        int
+      </span>
+      <span class="sympad">hashCode</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="isReturnDirections()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        boolean
+      </span>
+      <span class="sympad">isReturnDirections</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns whether or not directions should be returned in the event of a successful solve.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>true if directions should be returned on the result object.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="isReturnPointBarriers()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        boolean
+      </span>
+      <span class="sympad">isReturnPointBarriers</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the setting for returning point barriers on the results object.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>True if point barriers should be returned on the results object.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="isReturnPolygonBarriers()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        boolean
+      </span>
+      <span class="sympad">isReturnPolygonBarriers</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the setting for returning polygon barriers on the results object.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>True if polygon barriers should be returned on the results object.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="isReturnPolylineBarriers()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        boolean
+      </span>
+      <span class="sympad">isReturnPolylineBarriers</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Get the setting for returning polyline barriers on the results object.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>True if polyline barriers should be returned on the results object.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="isReturnRoutes()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        boolean
+      </span>
+      <span class="sympad">isReturnRoutes</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns whether or not routes (an individual route has a geometry and a collection of attributes) should be
+ returned in the event of a successful solve.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>true if routes should be returned (enabled by default).
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="isReturnStops()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        boolean
+      </span>
+      <span class="sympad">isReturnStops</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns whether or not input stops should be returned on the result object.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>true if stops should be returned (disabled by default).
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="isReturnZ()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        boolean
+      </span>
+      <span class="sympad">isReturnZ</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Get the setting for returning z values.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>True if z values should be returned.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setAccumulateAttributeNames(java.lang.String[])"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setAccumulateAttributeNames</span>
+      <span class="normal">(String[] accumulateAttributeNames)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set the accumulate attributes e.g. "Miles", "Minutes", etc. Accumulate attributes can be used for collecting
+ information other than the default impedance attribute.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>accumulateAttributeNames</td>
+          <td>The names of the accumulate attributes to be set.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setAttributeParameterValues(com.esri.core.tasks.na.AttributeParameterValue[])"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setAttributeParameterValues</span>
+      <span class="normal">(<a href="../../../../../../reference/com/esri/core/tasks/na/AttributeParameterValue.html">AttributeParameterValue[]</a> attributeParameterValues)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set the attribute parameter values e.g. Vehicle Weight, Vehicle Height, etc. Attribute parameter values are useful
+ for customizing individual restrictions ("Don't travel on a roads weight limits below 6 tons").</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>attributeParameterValues</td>
+          <td>The attribute parameter values to set.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setDirectionsLanguage(java.lang.String)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setDirectionsLanguage</span>
+      <span class="normal">(String directionsLanguage)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set the directions language e.g. "en-US".</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>directionsLanguage</td>
+          <td>The ISO language code of the directions language to be set. If an unsupported language is
+          set, an exception will occur at solve time.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setDirectionsLengthUnit(com.esri.core.tasks.na.DirectionsLengthUnit)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setDirectionsLengthUnit</span>
+      <span class="normal">(<a href="../../../../../../reference/com/esri/core/tasks/na/DirectionsLengthUnit.html">DirectionsLengthUnit</a> directionsLengthUnit)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set the unit of measurement for the length of directions e.g. miles, kilometers, etc.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>directionsLengthUnit</td>
+          <td>The enumeration value representing the desired length unit.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setDirectionsStyleName(java.lang.String)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setDirectionsStyleName</span>
+      <span class="normal">(String directionsStyleName)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set the directions style name e.g. NACampus, NANavigation, etc.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>directionsStyleName</td>
+          <td>The name of the desired directions style.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setFindBestSequence(java.lang.Boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setFindBestSequence</span>
+      <span class="normal">(Boolean findBestSequence)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set whether or not to reorder the stops for optimality (Traveling Salesman Problem). Note, the first and last stop
+ can be preserved using <code><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#setPreserveFirstStop(java.lang.Boolean)">setPreserveFirstStop(Boolean)</a></code> and
+ <code><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#setPreserveLastStop(java.lang.Boolean)">setPreserveLastStop(Boolean)</a></code> accordingly.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>findBestSequence</td>
+          <td>If true, reorder the stops to find the optimal order, respecting the preservations
+          strategies of first and last stops.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setIgnoreInvalidLocations(java.lang.Boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setIgnoreInvalidLocations</span>
+      <span class="normal">(Boolean ignoreInvalidLocations)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set whether or not to ignore invalid locations while routing.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>ignoreInvalidLocations</td>
+          <td>If true, invalid locations will be ignored while routing.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setImpedanceAttributeName(java.lang.String)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setImpedanceAttributeName</span>
+      <span class="normal">(String impedanceAttributeName)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set the impedance attribute. This is the attribute that the route will be optimized for e.g. "TravelTime" or
+ "Distance".</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>impedanceAttributeName</td>
+          <td>The name of the desired impedance attribute.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setOutSpatialReference(com.esri.core.geometry.SpatialReference)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setOutSpatialReference</span>
+      <span class="normal">(<a href="../../../../../../reference/com/esri/core/geometry/SpatialReference.html">SpatialReference</a> outSpatialReference)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set the output spatial reference. All route geometries will be returned in this spatial reference.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>outSpatialReference</td>
+          <td>The output spatial reference.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setOutputGeometryPrecision(java.lang.Double)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setOutputGeometryPrecision</span>
+      <span class="normal">(Double outputGeometryPrecision)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set the precision of the output geometry. Precision is useful for reducing the response size while sacrificing
+ route shape quality.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>outputGeometryPrecision</td>
+          <td>The output geometry precision.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setOutputGeometryPrecisionUnits(com.esri.core.geometry.Unit.EsriUnit)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setOutputGeometryPrecisionUnits</span>
+      <span class="normal">(<a href="../../../../../../reference/com/esri/core/geometry/Unit.EsriUnit.html">Unit.EsriUnit</a> outputGeometryPrecisionUnits)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set the enumeration value of the unit of measurement on the output geometry precision (Miles, Meters, etc.).</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>outputGeometryPrecisionUnits</td>
+          <td>The enumeration value for the unit of measurement on the output geometry
+          precision.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setOutputLines(com.esri.core.tasks.na.NAOutputLine)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setOutputLines</span>
+      <span class="normal">(<a href="../../../../../../reference/com/esri/core/tasks/na/NAOutputLine.html">NAOutputLine</a> outputLines)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the enumeration value for the output shape type e.g. straight line shape, true shape, or no shape.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>outputLines</td>
+          <td>The enumeration value for the output shape type.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setPointBarriers(com.esri.core.tasks.na.NAFeatures)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setPointBarriers</span>
+      <span class="normal">(<a href="../../../../../../reference/com/esri/core/tasks/na/NAFeatures.html">NAFeatures</a> pointBarriers)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the point barriers.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>pointBarriers</td>
+          <td>Collection of point barriers.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setPolygonBarriers(com.esri.core.tasks.na.NAFeatures)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setPolygonBarriers</span>
+      <span class="normal">(<a href="../../../../../../reference/com/esri/core/tasks/na/NAFeatures.html">NAFeatures</a> polygonBarriers)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the polygon barriers.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>polygonBarriers</td>
+          <td>Collection of polygon barriers.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setPolylineBarriers(com.esri.core.tasks.na.NAFeatures)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setPolylineBarriers</span>
+      <span class="normal">(<a href="../../../../../../reference/com/esri/core/tasks/na/NAFeatures.html">NAFeatures</a> polylineBarriers)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set the polyline barriers.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>polylineBarriers</td>
+          <td>Collection of polyline barriers.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setPreserveFirstStop(java.lang.Boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setPreserveFirstStop</span>
+      <span class="normal">(Boolean preserveFirstStop)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set whether or not to preserve the first stop when reordering stops for optimality (TSP). This settings is only
+ valid if <code><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#setFindBestSequence(java.lang.Boolean)">setFindBestSequence(Boolean)</a></code> is true.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>preserveFirstStop</td>
+          <td>If true, the first stop will be fixed when finding the optimal order of stops.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setPreserveLastStop(java.lang.Boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setPreserveLastStop</span>
+      <span class="normal">(Boolean preserveLastStop)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set whether or not to preserve the last stop when reordering stops for optimality (TSP). This settings is only
+ valid if <code><a href="../../../../../../reference/com/esri/core/tasks/na/RouteParameters.html#setFindBestSequence(java.lang.Boolean)">setFindBestSequence(Boolean)</a></code> is true.</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="setRestrictUTurns(com.esri.core.tasks.na.UTurnRestriction)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setRestrictUTurns</span>
+      <span class="normal">(<a href="../../../../../../reference/com/esri/core/tasks/na/UTurnRestriction.html">UTurnRestriction</a> restrictUTurns)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set the u-turn restriction policy e.g. no u-turns, u-turns at stops, etc.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>restrictUTurns</td>
+          <td>An enumeration value for the uturn policy.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setRestrictionAttributeNames(java.lang.String[])"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setRestrictionAttributeNames</span>
+      <span class="normal">(String[] restrictionAttributeNames)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set the names of the restriction attributes e.g. "Oneway". Restriction attribtues are useful for controlling which
+ feature to route on.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>restrictionAttributeNames</td>
+          <td>A collection of restriction attribute names.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setReturnDirections(boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setReturnDirections</span>
+      <span class="normal">(boolean returnDirections)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set whether or not to return driving directions in the event of a successful solve.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>returnDirections</td>
+          <td>If true, driving directions will be returned on the result object.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setReturnPointBarriers(boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setReturnPointBarriers</span>
+      <span class="normal">(boolean returnBarriers)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set whether or not to return point barriers on the result object.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>returnBarriers</td>
+          <td>If true, return point barriers on the results object.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setReturnPolygonBarriers(boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setReturnPolygonBarriers</span>
+      <span class="normal">(boolean returnPolygonBarriers)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set whether or not to return polygon barriers on the results object.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>returnPolygonBarriers</td>
+          <td>If true, return polygon barriers on the results object.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setReturnPolylineBarriers(boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setReturnPolylineBarriers</span>
+      <span class="normal">(boolean returnPolylineBarriers)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set whether or not to return polyline barriers on the results object.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>returnPolylineBarriers</td>
+          <td>If true, return polygon barriers on the results object.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setReturnRoutes(boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setReturnRoutes</span>
+      <span class="normal">(boolean returnRoutes)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set whether or not to return routes (a single route has a geometry and a collection of attributes) in the event of
+ a successful solve.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>returnRoutes</td>
+          <td>If true, return routes on the result object.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setReturnStops(boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setReturnStops</span>
+      <span class="normal">(boolean returnStops)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set whether or not to return stops on the results object.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>returnStops</td>
+          <td>If true, stops will be accessible on the results object.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setReturnZ(boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setReturnZ</span>
+      <span class="normal">(boolean returnZ)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set whether or not to return z values.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>returnZ</td>
+          <td>If true, return z values.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setStartTime(java.util.Date)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setStartTime</span>
+      <span class="normal">(Date startTime)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set the desired start date/time of the solve. This is useful in conjunction with time windows and historical
+ traffic data.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>startTime</td>
+          <td>The desired start date/time.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setStops(com.esri.core.tasks.na.NAFeatures)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setStops</span>
+      <span class="normal">(<a href="../../../../../../reference/com/esri/core/tasks/na/NAFeatures.html">NAFeatures</a> stops)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set the stops to be routed between. This is the most critical parameter for a routing solve and any given solve
+ will fail if two valid stops are not provided.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>stops</td>
+          <td>The stops to be routed between.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setUseHierarchy(java.lang.Boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setUseHierarchy</span>
+      <span class="normal">(Boolean useHierarchy)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set whether or not to solve using a hierarchy. A hierarchical solve tends to prefer higher-order streets such a
+ freeways.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>useHierarchy</td>
+          <td>If true, solve using a hierarchy (defaults to true).
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setUseTimeWindows(java.lang.Boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setUseTimeWindows</span>
+      <span class="normal">(Boolean useTimeWindows)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set whether or not to use time windows on the solve. Time windows can be used to specify arrival/departure times
+ for a given stop.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>useTimeWindows</td>
+          <td>If true, apply time windows to the solve.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+
+
+
+<!-- ========= END OF CLASS DATA ========= -->
+<A NAME="navbar_top"></A>
+
+<div id="footer">
+
+</div> <!-- end footer -->
+
+</div> <!-- jd-content -->
+
+</div><!-- end doc-content -->
+
+</div> <!-- end body-content --> 
+
+<script type="text/javascript">
+init(); /* initialize android-developer-docs.js */
+</script>
+
+</body>
+</html>

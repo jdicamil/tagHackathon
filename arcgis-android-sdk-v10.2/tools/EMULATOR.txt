@@ -1,0 +1,22 @@
+Setting up the Android Emulator
+
+The Android SDK provides a virtual mobile device emulator that you can prototype, test, and develop Android applications without the need for a physical device.
+
+The Android tools team introduced OpenGL support in Android 4.0.3r2.  This has allowed us to support the emulator in the ArcGIS Runtime SDK for Android.
+
+Create an Android Emulator with Hardware Acceleration
+Graphics acceleration for the emulator takes advantage of the graphics processing unit (GPU) of your computer for faster screen drawing.
+
+* Open the Android Virtual Device Manager. 
+* Click the New button.
+* Type in a name for your emulator in the text box next to AVD Name. 
+* Select a device from the Device drop down.
+* Choose a Target, must be Android 4.0.3 or higher, from the drop down box.
+* Under Emulation Options, check the Use Host GPU checkbox.
+  * The Emulator dialog should look similar to the image below:
+* Click OK to create the emulator.
+
+Refer to the Android guide to read more about hardware acceleration > http://developer.android.com/tools/devices/emulator.html#acceleration.  
+
+Virtual Machine Acceleration
+The Android emulator allows for taking advantage of a CPU extension for running virtual machines (VM's).  In order to take advantage of this feature you must amke use of x86 system image target emulator.  We provide x86 native libs to support running an emulator inside an accelerated virtual machine.  Please refeer to  the Android guide > http://developer.android.com/tools/devices/emulator.html#accel-vm, to configure your environment for virtual machine acceleration.  

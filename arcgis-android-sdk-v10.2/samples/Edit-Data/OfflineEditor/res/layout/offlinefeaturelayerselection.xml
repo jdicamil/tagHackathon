@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <Button
+        android:id="@+id/openGdb"
+        android:layout_width="86dp"
+        android:layout_height="wrap_content"
+        android:text="Select GDB" />
+
+    <Button
+        android:id="@+id/selectionType"
+        android:layout_width="86dp"
+        android:layout_height="wrap_content"
+        android:text="Selection Type" />
+
+
+</LinearLayout>
+
+<com.esri.android.map.MapView
+android:id="@+id/offlineMap"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+>
+</com.esri.android.map.MapView>
+
+</LinearLayout>

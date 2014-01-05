@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_title">Offliner</string>  
+    <string name="menu_settings">Settings</string>
+    <string name="search_hint">Find Places</string>
+		<string name="preferences_title">Preferences Setting</string>
+		
+		<string name="fsurl">fsurl</string>
+		<string name="gdbfilenamer">gdbfilename</string>
+		<string name="msurl">msurl</string>
+		<string name="basemappath">basemappath</string>
+		<string name="tpk">tpk</string>
+		
+		<string name="fsurl_title">FEATURE SERVICE URL</string>
+		<string name="layerIds_title">LAYER IDS TO DOWNLOAD(Ex: 0,1,2)</string>
+		<string name="gdbfilename_title">DOWNLOAD GDB PATH/FILENAME</string>
+		<string name="returnAttachments_title">RETURN ATTACHMENTS (true or false)</string>
+		<string name="syncModel_title">SYNC MODEL (perReplica or perLayer)</string>
+		<string name="tpk_title">LOCAL BASEMAP FILENAME</string>
+		
+		<string name="fsurl_default">http://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/Wildfire/FeatureServer</string>
+		<string name="layerIds_default">0,1,2</string>
+		<string name="gdbfilename_default">/ArcGIS/samples/OfflineEditor/Wildfire.geodatabase</string>
+		<string name="returnAttachments_default">true</string>
+		<string name="syncModel_default">perLayer</string>		
+		<string name="tpk_default">/ArcGIS/samples/OfflineEditor/SanFrancisco.tpk</string>
+		 
+</resources>

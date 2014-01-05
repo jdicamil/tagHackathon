@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentLeft="true"
+    android:orientation="vertical" >
+
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom" >
+
+                <include
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/offlinerdownloadlayout" />
+
+                <include
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/offlinereditlayout" />
+
+                <include
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/offlinersynclayout" />
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+    <com.esri.android.map.MapView
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        initExtent="-122.520046 37.814802 -122.367096 37.726737" >
+
+        <!-- url ="http://www.arcgis.com/home/item.html?id=6929c43e567647fb85e261beee7f5774"> -->
+        <!-- url ="http://www.arcgis.com/home/item.html?id=c35be7b8904b4f96862d2f6bea8ae24f" -->
+        <!-- > -->
+        <!--  -->
+        <!-- <com.esri.android.map.ags.ArcGISTiledMapServiceLayer -->
+        <!-- url="http://services.arcgisonline.com/ArcGIS/rest/services/ESRI_StreetMap_World_2D/MapServer"/> -->
+        <!-- <com.esri.android.map.ags.ArcGISFeatureLayer -->
+        <!-- url="http://sampleserver5.arcgisonline.com/ArcGIS/rest/services/LocalGovernment/Recreation/FeatureServer/2" -->
+        <!-- mode="ondemand"/> -->
+        <!-- <com.esri.android.map.ags.ArcGISFeatureLayer -->
+        <!-- url="http://sampleserver5.arcgisonline.com/ArcGIS/rest/services/LocalGovernment/Recreation/FeatureServer/0" -->
+        <!-- mode="ondemand"/> -->
+        <!-- <com.esri.android.map.ags.ArcGISFeatureLayer -->
+        <!-- url="http://sampleserver5.arcgisonline.com/ArcGIS/rest/services/LocalGovernment/Recreation/FeatureServer/1" -->
+        <!-- mode="ondemand"/> -->
+    </com.esri.android.map.MapView>
+
+</LinearLayout>

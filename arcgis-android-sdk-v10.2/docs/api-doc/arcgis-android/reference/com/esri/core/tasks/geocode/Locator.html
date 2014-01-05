@@ -1,0 +1,2284 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="shortcut icon" type="image/x-icon" href="../../../../../../favicon.ico" />
+<title>
+
+  Locator |
+
+
+  ArcGIS Android 10.2.0 API
+
+</title>
+<link href="../../../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
+<link href="../../../../../../assets/customizations.css" rel="stylesheet" type="text/css" />
+<script src="../../../../../../assets/search_autocomplete.js" type="text/javascript"></script>
+<script src="../../../../../../assets/jquery-resizable.min.js" type="text/javascript"></script>
+<script src="../../../../../../assets/doclava-developer-docs.js" type="text/javascript"></script>
+<script src="../../../../../../assets/prettify.js" type="text/javascript"></script>
+<script type="text/javascript">
+  setToRoot("../../../../../../");
+</script>
+<script src="../../../../../../assets/doclava-developer-reference.js" type="text/javascript"></script>
+<script src="../../../../../../navtree_data.js" type="text/javascript"></script>
+<script src="../../../../../../assets/customizations.js" type="text/javascript"></script>
+<noscript>
+  <style type="text/css">
+    html,body{overflow:auto;}
+    #body-content{position:relative; top:0;}
+    #doc-content{overflow:visible;border-left:3px solid #666;}
+    #side-nav{padding:0;}
+    #side-nav .toggle-list ul {display:block;}
+    #resize-packages-nav{border-bottom:3px solid #666;}
+  </style>
+</noscript>
+</head>
+
+<body class="" itemscope itemtype="http://schema.org/Article">
+
+<div id="header">
+    <div id="headerLeft">
+   		<span id="masthead-title">ArcGIS Android 10.2.0 API</span>
+    </div>
+    <div id="headerRight">
+        
+  <div id="search" >
+      <div id="searchForm">
+          <form accept-charset="utf-8" class="gsc-search-box" 
+                onsubmit="return submit_search()">
+            <table class="gsc-search-box" cellpadding="0" cellspacing="0"><tbody>
+                <tr>
+                  <td class="gsc-input">
+                    <input id="search_autocomplete" class="gsc-input" type="text" size="33" autocomplete="off"
+                      title="search developer docs" name="q"
+                      value="search developer docs"
+                      onFocus="search_focus_changed(this, true)"
+                      onBlur="search_focus_changed(this, false)"
+                      onkeydown="return search_changed(event, true, '../../../../../../')"
+                      onkeyup="return search_changed(event, false, '../../../../../../')" />
+                  <div id="search_filtered_div" class="no-display">
+                      <table id="search_filtered" cellspacing=0>
+                      </table>
+                  </div>
+                  </td>
+                  <td class="gsc-search-button">
+                    <input type="submit" value="Search" title="search" id="search-button" class="gsc-search-button" />
+                  </td>
+                  <td class="gsc-clear-button">
+                    <div title="clear results" class="gsc-clear-button">&nbsp;</div>
+                  </td>
+                </tr></tbody>
+              </table>
+          </form>
+      </div><!-- searchForm -->
+  </div><!-- search -->
+    </div><!-- headerRight -->
+</div><!-- header -->
+
+
+  <div class="g-section g-tpl-240" id="body-content">
+    <div class="g-unit g-first side-nav-resizable" id="side-nav">
+      <div id="swapper">
+        <div id="nav-panels">
+          <div id="resize-packages-nav">
+            <div id="packages-nav">
+              <div id="index-links"><nobr>
+                <a href="../../../../../../reference/packages.html"  >Package Index</a> | 
+                <a href="../../../../../../reference/classes.html" >Class Index</a></nobr>
+              </div>
+              <ul>
+                
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/android/action/package-summary.html">com.esri.android.action</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/android/map/package-summary.html">com.esri.android.map</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/android/map/ags/package-summary.html">com.esri.android.map.ags</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/android/map/bing/package-summary.html">com.esri.android.map.bing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/android/map/event/package-summary.html">com.esri.android.map.event</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/android/map/ogc/package-summary.html">com.esri.android.map.ogc</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/android/map/osm/package-summary.html">com.esri.android.map.osm</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/android/map/popup/package-summary.html">com.esri.android.map.popup</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/android/oauth/package-summary.html">com.esri.android.oauth</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/ags/package-summary.html">com.esri.core.ags</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/gdb/package-summary.html">com.esri.core.gdb</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/geometry/package-summary.html">com.esri.core.geometry</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/io/package-summary.html">com.esri.core.io</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/map/package-summary.html">com.esri.core.map</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/map/bing/package-summary.html">com.esri.core.map.bing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/map/popup/package-summary.html">com.esri.core.map.popup</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/portal/package-summary.html">com.esri.core.portal</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/renderer/package-summary.html">com.esri.core.renderer</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/symbol/package-summary.html">com.esri.core.symbol</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/symbol/advanced/package-summary.html">com.esri.core.symbol.advanced</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/table/package-summary.html">com.esri.core.table</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/package-summary.html">com.esri.core.tasks</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/ags/package-summary.html">com.esri.core.tasks.ags</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/ags/find/package-summary.html">com.esri.core.tasks.ags.find</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/ags/geocode/package-summary.html">com.esri.core.tasks.ags.geocode</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/ags/geoprocessing/package-summary.html">com.esri.core.tasks.ags.geoprocessing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/ags/identify/package-summary.html">com.esri.core.tasks.ags.identify</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/ags/na/package-summary.html">com.esri.core.tasks.ags.na</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/ags/query/package-summary.html">com.esri.core.tasks.ags.query</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/gdb/package-summary.html">com.esri.core.tasks.gdb</a></li>
+    <li class="selected api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/geocode/package-summary.html">com.esri.core.tasks.geocode</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/na/package-summary.html">com.esri.core.tasks.na</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/oauth/package-summary.html">com.esri.core.tasks.oauth</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/query/package-summary.html">com.esri.core.tasks.query</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/tilecache/package-summary.html">com.esri.core.tasks.tilecache</a></li>
+              </ul><br/>
+            </div> <!-- end packages -->
+          </div> <!-- end resize-packages -->
+          <div id="classes-nav">
+            <ul>
+              
+              
+    <li><h2>Classes</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/geocode/BatchGeocodeResult.html">BatchGeocodeResult</a></li>
+          <li class="selected api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html">Locator</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorFieldInfo.html">LocatorFieldInfo</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorFindParameters.html">LocatorFindParameters</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorGeocodeResult.html">LocatorGeocodeResult</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorReverseGeocodeResult.html">LocatorReverseGeocodeResult</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorServiceInfo.html">LocatorServiceInfo</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorSettings.html">LocatorSettings</a></li>
+      </ul>
+    </li>
+              
+              
+              
+            </ul><br/>
+          </div><!-- end classes -->
+        </div><!-- end nav-panels -->
+        <div id="nav-tree" style="display:none">
+          <div id="index-links"><nobr>
+            <a href="../../../../../../reference/packages.html"  >Package Index</a> | 
+            <a href="../../../../../../reference/classes.html" >Class Index</a></nobr>
+          </div>
+        </div><!-- end nav-tree -->
+      </div><!-- end swapper -->
+    </div> <!-- end side-nav -->
+    <script>
+      if (!isMobile) {
+        $("<a href='#' id='nav-swap' onclick='swapNav();return false;' style='font-size:10px;line-height:9px;margin-left:1em;text-decoration:none;'><span id='tree-link'>Use Tree Navigation</span><span id='panel-link' style='display:none'>Use Panel Navigation</span></a>").appendTo("#side-nav");
+        chooseDefaultNav();
+        if ($("#nav-tree").is(':visible')) {
+          init_default_navtree("../../../../../../");
+        } else {
+          addLoadEvent(function() {
+            scrollIntoView("packages-nav");
+            scrollIntoView("classes-nav");
+          });
+        }
+        $("#swapper").css({borderBottom:"2px solid #aaa"});
+      } else {
+        swapNav(); // tree view should be used on mobile
+      }
+    </script>
+
+
+
+<div class="g-unit" id="doc-content">
+
+<div id="api-info-block">
+
+
+
+  
+   
+  
+  
+  
+  
+
+
+<div class="sum-details-links">
+
+Summary:
+
+
+
+
+
+
+
+
+
+
+
+  <a href="#pubmethods">Methods</a>
+  
+
+
+
+  &#124; <a href="#inhmethods">Inherited Methods</a>
+
+&#124; <a href="#" onclick="return toggleAllClassInherited()" id="toggleAllClassInherited">[Expand All]</a>
+
+</div><!-- end sum-details-links -->
+<div class="api-level">
+  
+  
+  
+
+</div>
+</div><!-- end api-info-block -->
+
+
+<!-- ======== START OF CLASS DATA ======== -->
+
+<div id="jd-header">
+    public
+     
+     
+    abstract
+    class
+<h1 itemprop="name">Locator</h1>
+
+
+
+  
+    extends Object<br/>
+  
+  
+  
+
+  
+  
+  
+
+
+</div><!-- end header -->
+
+<div id="naMessage"></div>
+
+<div id="jd-content" class="api apilevel-">
+<table class="jd-inheritance-table">
+
+
+    <tr>
+         	
+        <td colspan="2" class="jd-inheritance-class-cell">java.lang.Object</td>
+    </tr>
+    
+
+    <tr>
+        
+            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
+         	
+        <td colspan="1" class="jd-inheritance-class-cell">com.esri.core.tasks.geocode.Locator</td>
+    </tr>
+    
+
+</table>
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Class Overview</h2>
+<p itemprop="articleBody">Abstract class for using and creating online/offline geocoders. The Locator class can be used to convert an address
+ to a point (geocode) or vice-versa (reverse geocode).
+ <p>
+ To create a locator using an online service, use <code><a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html#createOnlineLocator()">createOnlineLocator()</a></code>, <code><a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html#createOnlineLocator(java.lang.String)">createOnlineLocator(String)</a></code>,
+ or <code><a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html#createOnlineLocator(java.lang.String, com.esri.core.io.UserCredentials)">createOnlineLocator(String, UserCredentials)</a></code>. To create a locator using local data, use 
+ <code><a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html#createLocalLocator(java.lang.String)">createLocalLocator(String)</a></code>.
+ <p>
+ To geocode using address fields, use the <code>geocode</code> method. If you are using a locator or geocode 
+ service which supports single-line geocoding, you can use the <code>find</code> method. Each type of method 
+ has overloads which execute either synchronously (returning a result) or asynchronously (returning a 
+ <code>Future</code> and with a callback).
+ <p>
+ To reverse geocode, use the <code>reverseGeocode</code> method. Again there are overloads of this method for 
+ synchronous and asynchronous execution, as well as with or without spatial reference parameters.</p>
+
+
+
+
+
+</div><!-- jd-descr -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Summary</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="pubmethods" class="jd-sumtable"><tr><th colspan="12">Public Methods</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/esri/core/tasks/geocode/BatchGeocodeResult.html">BatchGeocodeResult</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html#batchGeocode(java.util.List<java.util.Map<java.lang.String, java.lang.String>>, com.esri.core.geometry.SpatialReference)">batchGeocode</a></span>(List&lt;Map&lt;String,&nbsp;String&gt;&gt; addresses, <a href="../../../../../../reference/com/esri/core/geometry/SpatialReference.html">SpatialReference</a> outSR)</nobr>
+        
+        <div class="jd-descrdiv">Matches addresses to locations.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            Future&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/BatchGeocodeResult.html">BatchGeocodeResult</a>&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html#batchGeocode(java.util.List<java.util.Map<java.lang.String, java.lang.String>>, com.esri.core.geometry.SpatialReference, com.esri.core.map.CallbackListener<com.esri.core.tasks.geocode.BatchGeocodeResult>)">batchGeocode</a></span>(List&lt;Map&lt;String,&nbsp;String&gt;&gt; addresses, <a href="../../../../../../reference/com/esri/core/geometry/SpatialReference.html">SpatialReference</a> outSR, <a href="../../../../../../reference/com/esri/core/map/CallbackListener.html">CallbackListener</a>&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/BatchGeocodeResult.html">BatchGeocodeResult</a>&gt; callback)</nobr>
+        
+        <div class="jd-descrdiv">Asynchronously matches addresses to locations.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            <a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html">Locator</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html#createLocalLocator(java.lang.String)">createLocalLocator</a></span>(String path)</nobr>
+        
+        <div class="jd-descrdiv"><b>@Beta</b>
+ <br><br>
+ Creates a locator using local data.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            <a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html">Locator</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html#createLocalLocator(java.lang.String, com.esri.core.tasks.geocode.LocatorSettings)">createLocalLocator</a></span>(String path, <a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorSettings.html">LocatorSettings</a> settings)</nobr>
+        
+        <div class="jd-descrdiv"><b>@Beta</b>
+ <br><br>
+ Creates a locator using local data.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            <a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html">Locator</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html#createOnlineLocator(java.lang.String)">createOnlineLocator</a></span>(String url)</nobr>
+        
+        <div class="jd-descrdiv">Creates a locator using an online geocode service URL.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            <a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html">Locator</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html#createOnlineLocator(java.lang.String, com.esri.core.io.UserCredentials)">createOnlineLocator</a></span>(String url, <a href="../../../../../../reference/com/esri/core/io/UserCredentials.html">UserCredentials</a> credentials)</nobr>
+        
+        <div class="jd-descrdiv">Creates a locator using an online geocode service URL and credentials for the service.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            <a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html">Locator</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html#createOnlineLocator()">createOnlineLocator</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Constructs a default locator object.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html#dispose()">dispose</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Cleanup any resources that the locator might be holding onto.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            List&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorGeocodeResult.html">LocatorGeocodeResult</a>&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html#find(com.esri.core.tasks.geocode.LocatorFindParameters)">find</a></span>(<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorFindParameters.html">LocatorFindParameters</a> findParams)</nobr>
+        
+        <div class="jd-descrdiv">Executes an operation to find location candidates for a given address, POI, or String.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            Future&lt;List&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorGeocodeResult.html">LocatorGeocodeResult</a>&gt;&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html#find(com.esri.core.tasks.geocode.LocatorFindParameters, com.esri.core.map.CallbackListener<java.util.List<com.esri.core.tasks.geocode.LocatorGeocodeResult>>)">find</a></span>(<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorFindParameters.html">LocatorFindParameters</a> findParams, <a href="../../../../../../reference/com/esri/core/map/CallbackListener.html">CallbackListener</a>&lt;List&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorGeocodeResult.html">LocatorGeocodeResult</a>&gt;&gt; callback)</nobr>
+        
+        <div class="jd-descrdiv">Executes an asynchronous operation to find location candidates for a given address, POI, or String.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            Future&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorReverseGeocodeResult.html">LocatorReverseGeocodeResult</a>&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html#findAddress(double, double, com.esri.core.tasks.geocode.Locator, com.esri.core.map.CallbackListener<com.esri.core.tasks.geocode.LocatorReverseGeocodeResult>)">findAddress</a></span>(double lat, double lon, <a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html">Locator</a> locator, <a href="../../../../../../reference/com/esri/core/map/CallbackListener.html">CallbackListener</a>&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorReverseGeocodeResult.html">LocatorReverseGeocodeResult</a>&gt; callback)</nobr>
+        
+        <div class="jd-descrdiv">Static method to find an address for a location defined in latitude and longitude.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            Future&lt;List&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorGeocodeResult.html">LocatorGeocodeResult</a>&gt;&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html#findLocation(java.lang.String, com.esri.core.tasks.geocode.Locator, com.esri.core.map.CallbackListener<java.util.List<com.esri.core.tasks.geocode.LocatorGeocodeResult>>)">findLocation</a></span>(String name, <a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html">Locator</a> locator, <a href="../../../../../../reference/com/esri/core/map/CallbackListener.html">CallbackListener</a>&lt;List&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorGeocodeResult.html">LocatorGeocodeResult</a>&gt;&gt; callback)</nobr>
+        
+        <div class="jd-descrdiv">Static method to generate location candidates (latitude longitude coordinates) for a given address or 
+ place name.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            List&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorGeocodeResult.html">LocatorGeocodeResult</a>&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html#geocode(java.util.Map<java.lang.String, java.lang.String>, java.util.List<java.lang.String>)">geocode</a></span>(Map&lt;String,&nbsp;String&gt; addressFields, List&lt;String&gt; outFields)</nobr>
+        
+        <div class="jd-descrdiv">Executes a geocoding operation to find location candidates for a given address.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            List&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorGeocodeResult.html">LocatorGeocodeResult</a>&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html#geocode(java.util.Map<java.lang.String, java.lang.String>, java.util.List<java.lang.String>, com.esri.core.geometry.SpatialReference)">geocode</a></span>(Map&lt;String,&nbsp;String&gt; addressFields, List&lt;String&gt; outFields, <a href="../../../../../../reference/com/esri/core/geometry/SpatialReference.html">SpatialReference</a> outSR)</nobr>
+        
+        <div class="jd-descrdiv">Executes a geocoding operation to find location candidates for a given address.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            Future&lt;List&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorGeocodeResult.html">LocatorGeocodeResult</a>&gt;&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html#geocode(java.util.Map<java.lang.String, java.lang.String>, java.util.List<java.lang.String>, com.esri.core.map.CallbackListener<java.util.List<com.esri.core.tasks.geocode.LocatorGeocodeResult>>)">geocode</a></span>(Map&lt;String,&nbsp;String&gt; addressFields, List&lt;String&gt; outFields, <a href="../../../../../../reference/com/esri/core/map/CallbackListener.html">CallbackListener</a>&lt;List&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorGeocodeResult.html">LocatorGeocodeResult</a>&gt;&gt; callback)</nobr>
+        
+        <div class="jd-descrdiv">Executes an asynchronous geocoding operation to find location candidates for a given address.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            Future&lt;List&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorGeocodeResult.html">LocatorGeocodeResult</a>&gt;&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html#geocode(java.util.Map<java.lang.String, java.lang.String>, java.util.List<java.lang.String>, com.esri.core.geometry.SpatialReference, com.esri.core.map.CallbackListener<java.util.List<com.esri.core.tasks.geocode.LocatorGeocodeResult>>)">geocode</a></span>(Map&lt;String,&nbsp;String&gt; addressFields, List&lt;String&gt; outFields, <a href="../../../../../../reference/com/esri/core/geometry/SpatialReference.html">SpatialReference</a> outSR, <a href="../../../../../../reference/com/esri/core/map/CallbackListener.html">CallbackListener</a>&lt;List&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorGeocodeResult.html">LocatorGeocodeResult</a>&gt;&gt; callback)</nobr>
+        
+        <div class="jd-descrdiv">Executes an asynchronous geocoding operation to find location candidates for a given address.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorServiceInfo.html">LocatorServiceInfo</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html#getInfo()">getInfo</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the information about the online Geocode service or local Locator data.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            String</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html#getUrl()">getUrl</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the URL of the Geocode service used by this instance of the Locator.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorReverseGeocodeResult.html">LocatorReverseGeocodeResult</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html#reverseGeocode(com.esri.core.geometry.Point, double)">reverseGeocode</a></span>(<a href="../../../../../../reference/com/esri/core/geometry/Point.html">Point</a> point, double distance)</nobr>
+        
+        <div class="jd-descrdiv">Executes a reverse-geocoding operation to find address candidates for a given location.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorReverseGeocodeResult.html">LocatorReverseGeocodeResult</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html#reverseGeocode(com.esri.core.geometry.Point, double, com.esri.core.geometry.SpatialReference, com.esri.core.geometry.SpatialReference)">reverseGeocode</a></span>(<a href="../../../../../../reference/com/esri/core/geometry/Point.html">Point</a> point, double distance, <a href="../../../../../../reference/com/esri/core/geometry/SpatialReference.html">SpatialReference</a> inSR, <a href="../../../../../../reference/com/esri/core/geometry/SpatialReference.html">SpatialReference</a> outSR)</nobr>
+        
+        <div class="jd-descrdiv"><p>
+ Executes a reverse-geocoding operation to find address candidates for a given location.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            Future&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorReverseGeocodeResult.html">LocatorReverseGeocodeResult</a>&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html#reverseGeocode(com.esri.core.geometry.Point, double, com.esri.core.geometry.SpatialReference, com.esri.core.geometry.SpatialReference, com.esri.core.map.CallbackListener<com.esri.core.tasks.geocode.LocatorReverseGeocodeResult>)">reverseGeocode</a></span>(<a href="../../../../../../reference/com/esri/core/geometry/Point.html">Point</a> point, double distance, <a href="../../../../../../reference/com/esri/core/geometry/SpatialReference.html">SpatialReference</a> inSR, <a href="../../../../../../reference/com/esri/core/geometry/SpatialReference.html">SpatialReference</a> outSR, <a href="../../../../../../reference/com/esri/core/map/CallbackListener.html">CallbackListener</a>&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorReverseGeocodeResult.html">LocatorReverseGeocodeResult</a>&gt; callback)</nobr>
+        
+        <div class="jd-descrdiv"><p>
+ Executes an asynchronous reverse-geocoding operation to find address candidates for a given location.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            Future&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorReverseGeocodeResult.html">LocatorReverseGeocodeResult</a>&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html#reverseGeocode(com.esri.core.geometry.Point, double, com.esri.core.map.CallbackListener<com.esri.core.tasks.geocode.LocatorReverseGeocodeResult>)">reverseGeocode</a></span>(<a href="../../../../../../reference/com/esri/core/geometry/Point.html">Point</a> point, double distance, <a href="../../../../../../reference/com/esri/core/map/CallbackListener.html">CallbackListener</a>&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorReverseGeocodeResult.html">LocatorReverseGeocodeResult</a>&gt; callback)</nobr>
+        
+        <div class="jd-descrdiv">Executes an asynchronous reverse-geocoding operation to find address candidates for a given location.</div>
+  
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="inhmethods" class="jd-sumtable"><tr><th>
+  <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
+  <div style="clear:left;">Inherited Methods</div></th></tr>
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Object" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-java.lang.Object-trigger"
+          src="../../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From class
+
+  java.lang.Object
+
+<div id="inherited-methods-java.lang.Object">
+  <div id="inherited-methods-java.lang.Object-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-java.lang.Object-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            Object</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">clone</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">equals</span>(Object arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">finalize</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            Class&lt;?&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getClass</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">hashCode</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notify</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notifyAll</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            String</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">toString</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>(long arg0, int arg1)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>(long arg0)</nobr>
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+</table>
+
+
+</div><!-- jd-descr (summary) -->
+
+<!-- Details -->
+
+
+
+
+
+
+
+
+<!-- XML Attributes -->
+
+
+<!-- Enum Values -->
+
+
+<!-- Constants -->
+
+
+<!-- Fields -->
+
+
+<!-- Public ctors -->
+
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<!-- Protected ctors -->
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+<!-- Public methdos -->
+
+<h2>Public Methods</h2>
+
+
+
+<A NAME="batchGeocode(java.util.List<java.util.Map<java.lang.String, java.lang.String>>, com.esri.core.geometry.SpatialReference)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        <a href="../../../../../../reference/com/esri/core/tasks/geocode/BatchGeocodeResult.html">BatchGeocodeResult</a>
+      </span>
+      <span class="sympad">batchGeocode</span>
+      <span class="normal">(List&lt;Map&lt;String,&nbsp;String&gt;&gt; addresses, <a href="../../../../../../reference/com/esri/core/geometry/SpatialReference.html">SpatialReference</a> outSR)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Matches addresses to locations. Results can be matched to input using the "ResultID" attribute in the results. This
+ attribute matches the index of the address e.g. if three addresses are supplied then the matches would have result
+ IDs of 0, 1 and 2. If the supplied addresses have an attribute "OBJECTID" then the result ID will be referenced to
+ that value.<br>
+ <br>
+ Note, batch geocoding is only supported for Locators using ArcGIS services, and is not usable by Locators created
+ with <code><a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html#createLocalLocator(java.lang.String)">createLocalLocator(String)</a></code>, <code><a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html#createLocalLocator(java.lang.String, com.esri.core.tasks.geocode.LocatorSettings)">createLocalLocator(String, LocatorSettings)</a></code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>addresses</td>
+          <td>the list of addresses to find matches for; each address is a Map of address fields and their
+          corresponding values</td>
+        </tr>
+        <tr>
+          <th>outSR</td>
+          <td>the spatial reference the location candidates will be projected to</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the result of the batch geocoding operation</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th>Exception</td>
+            <td>any exception occurring during the batch geocoding operation</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="batchGeocode(java.util.List<java.util.Map<java.lang.String, java.lang.String>>, com.esri.core.geometry.SpatialReference, com.esri.core.map.CallbackListener<com.esri.core.tasks.geocode.BatchGeocodeResult>)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        Future&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/BatchGeocodeResult.html">BatchGeocodeResult</a>&gt;
+      </span>
+      <span class="sympad">batchGeocode</span>
+      <span class="normal">(List&lt;Map&lt;String,&nbsp;String&gt;&gt; addresses, <a href="../../../../../../reference/com/esri/core/geometry/SpatialReference.html">SpatialReference</a> outSR, <a href="../../../../../../reference/com/esri/core/map/CallbackListener.html">CallbackListener</a>&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/BatchGeocodeResult.html">BatchGeocodeResult</a>&gt; callback)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Asynchronously matches addresses to locations. Results can be matched to input using the "ResultID" attribute in the results. This
+ attribute matches the index of the address e.g. if three addresses are supplied then the matches would have result
+ IDs of 0, 1 and 2. If the supplied addresses have an attribute "OBJECTID" then the result ID will be referenced to
+ that value.<br>
+ <br>
+ Note, batch geocoding is only supported for Locators using ArcGIS services, and is not usable by Locators created
+ with <code><a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html#createLocalLocator(java.lang.String)">createLocalLocator(String)</a></code>, <code><a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html#createLocalLocator(java.lang.String, com.esri.core.tasks.geocode.LocatorSettings)">createLocalLocator(String, LocatorSettings)</a></code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>addresses</td>
+          <td>the list of addresses to find matches for; each address is a Map of address fields and their
+          corresponding values</td>
+        </tr>
+        <tr>
+          <th>outSR</td>
+          <td>the spatial reference the location candidates will be projected to</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the result of the batch geocoding operation</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="createLocalLocator(java.lang.String)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        <a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html">Locator</a>
+      </span>
+      <span class="sympad">createLocalLocator</span>
+      <span class="normal">(String path)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><b>@Beta</b>
+ <br><br>
+ Creates a locator using local data. All locator files (*.lox, *.loc, *.locb) must be present.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>path</td>
+          <td>The absolute path to the ".loc" file e.g. "/mnt/sdcard/ArcGIS/locator.loc"</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>A locator object using local data.</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="createLocalLocator(java.lang.String, com.esri.core.tasks.geocode.LocatorSettings)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        <a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html">Locator</a>
+      </span>
+      <span class="sympad">createLocalLocator</span>
+      <span class="normal">(String path, <a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorSettings.html">LocatorSettings</a> settings)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><b>@Beta</b>
+ <br><br>
+ Creates a locator using local data. All locator files (*.lox, *.loc, *.locb) must be present.
+ <code><a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorSettings.html">LocatorSettings</a></code> controls various memory and performance settings.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>path</td>
+          <td>The absolute path to the ".loc" file e.g. "/mnt/sdcard/ArcGIS/locator.loc"</td>
+        </tr>
+        <tr>
+          <th>settings</td>
+          <td>The <code><a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorSettings.html">LocatorSettings</a></code> object for memory and performance adjustments.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>A locator object using local data.</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="createOnlineLocator(java.lang.String)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        <a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html">Locator</a>
+      </span>
+      <span class="sympad">createOnlineLocator</span>
+      <span class="normal">(String url)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Creates a locator using an online geocode service URL.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>url</td>
+          <td>URL to the REST endpoint of a Geocode service</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>A locator object using an online service.</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="createOnlineLocator(java.lang.String, com.esri.core.io.UserCredentials)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        <a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html">Locator</a>
+      </span>
+      <span class="sympad">createOnlineLocator</span>
+      <span class="normal">(String url, <a href="../../../../../../reference/com/esri/core/io/UserCredentials.html">UserCredentials</a> credentials)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Creates a locator using an online geocode service URL and credentials for the service.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>url</td>
+          <td>URL to the REST endpoint of a Geocode service</td>
+        </tr>
+        <tr>
+          <th>credentials</td>
+          <td>the credentials used for accessing a secure Geocode service</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>A locator object using an online service.</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="createOnlineLocator()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        <a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html">Locator</a>
+      </span>
+      <span class="sympad">createOnlineLocator</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Constructs a default locator object.<br>
+ The default locator uses the ArcGIS online world geocoding service.<br>
+ The REST endpoint of the service is "http://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer".</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>A locator object using an online service.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">See Also</h5>
+      <ul class="nolist"><li><a href="https://geocode.arcgis.com/arcgis/index.html">https://geocode.arcgis.com/arcgis/index.html</a></li>
+      </ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="dispose()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">dispose</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Cleanup any resources that the locator might be holding onto.  This is only applicable for the
+ offline case.</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="find(com.esri.core.tasks.geocode.LocatorFindParameters)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        List&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorGeocodeResult.html">LocatorGeocodeResult</a>&gt;
+      </span>
+      <span class="sympad">find</span>
+      <span class="normal">(<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorFindParameters.html">LocatorFindParameters</a> findParams)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Executes an operation to find location candidates for a given address, POI, or String.<br>
+ Note: If using an online Locator, this method will only work if the <code>find</code> operation 
+ is supported by the service, like in the world geocoding service hosted on ArcGIS online. 
+ You may obtain an exception from other geocoding services that do not support this operation. <br>
+ <br>
+ The Find operation of a geocoding service is used for single field geocoding, and supports finding the following
+ types of locations:
+ <ul>
+ <li>Street addresses: 380 New York St, Redlands, CA 92373</li>
+ <li>Administrative place names, such as city/county/state/province/country names: Seattle, Washington</li>
+ <li>Postal codes: 92591 USA</li>
+ <li>Points of interest (POI) and businesses: 'Disneyland', 'banks in Paris'</li>
+ </ul>
+ The output fields can be specified, passing null will return all the output fields defined for the service.<br>
+ The location candidates will be returned in the spatial reference passed in the parameters - passing null will
+ return the locations in the default spatial reference defined for the service/local data.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>findParams</td>
+          <td>A <code><a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorFindParameters.html">LocatorFindParameters</a></code> object containing the single line String to be geocoded and appropriate input/output settings.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>a List of <code><a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorGeocodeResult.html">LocatorGeocodeResult</a></code>s.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th>Exception</td>
+            <td>Possible causes of exceptions are: network error, invalid credentials, uninitialized Locator</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="find(com.esri.core.tasks.geocode.LocatorFindParameters, com.esri.core.map.CallbackListener<java.util.List<com.esri.core.tasks.geocode.LocatorGeocodeResult>>)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        Future&lt;List&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorGeocodeResult.html">LocatorGeocodeResult</a>&gt;&gt;
+      </span>
+      <span class="sympad">find</span>
+      <span class="normal">(<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorFindParameters.html">LocatorFindParameters</a> findParams, <a href="../../../../../../reference/com/esri/core/map/CallbackListener.html">CallbackListener</a>&lt;List&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorGeocodeResult.html">LocatorGeocodeResult</a>&gt;&gt; callback)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Executes an asynchronous operation to find location candidates for a given address, POI, or String.<br>
+ Note: If using an online Locator, this method will only work if the <code>find</code> operation 
+ is supported by the service, like in the world geocoding service hosted on ArcGIS online. 
+ You may obtain an exception from other geocoding services that do not support this operation. <br>
+ <br>
+ The Find operation of a geocoding service is used for single field geocoding, and supports finding the following
+ types of locations:
+ <ul>
+ <li>Street addresses: 380 New York St, Redlands, CA 92373</li>
+ <li>Administrative place names, such as city/county/state/province/country names: Seattle, Washington</li>
+ <li>Postal codes: 92591 USA</li>
+ <li>Points of interest (POI) and businesses: 'Disneyland', 'banks in Paris'</li>
+ </ul>
+ The output fields can be specified, passing null will return all the output fields defined for the service.<br>
+ The location candidates will be returned in the spatial reference passed in the parameters - passing null will
+ return the locations in the default spatial reference defined for the service/local data.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>findParams</td>
+          <td>A <code><a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorFindParameters.html">LocatorFindParameters</a></code> object containing the single line String to be geocoded and appropriate input/output settings.</td>
+        </tr>
+        <tr>
+          <th>callback</td>
+          <td>the <code><a href="../../../../../../reference/com/esri/core/map/CallbackListener.html">CallbackListener</a></code> to be invoked upon the successful completion of the asynchronous call</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>a <code><a href="../../../../../../reference/java/util/concurrent/Future.html">Future</a></code> containing a List of <code><a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorGeocodeResult.html">LocatorGeocodeResult</a></code>s.</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="findAddress(double, double, com.esri.core.tasks.geocode.Locator, com.esri.core.map.CallbackListener<com.esri.core.tasks.geocode.LocatorReverseGeocodeResult>)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        Future&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorReverseGeocodeResult.html">LocatorReverseGeocodeResult</a>&gt;
+      </span>
+      <span class="sympad">findAddress</span>
+      <span class="normal">(double lat, double lon, <a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html">Locator</a> locator, <a href="../../../../../../reference/com/esri/core/map/CallbackListener.html">CallbackListener</a>&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorReverseGeocodeResult.html">LocatorReverseGeocodeResult</a>&gt; callback)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Static method to find an address for a location defined in latitude and longitude. This method simplifies the
+ workflow of setting parameters and getting a result from a Locator. The operation can be cancelled through 
+ the Future. When an operation is cancelled, the Callback won't be invoked. However, the request to the 
+ operation may be sent before the operation is cancelled.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>lat</td>
+          <td>latitude of the location.</td>
+        </tr>
+        <tr>
+          <th>lon</td>
+          <td>longitude of the location.</td>
+        </tr>
+        <tr>
+          <th>locator</td>
+          <td>the geocode service of ArcGIS Server to use. If null, a default locator using the ArcGIS online
+          world geocoding service will be used. The endpoint of this service is
+          "http://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer".</td>
+        </tr>
+        <tr>
+          <th>callback</td>
+          <td>Callback to invoke when the operation is complete or on error.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>a Future which resolves to a LocatorReverseGeocodeResult if the operation is complete.</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="findLocation(java.lang.String, com.esri.core.tasks.geocode.Locator, com.esri.core.map.CallbackListener<java.util.List<com.esri.core.tasks.geocode.LocatorGeocodeResult>>)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        Future&lt;List&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorGeocodeResult.html">LocatorGeocodeResult</a>&gt;&gt;
+      </span>
+      <span class="sympad">findLocation</span>
+      <span class="normal">(String name, <a href="../../../../../../reference/com/esri/core/tasks/geocode/Locator.html">Locator</a> locator, <a href="../../../../../../reference/com/esri/core/map/CallbackListener.html">CallbackListener</a>&lt;List&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorGeocodeResult.html">LocatorGeocodeResult</a>&gt;&gt; callback)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Static method to generate location candidates (latitude longitude coordinates) for a given address or 
+ place name. This method simplifies the workflow of setting parameters and getting a result from a 
+ Locator. The operation can be cancelled via the Future. When an operation is cancelled, the Callback 
+ won't be invoked. However, the request to the operation may be sent before the operation is cancelled.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>name</td>
+          <td>the address to look up.</td>
+        </tr>
+        <tr>
+          <th>locator</td>
+          <td>the ArcGIS Server geocode service to use. If null, a default locator using the ArcGIS online
+          world geocoding service will be used. The endpoint of this service is
+          "http://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer".</td>
+        </tr>
+        <tr>
+          <th>callback</td>
+          <td>Callback to invoke when the operation is complete or on error.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>a Future which resolves to a LocatorGeocodeResult if the operation is complete.</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="geocode(java.util.Map<java.lang.String, java.lang.String>, java.util.List<java.lang.String>)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        List&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorGeocodeResult.html">LocatorGeocodeResult</a>&gt;
+      </span>
+      <span class="sympad">geocode</span>
+      <span class="normal">(Map&lt;String,&nbsp;String&gt; addressFields, List&lt;String&gt; outFields)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Executes a geocoding operation to find location candidates for a given address.<br>
+ The output fields can be specified; passing null will return all the output fields defined for the service.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>addressFields</td>
+          <td>a Map containing the address fields and their corresponding values</td>
+        </tr>
+        <tr>
+          <th>outFields</td>
+          <td>a List of output fields to be returned for each address candidate</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>a List of <code><a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorGeocodeResult.html">LocatorGeocodeResult</a></code>s.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th>Exception</td>
+            <td>Possible causes of exceptions are: network error, invalid credentials, uninitialized Locator</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="geocode(java.util.Map<java.lang.String, java.lang.String>, java.util.List<java.lang.String>, com.esri.core.geometry.SpatialReference)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        List&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorGeocodeResult.html">LocatorGeocodeResult</a>&gt;
+      </span>
+      <span class="sympad">geocode</span>
+      <span class="normal">(Map&lt;String,&nbsp;String&gt; addressFields, List&lt;String&gt; outFields, <a href="../../../../../../reference/com/esri/core/geometry/SpatialReference.html">SpatialReference</a> outSR)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Executes a geocoding operation to find location candidates for a given address.<br>
+ The output fields can be specified; passing null will return all the output fields defined for the service.<br>
+ The location candidates will be returned in the spatial reference passed in as an argument - passing null will
+ return the locations in the default spatial reference defined for the service/local data.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>addressFields</td>
+          <td>a Map containing the address fields and their corresponding values</td>
+        </tr>
+        <tr>
+          <th>outFields</td>
+          <td>a List of output fields to be returned for each address candidate</td>
+        </tr>
+        <tr>
+          <th>outSR</td>
+          <td>a spatial reference the location candidates will be projected to</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>a List of <code><a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorGeocodeResult.html">LocatorGeocodeResult</a></code>s.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th>Exception</td>
+            <td>Possible causes of exceptions are: network error, invalid credentials, uninitialized Locator</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="geocode(java.util.Map<java.lang.String, java.lang.String>, java.util.List<java.lang.String>, com.esri.core.map.CallbackListener<java.util.List<com.esri.core.tasks.geocode.LocatorGeocodeResult>>)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        Future&lt;List&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorGeocodeResult.html">LocatorGeocodeResult</a>&gt;&gt;
+      </span>
+      <span class="sympad">geocode</span>
+      <span class="normal">(Map&lt;String,&nbsp;String&gt; addressFields, List&lt;String&gt; outFields, <a href="../../../../../../reference/com/esri/core/map/CallbackListener.html">CallbackListener</a>&lt;List&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorGeocodeResult.html">LocatorGeocodeResult</a>&gt;&gt; callback)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Executes an asynchronous geocoding operation to find location candidates for a given address.<br>
+ The output fields can be specified, passing null will return all the output fields defined for the service.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>addressFields</td>
+          <td>a Map containing the address fields and their corresponding values</td>
+        </tr>
+        <tr>
+          <th>outFields</td>
+          <td>a List of output fields to be returned for each address candidate</td>
+        </tr>
+        <tr>
+          <th>callback</td>
+          <td>the <code><a href="../../../../../../reference/com/esri/core/map/CallbackListener.html">CallbackListener</a></code> to be invoked upon the successful completion of the asynchronous call</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>a <code><a href="../../../../../../reference/java/util/concurrent/Future.html">Future</a></code> containing a List of <code><a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorGeocodeResult.html">LocatorGeocodeResult</a></code>s.</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="geocode(java.util.Map<java.lang.String, java.lang.String>, java.util.List<java.lang.String>, com.esri.core.geometry.SpatialReference, com.esri.core.map.CallbackListener<java.util.List<com.esri.core.tasks.geocode.LocatorGeocodeResult>>)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        Future&lt;List&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorGeocodeResult.html">LocatorGeocodeResult</a>&gt;&gt;
+      </span>
+      <span class="sympad">geocode</span>
+      <span class="normal">(Map&lt;String,&nbsp;String&gt; addressFields, List&lt;String&gt; outFields, <a href="../../../../../../reference/com/esri/core/geometry/SpatialReference.html">SpatialReference</a> outSR, <a href="../../../../../../reference/com/esri/core/map/CallbackListener.html">CallbackListener</a>&lt;List&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorGeocodeResult.html">LocatorGeocodeResult</a>&gt;&gt; callback)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Executes an asynchronous geocoding operation to find location candidates for a given address.<br>
+ The output fields can be specified; passing null will return all the output fields defined for the service.<br>
+ The location candidates will be returned in the spatial reference passed in as an argument - passing null will
+ return the locations in the default spatial reference defined for the service/local data.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>addressFields</td>
+          <td>a Map containing the address fields and their corresponding values</td>
+        </tr>
+        <tr>
+          <th>outFields</td>
+          <td>a List of output fields to be returned for each address candidate</td>
+        </tr>
+        <tr>
+          <th>outSR</td>
+          <td>a spatial reference the location candidates will be projected to</td>
+        </tr>
+        <tr>
+          <th>callback</td>
+          <td>the <code><a href="../../../../../../reference/com/esri/core/map/CallbackListener.html">CallbackListener</a></code> to be invoked upon the successful completion of the asynchronous call</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>a <code><a href="../../../../../../reference/java/util/concurrent/Future.html">Future</a></code> containing a List of <code><a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorGeocodeResult.html">LocatorGeocodeResult</a></code>s.</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getInfo()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        <a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorServiceInfo.html">LocatorServiceInfo</a>
+      </span>
+      <span class="sympad">getInfo</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the information about the online Geocode service or local Locator data. This information includes candidate
+ fields, service properties, spatial reference, single line address field, and address fields.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>a <code><a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorServiceInfo.html">LocatorServiceInfo</a></code> containing the service information</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th>Exception</td>
+            <td>Possible causes of exceptions are: network error, invalid credentials, uninitialized Locator</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getUrl()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        String
+      </span>
+      <span class="sympad">getUrl</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the URL of the Geocode service used by this instance of the Locator. In the case of a local Locator, this
+ will be the file path to the locator.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the URL of the Geocode service used by this instance of the Locator</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="reverseGeocode(com.esri.core.geometry.Point, double)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        <a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorReverseGeocodeResult.html">LocatorReverseGeocodeResult</a>
+      </span>
+      <span class="sympad">reverseGeocode</span>
+      <span class="normal">(<a href="../../../../../../reference/com/esri/core/geometry/Point.html">Point</a> point, double distance)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Executes a reverse-geocoding operation to find address candidates for a given location.<br>
+ A distance in meters from the given location within which a matching address should be searched must be provided, 0
+ if none is desired.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>point</td>
+          <td>the location to search for address candidates.</td>
+        </tr>
+        <tr>
+          <th>distance</td>
+          <td>the distance in meters from the given location within which a matching address should be searched.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>a <code><a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorReverseGeocodeResult.html">LocatorReverseGeocodeResult</a></code></li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th>Exception</td>
+            <td>Possible causes of exceptions are: network error, invalid credentials, uninitialized Locator</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="reverseGeocode(com.esri.core.geometry.Point, double, com.esri.core.geometry.SpatialReference, com.esri.core.geometry.SpatialReference)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        <a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorReverseGeocodeResult.html">LocatorReverseGeocodeResult</a>
+      </span>
+      <span class="sympad">reverseGeocode</span>
+      <span class="normal">(<a href="../../../../../../reference/com/esri/core/geometry/Point.html">Point</a> point, double distance, <a href="../../../../../../reference/com/esri/core/geometry/SpatialReference.html">SpatialReference</a> inSR, <a href="../../../../../../reference/com/esri/core/geometry/SpatialReference.html">SpatialReference</a> outSR)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><p>
+ Executes a reverse-geocoding operation to find address candidates for a given location.<br>
+ A distance in meters from the given location within which a matching address should be searched must be provided, 0
+ if none is desired.<br>
+ The input spatial reference can be specified if the location coordinates are in a different spatial reference than
+ the one expected by the service.<br>
+ An output spatial reference can be specified if the coordinates for the address candidates are wanted in a
+ different spatial reference than the one defined in the service.<br>
+ Passing null for either of the two spatial references will result in the default service/local data spatial reference being used.
+ </p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>point</td>
+          <td>the location to search for address candidates.</td>
+        </tr>
+        <tr>
+          <th>distance</td>
+          <td>the distance in meters from the given location within which a matching address should be searched.</td>
+        </tr>
+        <tr>
+          <th>inSR</td>
+          <td>the input spatial reference for the location.</td>
+        </tr>
+        <tr>
+          <th>outSR</td>
+          <td>the output spatial reference for the location of the address candidates</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>a <code><a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorReverseGeocodeResult.html">LocatorReverseGeocodeResult</a></code></li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th>Exception</td>
+            <td>Possible causes of exceptions are: network error, invalid credentials, uninitialized Locator</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="reverseGeocode(com.esri.core.geometry.Point, double, com.esri.core.geometry.SpatialReference, com.esri.core.geometry.SpatialReference, com.esri.core.map.CallbackListener<com.esri.core.tasks.geocode.LocatorReverseGeocodeResult>)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        Future&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorReverseGeocodeResult.html">LocatorReverseGeocodeResult</a>&gt;
+      </span>
+      <span class="sympad">reverseGeocode</span>
+      <span class="normal">(<a href="../../../../../../reference/com/esri/core/geometry/Point.html">Point</a> point, double distance, <a href="../../../../../../reference/com/esri/core/geometry/SpatialReference.html">SpatialReference</a> inSR, <a href="../../../../../../reference/com/esri/core/geometry/SpatialReference.html">SpatialReference</a> outSR, <a href="../../../../../../reference/com/esri/core/map/CallbackListener.html">CallbackListener</a>&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorReverseGeocodeResult.html">LocatorReverseGeocodeResult</a>&gt; callback)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><p>
+ Executes an asynchronous reverse-geocoding operation to find address candidates for a given location.<br>
+ A distance in meters from the given location within which a matching address should be searched must be provided, 0
+ if none is desired.<br>
+ The input spatial reference can be specified if the location coordinates are in a different spatial reference than
+ the one expected by the service.<br>
+ An output spatial reference can be specified if the coordinates for the address candidates are wanted in a
+ different spatial reference than the one defined in the service.<br>
+ Passing null for either of the two spatial references will result in the default service/local data spatial reference being used.
+ </p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>point</td>
+          <td>the location to search for address candidates.</td>
+        </tr>
+        <tr>
+          <th>distance</td>
+          <td>the distance in meters from the given location within which a matching address should be searched.</td>
+        </tr>
+        <tr>
+          <th>inSR</td>
+          <td>the input spatial reference for the location.</td>
+        </tr>
+        <tr>
+          <th>outSR</td>
+          <td>the output spatial reference for the location of the address candidates</td>
+        </tr>
+        <tr>
+          <th>callback</td>
+          <td>the <code><a href="../../../../../../reference/com/esri/core/map/CallbackListener.html">CallbackListener</a></code> to be invoked upon the successful completion of the asynchronous call</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>a <code><a href="../../../../../../reference/java/util/concurrent/Future.html">Future</a></code> containing a <code><a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorReverseGeocodeResult.html">LocatorReverseGeocodeResult</a></code></li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="reverseGeocode(com.esri.core.geometry.Point, double, com.esri.core.map.CallbackListener<com.esri.core.tasks.geocode.LocatorReverseGeocodeResult>)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        Future&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorReverseGeocodeResult.html">LocatorReverseGeocodeResult</a>&gt;
+      </span>
+      <span class="sympad">reverseGeocode</span>
+      <span class="normal">(<a href="../../../../../../reference/com/esri/core/geometry/Point.html">Point</a> point, double distance, <a href="../../../../../../reference/com/esri/core/map/CallbackListener.html">CallbackListener</a>&lt;<a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorReverseGeocodeResult.html">LocatorReverseGeocodeResult</a>&gt; callback)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Executes an asynchronous reverse-geocoding operation to find address candidates for a given location.<br>
+ A distance in meters from the given location within which a matching address should be searched must be provided, 0
+ if none is desired.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>point</td>
+          <td>the location to search for address candidates.</td>
+        </tr>
+        <tr>
+          <th>distance</td>
+          <td>the distance in meters from the given location within which a matching address should be searched.</td>
+        </tr>
+        <tr>
+          <th>callback</td>
+          <td>the <code><a href="../../../../../../reference/com/esri/core/map/CallbackListener.html">CallbackListener</a></code> to be invoked upon the successful completion of the asynchronous call</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>a <code><a href="../../../../../../reference/java/util/concurrent/Future.html">Future</a></code> containing a <code><a href="../../../../../../reference/com/esri/core/tasks/geocode/LocatorReverseGeocodeResult.html">LocatorReverseGeocodeResult</a></code></li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+
+
+
+<!-- ========= END OF CLASS DATA ========= -->
+<A NAME="navbar_top"></A>
+
+<div id="footer">
+
+</div> <!-- end footer -->
+
+</div> <!-- jd-content -->
+
+</div><!-- end doc-content -->
+
+</div> <!-- end body-content --> 
+
+<script type="text/javascript">
+init(); /* initialize android-developer-docs.js */
+</script>
+
+</body>
+</html>

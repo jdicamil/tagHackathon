@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PlaceSearch</string>
+    <!-- map service -->
+    <string name="basemap_url">http://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer</string>
+    <!-- geocode service -->
+    <string name="geocode_url">http://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer</string>
+    <!-- text for geocode label -->
+    <string name="geocode_label">Enter a USA input address: house #, street, city,
+		state, zip</string>
+    <!-- button string -->
+    <string name="button_locate">Go</string>
+    <!-- address hint -->
+    <string name="address">380 New York St Redlands CA 92373</string>
+    <!-- callout image content description -->
+    <string name="contentDesc">selection icon</string>
+
+</resources>

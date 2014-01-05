@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/World_Street_Map"
+        android:title="@string/StreetMapMenu" />
+    <item android:id="@+id/World_Topo"
+        android:title="@string/TopoMenu"/>
+    <item android:id="@+id/NatGeo"
+        android:title="@string/NatGeoMenu"/>
+    <item android:id="@+id/Ocean_Basemap"
+        android:title="@string/OceanMenu"/>
+</menu>

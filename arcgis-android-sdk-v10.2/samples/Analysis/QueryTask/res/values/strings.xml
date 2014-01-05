@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">QueryTask</string>
+    <string name="button_text">Average Household > 3.5</string>
+    
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <resources>
+ <calloutViewStyle
+     backgroundAlpha="255" cornerCurve="0" anchor="5" flat="true" backgroundColor="#000000" frameColor="#000000" titleTextColor="#000000"/> // the position of the anchor (0-9, see ANCHOR_POSITION_XXX constants)
+ </resources>

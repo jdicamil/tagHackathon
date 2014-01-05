@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config.data.sdcard.offline.dir">ArcGIS/samples/cljf/OfflineData</string>
+    <string name="config.windturbine.name">WindTurbine</string>
+    <string name="config.local.basemap">ImageryTPK.tpk</string>
+    <string name="config.windturbine.layer.definition">
+      {
+  \"currentVersion\" : 10.01, 
+  \"id\" : 0, 
+  \"name\" : \"Wind Turbine\", 
+  \"type\" : \"Feature Layer\", 
+  \"displayField\" : \"ORS_\", 
+  \"description\" : \"\", 
+  \"copyrightText\" : \"\", 
+  \"relationships\" : [
+  ], 
+  \"geometryType\" : \"esriGeometryPoint\", 
+  \"minScale\" : 0, 
+  \"maxScale\" : 0, 
+  \"extent\" : {
+    \"xmin\" : -13026498.1821, 
+    \"ymin\" : 4013926.5728, 
+    \"xmax\" : 13298999.4698, 
+    \"ymax\" : 4864406.3471, 
+    \"spatialReference\" : {
+      \"wkid\" : 102100
+    }
+  }, 
+  \"drawingInfo\" : {\"renderer\" : 
+    {
+      \"type\" : \"simple\", 
+      \"symbol\" : 
+      {
+        \"type\" : \"esriPMS\", 
+        \"url\" : \"5582A87E\", 
+        \"imageData\" : \"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\", 
+        \"contentType\" : \"image/png\", 
+        \"color\" : null, 
+        \"width\" : 42, 
+        \"height\" : 42, 
+        \"angle\" : 0, 
+        \"xoffset\" : 0, 
+        \"yoffset\" : 0
+      }, 
+      \"label\" : \"\", 
+      \"description\" : \"\"
+    }, 
+    \"transparency\" : 0, 
+    \"labelingInfo\" : null}, 
+  \"hasAttachments\" : true, 
+  \"htmlPopupType\" : \"esriServerHTMLPopupTypeAsHTMLText\", 
+  \"objectIdField\" : \"OBJECTID\", 
+  \"globalIdField\" : \"\", 
+  \"typeIdField\" : \"\", 
+  \"fields\" : [
+    {
+      \"name\" : \"OBJECTID\", 
+      \"type\" : \"esriFieldTypeOID\", 
+      \"alias\" : \"OBJECTID\", 
+      \"editable\" : false, 
+      \"domain\" : null
+    }, 
+    {
+      \"name\" : \"ORS_\", 
+      \"type\" : \"esriFieldTypeString\", 
+      \"alias\" : \"ORS_\", 
+      \"editable\" : true, 
+      \"length\" : 80, 
+      \"domain\" : null
+    }, 
+    {
+      \"name\" : \"V\", 
+      \"type\" : \"esriFieldTypeString\", 
+      \"alias\" : \"V\", 
+      \"editable\" : true, 
+      \"length\" : 80, 
+      \"domain\" : null
+    }, 
+    {
+      \"name\" : \"CO\", 
+      \"type\" : \"esriFieldTypeString\", 
+      \"alias\" : \"CO\", 
+      \"editable\" : true, 
+      \"length\" : 80, 
+      \"domain\" : null
+    }, 
+    {
+      \"name\" : \"ST\", 
+      \"type\" : \"esriFieldTypeString\", 
+      \"alias\" : \"ST\", 
+      \"editable\" : true, 
+      \"length\" : 80, 
+      \"domain\" : null
+    }, 
+    {
+      \"name\" : \"CITY\", 
+      \"type\" : \"esriFieldTypeString\", 
+      \"alias\" : \"CITY\", 
+      \"editable\" : true, 
+      \"length\" : 80, 
+      \"domain\" : null
+    }, 
+    {
+      \"name\" : \"y\", 
+      \"type\" : \"esriFieldTypeDouble\", 
+      \"alias\" : \"y\", 
+      \"editable\" : true, 
+      \"domain\" : null
+    }, 
+    {
+      \"name\" : \"x\", 
+      \"type\" : \"esriFieldTypeDouble\", 
+      \"alias\" : \"x\", 
+      \"editable\" : true, 
+      \"domain\" : null
+    }, 
+    {
+      \"name\" : \"DEG\", 
+      \"type\" : \"esriFieldTypeDouble\", 
+      \"alias\" : \"DEG\", 
+      \"editable\" : true, 
+      \"domain\" : null
+    }, 
+    {
+      \"name\" : \"MIN_\", 
+      \"type\" : \"esriFieldTypeDouble\", 
+      \"alias\" : \"MIN\", 
+      \"editable\" : true, 
+      \"domain\" : null
+    }, 
+    {
+      \"name\" : \"SEC\", 
+      \"type\" : \"esriFieldTypeDouble\", 
+      \"alias\" : \"SEC\", 
+      \"editable\" : true, 
+      \"domain\" : null
+    }, 
+    {
+      \"name\" : \"DEG_1\", 
+      \"type\" : \"esriFieldTypeDouble\", 
+      \"alias\" : \"DEG_1\", 
+      \"editable\" : true, 
+      \"domain\" : null
+    }, 
+    {
+      \"name\" : \"MIN_1\", 
+      \"type\" : \"esriFieldTypeDouble\", 
+      \"alias\" : \"MIN_1\", 
+      \"editable\" : true, 
+      \"domain\" : null
+    }, 
+    {
+      \"name\" : \"SEC_1\", 
+      \"type\" : \"esriFieldTypeDouble\", 
+      \"alias\" : \"SEC_1\", 
+      \"editable\" : true, 
+      \"domain\" : null
+    }, 
+    {
+      \"name\" : \"TYPE\", 
+      \"type\" : \"esriFieldTypeString\", 
+      \"alias\" : \"TYPE\", 
+      \"editable\" : true, 
+      \"length\" : 80, 
+      \"domain\" : null
+    }, 
+    {
+      \"name\" : \"HT\", 
+      \"type\" : \"esriFieldTypeDouble\", 
+      \"alias\" : \"HT\", 
+      \"editable\" : true, 
+      \"domain\" : null
+    }, 
+    {
+      \"name\" : \"HT_1\", 
+      \"type\" : \"esriFieldTypeDouble\", 
+      \"alias\" : \"HT_1\", 
+      \"editable\" : true, 
+      \"domain\" : null
+    }, 
+    {
+      \"name\" : \"H\", 
+      \"type\" : \"esriFieldTypeDouble\", 
+      \"alias\" : \"H\", 
+      \"editable\" : true, 
+      \"domain\" : null
+    }, 
+    {
+      \"name\" : \"V_1\", 
+      \"type\" : \"esriFieldTypeString\", 
+      \"alias\" : \"V_1\", 
+      \"editable\" : true, 
+      \"length\" : 80, 
+      \"domain\" : null
+    }, 
+    {
+      \"name\" : \"IND\", 
+      \"type\" : \"esriFieldTypeString\", 
+      \"alias\" : \"IND\", 
+      \"editable\" : true, 
+      \"length\" : 80, 
+      \"domain\" : null
+    }, 
+    {
+      \"name\" : \"STUDY\", 
+      \"type\" : \"esriFieldTypeString\", 
+      \"alias\" : \"STUDY\", 
+      \"editable\" : true, 
+      \"length\" : 80, 
+      \"domain\" : null
+    }, 
+    {
+      \"name\" : \"JDATE\", 
+      \"type\" : \"esriFieldTypeDouble\", 
+      \"alias\" : \"JDATE\", 
+      \"editable\" : true, 
+      \"domain\" : null
+    }, 
+    {
+      \"name\" : \"TurbineType\", 
+      \"type\" : \"esriFieldTypeSmallInteger\", 
+      \"alias\" : \"Turbine Material\", 
+      \"editable\" : true, 
+      \"domain\" : 
+      {
+        \"type\" : \"codedValue\", 
+        \"name\" : \"Turbine\", 
+        \"codedValues\" : [
+          {
+            \"name\" : \"Aluminum\", 
+            \"code\" : 0
+          }, 
+          {
+            \"name\" : \"Composite\", 
+            \"code\" : 1
+          }, 
+          {
+            \"name\" : \"Steel\", 
+            \"code\" : 2
+          }, 
+          {
+            \"name\" : \"Carbon\", 
+            \"code\" : 3
+          }
+        ]
+      }
+    }, 
+    {
+      \"name\" : \"WindFarmZoneID\", 
+      \"type\" : \"esriFieldTypeInteger\", 
+      \"alias\" : \"Wind Farm Zone ID\", 
+      \"editable\" : true, 
+      \"domain\" : null
+    }, 
+    {
+      \"name\" : \"WindFarmZoneName\", 
+      \"type\" : \"esriFieldTypeString\", 
+      \"alias\" : \"Wind Farm Zone Name\", 
+      \"editable\" : true, 
+      \"length\" : 30, 
+      \"domain\" : null
+    }, 
+    {
+      \"name\" : \"TeamAreasID\", 
+      \"type\" : \"esriFieldTypeInteger\", 
+      \"alias\" : \"Team Areas ID\", 
+      \"editable\" : true, 
+      \"domain\" : null
+    }, 
+    {
+      \"name\" : \"TeamAreasName\", 
+      \"type\" : \"esriFieldTypeString\", 
+      \"alias\" : \"Team Areas Name\", 
+      \"editable\" : true, 
+      \"length\" : 30, 
+      \"domain\" : null
+    }, 
+    {
+      \"name\" : \"WindTurbineID\", 
+      \"type\" : \"esriFieldTypeInteger\", 
+      \"alias\" : \"Wind Turbine ID\", 
+      \"editable\" : true, 
+      \"domain\" : null
+    }
+  ], 
+  \"types\" : [
+  ], 
+  \"templates\" : [
+    {
+      \"name\" : \"Wind Turbine\", 
+      \"description\" : \"\", 
+      \"drawingTool\" : \"esriFeatureEditToolPoint\", 
+      \"prototype\" : {
+        \"attributes\" : {
+          \"WindTurbineID\" : null, 
+          \"ORS_\" : null, 
+          \"V\" : null, 
+          \"CO\" : null, 
+          \"ST\" : null, 
+          \"CITY\" : null, 
+          \"y\" : null, 
+          \"x\" : null, 
+          \"DEG\" : null, 
+          \"MIN_\" : null, 
+          \"SEC\" : null, 
+          \"DEG_1\" : null, 
+          \"MIN_1\" : null, 
+          \"SEC_1\" : null, 
+          \"TYPE\" : null, 
+          \"HT\" : null, 
+          \"HT_1\" : null, 
+          \"H\" : null, 
+          \"V_1\" : null, 
+          \"IND\" : null, 
+          \"STUDY\" : null, 
+          \"JDATE\" : null, 
+          \"TurbineType\" : 1, 
+          \"WindFarmZoneID\" : null, 
+          \"WindFarmZoneName\" : null, 
+          \"TeamAreasID\" : null, 
+          \"TeamAreasName\" : null
+        }
+      }
+    }
+  ], 
+  \"capabilities\" : \"Query,Editing\"
+}
+        
+    </string>
+    
+</resources>

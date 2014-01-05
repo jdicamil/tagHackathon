@@ -1,0 +1,1785 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
+<title>
+
+  ServerFolder |
+
+
+  ArcGIS Android 10.2.0 API
+
+</title>
+<link href="../../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
+<link href="../../../../../assets/customizations.css" rel="stylesheet" type="text/css" />
+<script src="../../../../../assets/search_autocomplete.js" type="text/javascript"></script>
+<script src="../../../../../assets/jquery-resizable.min.js" type="text/javascript"></script>
+<script src="../../../../../assets/doclava-developer-docs.js" type="text/javascript"></script>
+<script src="../../../../../assets/prettify.js" type="text/javascript"></script>
+<script type="text/javascript">
+  setToRoot("../../../../../");
+</script>
+<script src="../../../../../assets/doclava-developer-reference.js" type="text/javascript"></script>
+<script src="../../../../../navtree_data.js" type="text/javascript"></script>
+<script src="../../../../../assets/customizations.js" type="text/javascript"></script>
+<noscript>
+  <style type="text/css">
+    html,body{overflow:auto;}
+    #body-content{position:relative; top:0;}
+    #doc-content{overflow:visible;border-left:3px solid #666;}
+    #side-nav{padding:0;}
+    #side-nav .toggle-list ul {display:block;}
+    #resize-packages-nav{border-bottom:3px solid #666;}
+  </style>
+</noscript>
+</head>
+
+<body class="" itemscope itemtype="http://schema.org/Article">
+
+<div id="header">
+    <div id="headerLeft">
+   		<span id="masthead-title">ArcGIS Android 10.2.0 API</span>
+    </div>
+    <div id="headerRight">
+        
+  <div id="search" >
+      <div id="searchForm">
+          <form accept-charset="utf-8" class="gsc-search-box" 
+                onsubmit="return submit_search()">
+            <table class="gsc-search-box" cellpadding="0" cellspacing="0"><tbody>
+                <tr>
+                  <td class="gsc-input">
+                    <input id="search_autocomplete" class="gsc-input" type="text" size="33" autocomplete="off"
+                      title="search developer docs" name="q"
+                      value="search developer docs"
+                      onFocus="search_focus_changed(this, true)"
+                      onBlur="search_focus_changed(this, false)"
+                      onkeydown="return search_changed(event, true, '../../../../../')"
+                      onkeyup="return search_changed(event, false, '../../../../../')" />
+                  <div id="search_filtered_div" class="no-display">
+                      <table id="search_filtered" cellspacing=0>
+                      </table>
+                  </div>
+                  </td>
+                  <td class="gsc-search-button">
+                    <input type="submit" value="Search" title="search" id="search-button" class="gsc-search-button" />
+                  </td>
+                  <td class="gsc-clear-button">
+                    <div title="clear results" class="gsc-clear-button">&nbsp;</div>
+                  </td>
+                </tr></tbody>
+              </table>
+          </form>
+      </div><!-- searchForm -->
+  </div><!-- search -->
+    </div><!-- headerRight -->
+</div><!-- header -->
+
+
+  <div class="g-section g-tpl-240" id="body-content">
+    <div class="g-unit g-first side-nav-resizable" id="side-nav">
+      <div id="swapper">
+        <div id="nav-panels">
+          <div id="resize-packages-nav">
+            <div id="packages-nav">
+              <div id="index-links"><nobr>
+                <a href="../../../../../reference/packages.html"  >Package Index</a> | 
+                <a href="../../../../../reference/classes.html" >Class Index</a></nobr>
+              </div>
+              <ul>
+                
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/android/action/package-summary.html">com.esri.android.action</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/android/map/package-summary.html">com.esri.android.map</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/android/map/ags/package-summary.html">com.esri.android.map.ags</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/android/map/bing/package-summary.html">com.esri.android.map.bing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/android/map/event/package-summary.html">com.esri.android.map.event</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/android/map/ogc/package-summary.html">com.esri.android.map.ogc</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/android/map/osm/package-summary.html">com.esri.android.map.osm</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/android/map/popup/package-summary.html">com.esri.android.map.popup</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/android/oauth/package-summary.html">com.esri.android.oauth</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/ags/package-summary.html">com.esri.core.ags</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/gdb/package-summary.html">com.esri.core.gdb</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/geometry/package-summary.html">com.esri.core.geometry</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/io/package-summary.html">com.esri.core.io</a></li>
+    <li class="selected api apilevel-">
+  <a href="../../../../../reference/com/esri/core/map/package-summary.html">com.esri.core.map</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/map/bing/package-summary.html">com.esri.core.map.bing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/map/popup/package-summary.html">com.esri.core.map.popup</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/portal/package-summary.html">com.esri.core.portal</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/renderer/package-summary.html">com.esri.core.renderer</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/symbol/package-summary.html">com.esri.core.symbol</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/symbol/advanced/package-summary.html">com.esri.core.symbol.advanced</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/table/package-summary.html">com.esri.core.table</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/tasks/package-summary.html">com.esri.core.tasks</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/tasks/ags/package-summary.html">com.esri.core.tasks.ags</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/tasks/ags/find/package-summary.html">com.esri.core.tasks.ags.find</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/tasks/ags/geocode/package-summary.html">com.esri.core.tasks.ags.geocode</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/tasks/ags/geoprocessing/package-summary.html">com.esri.core.tasks.ags.geoprocessing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/tasks/ags/identify/package-summary.html">com.esri.core.tasks.ags.identify</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/tasks/ags/na/package-summary.html">com.esri.core.tasks.ags.na</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/tasks/ags/query/package-summary.html">com.esri.core.tasks.ags.query</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/tasks/gdb/package-summary.html">com.esri.core.tasks.gdb</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/tasks/geocode/package-summary.html">com.esri.core.tasks.geocode</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/tasks/na/package-summary.html">com.esri.core.tasks.na</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/tasks/oauth/package-summary.html">com.esri.core.tasks.oauth</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/tasks/query/package-summary.html">com.esri.core.tasks.query</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/tasks/tilecache/package-summary.html">com.esri.core.tasks.tilecache</a></li>
+              </ul><br/>
+            </div> <!-- end packages -->
+          </div> <!-- end resize-packages -->
+          <div id="classes-nav">
+            <ul>
+              
+    <li><h2>Interfaces</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/CallbackListener.html">CallbackListener</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/Feature.html">Feature</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/LayerInfoItem.html">LayerInfoItem</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/TimeAwareLayer.html">TimeAwareLayer</a></li>
+      </ul>
+    </li>
+              
+    <li><h2>Classes</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/AttachmentInfo.html">AttachmentInfo</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/Bookmark.html">Bookmark</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/CodedValueDomain.html">CodedValueDomain</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/DataSource.html">DataSource</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/Domain.html">Domain</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/DrawingInfo.html">DrawingInfo</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/DynamicLayerInfo.html">DynamicLayerInfo</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/EditFieldsInfo.html">EditFieldsInfo</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/EditInfo.html">EditInfo</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/EditorTrackingInfo.html">EditorTrackingInfo</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/FeatureEditError.html">FeatureEditError</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/FeatureEditResult.html">FeatureEditResult</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/FeatureResult.html">FeatureResult</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/FeatureSet.html">FeatureSet</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/FeatureTemplate.html">FeatureTemplate</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/FeatureType.html">FeatureType</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/Field.html">Field</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/Graphic.html">Graphic</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/GraphicsUtil.html">GraphicsUtil</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/ImageServiceParameters.html">ImageServiceParameters</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/InheritedDomain.html">InheritedDomain</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/JoinTableDataSource.html">JoinTableDataSource</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/LabelingInfo.html">LabelingInfo</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/LayerDataSource.html">LayerDataSource</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/LayerInfo.html">LayerInfo</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/LayerMapSource.html">LayerMapSource</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/LayerRelationship.html">LayerRelationship</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/LayerSource.html">LayerSource</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/LayerTimeOptions.html">LayerTimeOptions</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/Legend.html">Legend</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/MosaicRule.html">MosaicRule</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/OwnershipBasedAccessControlForFeatures.html">OwnershipBasedAccessControlForFeatures</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/QueryTableDataSource.html">QueryTableDataSource</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/RangeDomain.html">RangeDomain</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/RasterDataSource.html">RasterDataSource</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/RasterFunction.html">RasterFunction</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/ServerError.html">ServerError</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/ServerFile.html">ServerFile</a></li>
+          <li class="selected api apilevel-"><a href="../../../../../reference/com/esri/core/map/ServerFolder.html">ServerFolder</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/SpatialFilter.html">SpatialFilter</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/TableDataSource.html">TableDataSource</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/TimeExtent.html">TimeExtent</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/TimeInfo.html">TimeInfo</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/TimeOptions.html">TimeOptions</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/TimeReference.html">TimeReference</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/WebMapQuery.html">WebMapQuery</a></li>
+      </ul>
+    </li>
+              
+    <li><h2>Enums</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/DataSource.DataSourceType.html">DataSource.DataSourceType</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/EditInfo.ACTION_TYPE.html">EditInfo.ACTION_TYPE</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/EditInfo.DATE_DISPLAY_PATTERN.html">EditInfo.DATE_DISPLAY_PATTERN</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/FeatureTemplate.DRAWING_TOOL.html">FeatureTemplate.DRAWING_TOOL</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/ImageServiceParameters.IMAGE_FORMAT.html">ImageServiceParameters.IMAGE_FORMAT</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/ImageServiceParameters.PIXEL_TYPE.html">ImageServiceParameters.PIXEL_TYPE</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/ImageServiceParameters.RSP.html">ImageServiceParameters.RSP</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/JoinTableDataSource.JoinType.html">JoinTableDataSource.JoinType</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/LabelPlacement.html">LabelPlacement</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/LayerSource.LayerType.html">LayerSource.LayerType</a></li>
+          <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/map/TimeOptions.Units.html">TimeOptions.Units</a></li>
+      </ul>
+    </li>
+              
+              
+            </ul><br/>
+          </div><!-- end classes -->
+        </div><!-- end nav-panels -->
+        <div id="nav-tree" style="display:none">
+          <div id="index-links"><nobr>
+            <a href="../../../../../reference/packages.html"  >Package Index</a> | 
+            <a href="../../../../../reference/classes.html" >Class Index</a></nobr>
+          </div>
+        </div><!-- end nav-tree -->
+      </div><!-- end swapper -->
+    </div> <!-- end side-nav -->
+    <script>
+      if (!isMobile) {
+        $("<a href='#' id='nav-swap' onclick='swapNav();return false;' style='font-size:10px;line-height:9px;margin-left:1em;text-decoration:none;'><span id='tree-link'>Use Tree Navigation</span><span id='panel-link' style='display:none'>Use Panel Navigation</span></a>").appendTo("#side-nav");
+        chooseDefaultNav();
+        if ($("#nav-tree").is(':visible')) {
+          init_default_navtree("../../../../../");
+        } else {
+          addLoadEvent(function() {
+            scrollIntoView("packages-nav");
+            scrollIntoView("classes-nav");
+          });
+        }
+        $("#swapper").css({borderBottom:"2px solid #aaa"});
+      } else {
+        swapNav(); // tree view should be used on mobile
+      }
+    </script>
+
+
+
+<div class="g-unit" id="doc-content">
+
+<div id="api-info-block">
+
+
+
+  
+   
+  
+  
+  
+  
+
+
+<div class="sum-details-links">
+
+Summary:
+
+
+
+
+
+
+
+
+
+
+
+  <a href="#pubmethods">Methods</a>
+  
+
+
+
+  &#124; <a href="#inhmethods">Inherited Methods</a>
+
+&#124; <a href="#" onclick="return toggleAllClassInherited()" id="toggleAllClassInherited">[Expand All]</a>
+
+</div><!-- end sum-details-links -->
+<div class="api-level">
+  
+  
+  
+
+</div>
+</div><!-- end api-info-block -->
+
+
+<!-- ======== START OF CLASS DATA ======== -->
+
+<div id="jd-header">
+    public
+     
+     
+    
+    class
+<h1 itemprop="name">ServerFolder</h1>
+
+
+
+  
+    extends Object<br/>
+  
+  
+  
+
+  
+  
+  
+
+
+</div><!-- end header -->
+
+<div id="naMessage"></div>
+
+<div id="jd-content" class="api apilevel-">
+<table class="jd-inheritance-table">
+
+
+    <tr>
+         	
+        <td colspan="2" class="jd-inheritance-class-cell">java.lang.Object</td>
+    </tr>
+    
+
+    <tr>
+        
+            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
+         	
+        <td colspan="1" class="jd-inheritance-class-cell">com.esri.core.map.ServerFolder</td>
+    </tr>
+    
+
+</table>
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Class Overview</h2>
+<p itemprop="articleBody">This class represents the directory structure of files on a server. It is intended to be
+ used to retrieve the output of geoprocessing tools and offline tiled layers where a number
+ of files are created and need to be downloaded. Initially a newly created instance of this
+ class will only contain information on the top level folder: the files it contains and the
+ names of any child folders. To access folders deeper inside the folder hierarchy, use the
+ <code><a href="../../../../../reference/com/esri/core/map/ServerFolder.html#open(boolean)">open(boolean)</a></code> method. If the <code>recursive</code> parameter is
+ false, only the next level of folder information will be retrieved. If it is true, the folder
+ information for the entire folder hierarchy will be retrieved. This allows the structure to
+ be browsed without opening everything unless needed.</p>
+ To download the entire structure from the server, use the <code><a href="../../../../../reference/com/esri/core/map/ServerFolder.html#download(java.lang.String)">download(String)</a></code>
+ method. This will open all the folders and download all the files they contain.</p>
+
+
+
+
+
+</div><!-- jd-descr -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Summary</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="pubmethods" class="jd-sumtable"><tr><th colspan="12">Public Methods</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/esri/core/map/ServerFolder.html#deleteFolder(com.esri.core.map.ServerFolder)">deleteFolder</a></span>(<a href="../../../../../reference/com/esri/core/map/ServerFolder.html">ServerFolder</a> folder)</nobr>
+        
+        <div class="jd-descrdiv">Delete folder.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/esri/core/map/ServerFolder.html#download(java.lang.String)">download</a></span>(String parentPath)</nobr>
+        
+        <div class="jd-descrdiv">Download this instance and all of its child items to the given location on disk.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../reference/com/esri/core/map/ServerFile.html">ServerFile</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/esri/core/map/ServerFolder.html#findFile(java.lang.String)">findFile</a></span>(String filename)</nobr>
+        
+        <div class="jd-descrdiv">Find the given file.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../reference/com/esri/core/map/ServerFolder.html">ServerFolder</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/esri/core/map/ServerFolder.html#findFolder(java.lang.String)">findFolder</a></span>(String folderName)</nobr>
+        
+        <div class="jd-descrdiv">Find folder.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            <a href="../../../../../reference/com/esri/core/map/ServerFolder.html">ServerFolder</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/esri/core/map/ServerFolder.html#fromJson(org.codehaus.jackson.JsonParser, java.lang.String, com.esri.core.io.UserCredentials)">fromJson</a></span>(JsonParser parser, String parentFolder, <a href="../../../../../reference/com/esri/core/io/UserCredentials.html">UserCredentials</a> credentials)</nobr>
+        
+        <div class="jd-descrdiv">Create an instance of this class from a JSON string.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            ArrayList&lt;<a href="../../../../../reference/com/esri/core/map/ServerFolder.html">ServerFolder</a>&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/esri/core/map/ServerFolder.html#getChildFolders()">getChildFolders</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the child folders.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            ArrayList&lt;<a href="../../../../../reference/com/esri/core/map/ServerFile.html">ServerFile</a>&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/esri/core/map/ServerFolder.html#getFiles()">getFiles</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the files.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/esri/core/map/ServerFolder.html#getFolderLevel()">getFolderLevel</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the folder level.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            String</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/esri/core/map/ServerFolder.html#getName()">getName</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the name of this folder.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../reference/com/esri/core/map/ServerFolder.html">ServerFolder</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/esri/core/map/ServerFolder.html#getParent()">getParent</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the parent folder, or null if this is a top level item.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            String</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/esri/core/map/ServerFolder.html#getPath()">getPath</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the path to this folder.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            String</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/esri/core/map/ServerFolder.html#getUrl()">getUrl</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the url of this folder on the server.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/esri/core/map/ServerFolder.html#hasFiles()">hasFiles</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Checks for files.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/esri/core/map/ServerFolder.html#moveFolder(com.esri.core.map.ServerFolder, com.esri.core.map.ServerFolder)">moveFolder</a></span>(<a href="../../../../../reference/com/esri/core/map/ServerFolder.html">ServerFolder</a> folderToMove, <a href="../../../../../reference/com/esri/core/map/ServerFolder.html">ServerFolder</a> destination)</nobr>
+        
+        <div class="jd-descrdiv">Move folder.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/esri/core/map/ServerFolder.html#open(boolean)">open</a></span>(boolean recursive)</nobr>
+        
+        <div class="jd-descrdiv">Open this folder and get information on the child folders and files that it contains.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/esri/core/map/ServerFolder.html#setCredentials(com.esri.core.io.UserCredentials)">setCredentials</a></span>(<a href="../../../../../reference/com/esri/core/io/UserCredentials.html">UserCredentials</a> userCredentials)</nobr>
+        
+        <div class="jd-descrdiv">Sets the credentials.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            String</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/esri/core/map/ServerFolder.html#toString()">toString</a></span>()</nobr>
+        
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="inhmethods" class="jd-sumtable"><tr><th>
+  <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
+  <div style="clear:left;">Inherited Methods</div></th></tr>
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Object" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-java.lang.Object-trigger"
+          src="../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From class
+
+  java.lang.Object
+
+<div id="inherited-methods-java.lang.Object">
+  <div id="inherited-methods-java.lang.Object-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-java.lang.Object-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            Object</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">clone</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">equals</span>(Object arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">finalize</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            Class&lt;?&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getClass</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">hashCode</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notify</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notifyAll</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            String</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">toString</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>(long arg0, int arg1)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>(long arg0)</nobr>
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+</table>
+
+
+</div><!-- jd-descr (summary) -->
+
+<!-- Details -->
+
+
+
+
+
+
+
+
+<!-- XML Attributes -->
+
+
+<!-- Enum Values -->
+
+
+<!-- Constants -->
+
+
+<!-- Fields -->
+
+
+<!-- Public ctors -->
+
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<!-- Protected ctors -->
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+<!-- Public methdos -->
+
+<h2>Public Methods</h2>
+
+
+
+<A NAME="deleteFolder(com.esri.core.map.ServerFolder)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">deleteFolder</span>
+      <span class="normal">(<a href="../../../../../reference/com/esri/core/map/ServerFolder.html">ServerFolder</a> folder)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Delete folder.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>folder</td>
+          <td>the folder</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>true, if successful
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="download(java.lang.String)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">download</span>
+      <span class="normal">(String parentPath)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Download this instance and all of its child items to the given location on disk.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>parentPath</td>
+          <td>the parent path to save this folder structure to</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th>IOException</td>
+            <td>Signals that an I/O exception has occurred.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="findFile(java.lang.String)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../reference/com/esri/core/map/ServerFile.html">ServerFile</a>
+      </span>
+      <span class="sympad">findFile</span>
+      <span class="normal">(String filename)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Find the given file. This will only return the first occurrence of a file with the given name.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>filename</td>
+          <td>the filename to find</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the the file, if found, or null</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th>IOException</td>
+            <td>Signals that an I/O exception has occurred.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="findFolder(java.lang.String)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../reference/com/esri/core/map/ServerFolder.html">ServerFolder</a>
+      </span>
+      <span class="sympad">findFolder</span>
+      <span class="normal">(String folderName)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Find folder.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>folderName</td>
+          <td>the folder name</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the server folder</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th>IOException</td>
+            <td>Signals that an I/O exception has occurred.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="fromJson(org.codehaus.jackson.JsonParser, java.lang.String, com.esri.core.io.UserCredentials)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        <a href="../../../../../reference/com/esri/core/map/ServerFolder.html">ServerFolder</a>
+      </span>
+      <span class="sympad">fromJson</span>
+      <span class="normal">(JsonParser parser, String parentFolder, <a href="../../../../../reference/com/esri/core/io/UserCredentials.html">UserCredentials</a> credentials)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Create an instance of this class from a JSON string. This string will generally be returned by a query to a REST
+ endpoint.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>parser</td>
+          <td>the parser</td>
+        </tr>
+        <tr>
+          <th>parentFolder</td>
+          <td>the parent folder</td>
+        </tr>
+        <tr>
+          <th>credentials</td>
+          <td>the credentials needed for server access or null if no authentication is required</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the new server folder instance</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th>JsonParseException</td>
+            <td>the json parse exception</td>
+        </tr>  
+        <tr>
+            <th>IOException</td>
+            <td>Signals that an I/O exception has occurred.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getChildFolders()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        ArrayList&lt;<a href="../../../../../reference/com/esri/core/map/ServerFolder.html">ServerFolder</a>&gt;
+      </span>
+      <span class="sympad">getChildFolders</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the child folders.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the child folders
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getFiles()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        ArrayList&lt;<a href="../../../../../reference/com/esri/core/map/ServerFile.html">ServerFile</a>&gt;
+      </span>
+      <span class="sympad">getFiles</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the files.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the files
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getFolderLevel()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getFolderLevel</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the folder level.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the folder level
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getName()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        String
+      </span>
+      <span class="sympad">getName</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the name of this folder.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the name
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getParent()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../reference/com/esri/core/map/ServerFolder.html">ServerFolder</a>
+      </span>
+      <span class="sympad">getParent</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the parent folder, or null if this is a top level item.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the parent folder
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getPath()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        String
+      </span>
+      <span class="sympad">getPath</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the path to this folder. If we haven't downloaded the structure
+ to disk, this path will be relative to the top level <code>ServerFolder</code>.
+ If we have downloaded the structure to disk, this path will be the absolute
+ path on disk.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the path to this folder
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getUrl()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        String
+      </span>
+      <span class="sympad">getUrl</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the url of this folder on the server.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the url
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="hasFiles()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">hasFiles</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Checks for files.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>true, if successful
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="moveFolder(com.esri.core.map.ServerFolder, com.esri.core.map.ServerFolder)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">moveFolder</span>
+      <span class="normal">(<a href="../../../../../reference/com/esri/core/map/ServerFolder.html">ServerFolder</a> folderToMove, <a href="../../../../../reference/com/esri/core/map/ServerFolder.html">ServerFolder</a> destination)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Move folder.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>folderToMove</td>
+          <td>the folder to move</td>
+        </tr>
+        <tr>
+          <th>destination</td>
+          <td>the destination</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>true, if successful
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="open(boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">open</span>
+      <span class="normal">(boolean recursive)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Open this folder and get information on the child folders and files that it contains. If <code>recursive</code> is
+ false, only information on this folder's children will be accessed. If <code>recursive</code> is true, information
+ on all child folders will be accessed.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>recursive</td>
+          <td>true to open all folders, false to open this one only</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th>IOException</td>
+            <td>Signals that an I/O exception has occurred.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setCredentials(com.esri.core.io.UserCredentials)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setCredentials</span>
+      <span class="normal">(<a href="../../../../../reference/com/esri/core/io/UserCredentials.html">UserCredentials</a> userCredentials)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the credentials.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>userCredentials</td>
+          <td>the new credentials
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="toString()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        String
+      </span>
+      <span class="sympad">toString</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+
+
+
+<!-- ========= END OF CLASS DATA ========= -->
+<A NAME="navbar_top"></A>
+
+<div id="footer">
+
+</div> <!-- end footer -->
+
+</div> <!-- jd-content -->
+
+</div><!-- end doc-content -->
+
+</div> <!-- end body-content --> 
+
+<script type="text/javascript">
+init(); /* initialize android-developer-docs.js */
+</script>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent" 
+              android:layout_height="fill_parent" 
+              android:layout_alignParentLeft="true"
+              android:orientation="vertical">
+
+	<LinearLayout android:layout_width="fill_parent" 
+	              android:layout_height="wrap_content" 
+	              android:layout_alignParentRight="true"
+	              android:orientation="horizontal">      
+		<Button android:id="@+id/openbutton"
+	    		android:text="Open Gdb"
+	    		android:enabled="true"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:onClick="openButton" 
+				/>
+        
+        <Button android:id="@+id/editbutton"
+	    		android:text="Edit"
+	    		android:enabled="false"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:onClick="editButton" 
+				/>	
+				
+		<Button android:id="@+id/removebutton"
+	    		android:text="Delete"
+	    		android:enabled="false"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:onClick="removeButton"
+				/>	
+		<Button android:id="@+id/cancelbutton"
+	    		android:text="Cancel"
+	    		android:enabled="false"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:visibility="gone"
+				android:onClick="cancelButton"
+				/>						
+		<Button android:id="@+id/clearbutton"
+	    		android:text="Clear"
+	    		android:enabled="false"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:onClick="clearButton"
+				/>		
+		<Button android:id="@+id/undobutton"
+	    		android:text="Undo"
+	    		android:enabled="false"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:onClick="undoButton"
+				/>		
+		<Button android:id="@+id/savebutton"
+	    		android:text="Save"
+	    		android:enabled="false"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:onClick="saveButton"
+				/>		
+	</LinearLayout>		
+			
+<com.esri.android.map.MapView
+  android:id="@+id/map"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+<!-- url ="http://www.arcgis.com/home/item.html?id=6929c43e567647fb85e261beee7f5774"> -->
+<!--  url ="http://www.arcgis.com/home/item.html?id=c35be7b8904b4f96862d2f6bea8ae24f"-->
+<!--  >-->
+  <!--   initExtent ="-120.5456052636689 31.890823306913795 -109.80225498154974 36.545436426801494" -->
+<!--  <com.esri.android.map.ags.ArcGISTiledMapServiceLayer-->
+<!--    url="http://services.arcgisonline.com/ArcGIS/rest/services/ESRI_StreetMap_World_2D/MapServer"/>-->
+<!--  <com.esri.android.map.ags.ArcGISFeatureLayer-->
+<!--    url="http://sampleserver5.arcgisonline.com/ArcGIS/rest/services/LocalGovernment/Recreation/FeatureServer/2"-->
+<!--    mode="ondemand"/>-->
+<!--  <com.esri.android.map.ags.ArcGISFeatureLayer-->
+<!--    url="http://sampleserver5.arcgisonline.com/ArcGIS/rest/services/LocalGovernment/Recreation/FeatureServer/0"-->
+<!--    mode="ondemand"/>-->
+<!--  <com.esri.android.map.ags.ArcGISFeatureLayer-->
+<!--    url="http://sampleserver5.arcgisonline.com/ArcGIS/rest/services/LocalGovernment/Recreation/FeatureServer/1"-->
+<!--    mode="ondemand"/>-->
+</com.esri.android.map.MapView>
+	
+</LinearLayout>

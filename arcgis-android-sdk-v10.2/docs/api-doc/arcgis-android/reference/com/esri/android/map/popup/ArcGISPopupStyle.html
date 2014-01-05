@@ -1,0 +1,5255 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="shortcut icon" type="image/x-icon" href="../../../../../../favicon.ico" />
+<title>
+
+  ArcGISPopupStyle |
+
+
+  ArcGIS Android 10.2.0 API
+
+</title>
+<link href="../../../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
+<link href="../../../../../../assets/customizations.css" rel="stylesheet" type="text/css" />
+<script src="../../../../../../assets/search_autocomplete.js" type="text/javascript"></script>
+<script src="../../../../../../assets/jquery-resizable.min.js" type="text/javascript"></script>
+<script src="../../../../../../assets/doclava-developer-docs.js" type="text/javascript"></script>
+<script src="../../../../../../assets/prettify.js" type="text/javascript"></script>
+<script type="text/javascript">
+  setToRoot("../../../../../../");
+</script>
+<script src="../../../../../../assets/doclava-developer-reference.js" type="text/javascript"></script>
+<script src="../../../../../../navtree_data.js" type="text/javascript"></script>
+<script src="../../../../../../assets/customizations.js" type="text/javascript"></script>
+<noscript>
+  <style type="text/css">
+    html,body{overflow:auto;}
+    #body-content{position:relative; top:0;}
+    #doc-content{overflow:visible;border-left:3px solid #666;}
+    #side-nav{padding:0;}
+    #side-nav .toggle-list ul {display:block;}
+    #resize-packages-nav{border-bottom:3px solid #666;}
+  </style>
+</noscript>
+</head>
+
+<body class="" itemscope itemtype="http://schema.org/Article">
+
+<div id="header">
+    <div id="headerLeft">
+   		<span id="masthead-title">ArcGIS Android 10.2.0 API</span>
+    </div>
+    <div id="headerRight">
+        
+  <div id="search" >
+      <div id="searchForm">
+          <form accept-charset="utf-8" class="gsc-search-box" 
+                onsubmit="return submit_search()">
+            <table class="gsc-search-box" cellpadding="0" cellspacing="0"><tbody>
+                <tr>
+                  <td class="gsc-input">
+                    <input id="search_autocomplete" class="gsc-input" type="text" size="33" autocomplete="off"
+                      title="search developer docs" name="q"
+                      value="search developer docs"
+                      onFocus="search_focus_changed(this, true)"
+                      onBlur="search_focus_changed(this, false)"
+                      onkeydown="return search_changed(event, true, '../../../../../../')"
+                      onkeyup="return search_changed(event, false, '../../../../../../')" />
+                  <div id="search_filtered_div" class="no-display">
+                      <table id="search_filtered" cellspacing=0>
+                      </table>
+                  </div>
+                  </td>
+                  <td class="gsc-search-button">
+                    <input type="submit" value="Search" title="search" id="search-button" class="gsc-search-button" />
+                  </td>
+                  <td class="gsc-clear-button">
+                    <div title="clear results" class="gsc-clear-button">&nbsp;</div>
+                  </td>
+                </tr></tbody>
+              </table>
+          </form>
+      </div><!-- searchForm -->
+  </div><!-- search -->
+    </div><!-- headerRight -->
+</div><!-- header -->
+
+
+  <div class="g-section g-tpl-240" id="body-content">
+    <div class="g-unit g-first side-nav-resizable" id="side-nav">
+      <div id="swapper">
+        <div id="nav-panels">
+          <div id="resize-packages-nav">
+            <div id="packages-nav">
+              <div id="index-links"><nobr>
+                <a href="../../../../../../reference/packages.html"  >Package Index</a> | 
+                <a href="../../../../../../reference/classes.html" >Class Index</a></nobr>
+              </div>
+              <ul>
+                
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/android/action/package-summary.html">com.esri.android.action</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/android/map/package-summary.html">com.esri.android.map</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/android/map/ags/package-summary.html">com.esri.android.map.ags</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/android/map/bing/package-summary.html">com.esri.android.map.bing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/android/map/event/package-summary.html">com.esri.android.map.event</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/android/map/ogc/package-summary.html">com.esri.android.map.ogc</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/android/map/osm/package-summary.html">com.esri.android.map.osm</a></li>
+    <li class="selected api apilevel-">
+  <a href="../../../../../../reference/com/esri/android/map/popup/package-summary.html">com.esri.android.map.popup</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/android/oauth/package-summary.html">com.esri.android.oauth</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/ags/package-summary.html">com.esri.core.ags</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/gdb/package-summary.html">com.esri.core.gdb</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/geometry/package-summary.html">com.esri.core.geometry</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/io/package-summary.html">com.esri.core.io</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/map/package-summary.html">com.esri.core.map</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/map/bing/package-summary.html">com.esri.core.map.bing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/map/popup/package-summary.html">com.esri.core.map.popup</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/portal/package-summary.html">com.esri.core.portal</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/renderer/package-summary.html">com.esri.core.renderer</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/symbol/package-summary.html">com.esri.core.symbol</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/symbol/advanced/package-summary.html">com.esri.core.symbol.advanced</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/table/package-summary.html">com.esri.core.table</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/package-summary.html">com.esri.core.tasks</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/ags/package-summary.html">com.esri.core.tasks.ags</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/ags/find/package-summary.html">com.esri.core.tasks.ags.find</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/ags/geocode/package-summary.html">com.esri.core.tasks.ags.geocode</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/ags/geoprocessing/package-summary.html">com.esri.core.tasks.ags.geoprocessing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/ags/identify/package-summary.html">com.esri.core.tasks.ags.identify</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/ags/na/package-summary.html">com.esri.core.tasks.ags.na</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/ags/query/package-summary.html">com.esri.core.tasks.ags.query</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/gdb/package-summary.html">com.esri.core.tasks.gdb</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/geocode/package-summary.html">com.esri.core.tasks.geocode</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/na/package-summary.html">com.esri.core.tasks.na</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/oauth/package-summary.html">com.esri.core.tasks.oauth</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/query/package-summary.html">com.esri.core.tasks.query</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/core/tasks/tilecache/package-summary.html">com.esri.core.tasks.tilecache</a></li>
+              </ul><br/>
+            </div> <!-- end packages -->
+          </div> <!-- end resize-packages -->
+          <div id="classes-nav">
+            <ul>
+              
+    <li><h2>Interfaces</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISEditAttributesAdapter.Required.html">ArcGISEditAttributesAdapter.Required</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/AttachmentView.html">AttachmentView</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/AttributeView.html">AttributeView</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/Popup.PopupListener.html">Popup.PopupListener</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/PopupContainer.PopupContainerListener.html">PopupContainer.PopupContainerListener</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/PopupEditable.html">PopupEditable</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/PopupLayer.html">PopupLayer</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/PopupLayout.html">PopupLayout</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/PopupRefreshable.html">PopupRefreshable</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/PopupStyle.html">PopupStyle</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/PopupValid.html">PopupValid</a></li>
+      </ul>
+    </li>
+              
+    <li><h2>Classes</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISAbstractMediaView.html">ArcGISAbstractMediaView</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISAbstractMediaView.ExpandableHeightGridView.html">ArcGISAbstractMediaView.ExpandableHeightGridView</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISAttachmentsAdapter.html">ArcGISAttachmentsAdapter</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISAttachmentsView.html">ArcGISAttachmentsView</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISAttributesAdapter.html">ArcGISAttributesAdapter</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISAttributesAdapter.AttributeInfo.html">ArcGISAttributesAdapter.AttributeInfo</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISAttributesAdapter.FieldLabelView.html">ArcGISAttributesAdapter.FieldLabelView</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISAttributesAdapter.LayoutResource.html">ArcGISAttributesAdapter.LayoutResource</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISAttributesAdapter.SeparatorView.html">ArcGISAttributesAdapter.SeparatorView</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISAttributeView.html">ArcGISAttributeView</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISDescriptionAdapter.html">ArcGISDescriptionAdapter</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISEditAttributesAdapter.html">ArcGISEditAttributesAdapter</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISEditAttributesAdapter.CodedValueSpinnerAdapter.html">ArcGISEditAttributesAdapter.CodedValueSpinnerAdapter</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISEditAttributesAdapter.DateButtonOnClickListener.html">ArcGISEditAttributesAdapter.DateButtonOnClickListener</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISEditAttributesAdapter.DateTimePickerDialog.html">ArcGISEditAttributesAdapter.DateTimePickerDialog</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISEditAttributesAdapter.DefaultAttributeValueEditText.html">ArcGISEditAttributesAdapter.DefaultAttributeValueEditText</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISEditAttributesAdapter.EditTextBackgroundDrawable.html">ArcGISEditAttributesAdapter.EditTextBackgroundDrawable</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISEditAttributesAdapter.RangeSpinnerAdapter.html">ArcGISEditAttributesAdapter.RangeSpinnerAdapter</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISEditAttributesAdapter.SpinnerBackgroundDrawable.html">ArcGISEditAttributesAdapter.SpinnerBackgroundDrawable</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISEditAttributesAdapter.TextViewSpinner.html">ArcGISEditAttributesAdapter.TextViewSpinner</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISLayout.html">ArcGISLayout</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISMediaAdapter.html">ArcGISMediaAdapter</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISMediaFullScreenPageAdapter.html">ArcGISMediaFullScreenPageAdapter</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISMediaFullScreenView.html">ArcGISMediaFullScreenView</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISMediaView.html">ArcGISMediaView</a></li>
+          <li class="selected api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html">ArcGISPopupStyle</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISReadOnlyAttributesAdapter.html">ArcGISReadOnlyAttributesAdapter</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISReadOnlyAttributesAdapter.DescriptionView.html">ArcGISReadOnlyAttributesAdapter.DescriptionView</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISReadOnlyAttributesAdapter.FieldValueView.html">ArcGISReadOnlyAttributesAdapter.FieldValueView</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISTitleView.html">ArcGISTitleView</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISValueFormat.html">ArcGISValueFormat</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/FeatureTablePopupInfo.html">FeatureTablePopupInfo</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/Popup.html">Popup</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/PopupContainer.html">PopupContainer</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/PopupContainerView.html">PopupContainerView</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/PopupDefaultLayout.html">PopupDefaultLayout</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/PopupLayoutInfo.html">PopupLayoutInfo</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/PopupUtil.html">PopupUtil</a></li>
+      </ul>
+    </li>
+              
+    <li><h2>Enums</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISAttributesAdapter.FIELD_TYPE.html">ArcGISAttributesAdapter.FIELD_TYPE</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.STYLE_ELEMENT.html">ArcGISPopupStyle.STYLE_ELEMENT</a></li>
+      </ul>
+    </li>
+              
+              
+            </ul><br/>
+          </div><!-- end classes -->
+        </div><!-- end nav-panels -->
+        <div id="nav-tree" style="display:none">
+          <div id="index-links"><nobr>
+            <a href="../../../../../../reference/packages.html"  >Package Index</a> | 
+            <a href="../../../../../../reference/classes.html" >Class Index</a></nobr>
+          </div>
+        </div><!-- end nav-tree -->
+      </div><!-- end swapper -->
+    </div> <!-- end side-nav -->
+    <script>
+      if (!isMobile) {
+        $("<a href='#' id='nav-swap' onclick='swapNav();return false;' style='font-size:10px;line-height:9px;margin-left:1em;text-decoration:none;'><span id='tree-link'>Use Tree Navigation</span><span id='panel-link' style='display:none'>Use Panel Navigation</span></a>").appendTo("#side-nav");
+        chooseDefaultNav();
+        if ($("#nav-tree").is(':visible')) {
+          init_default_navtree("../../../../../../");
+        } else {
+          addLoadEvent(function() {
+            scrollIntoView("packages-nav");
+            scrollIntoView("classes-nav");
+          });
+        }
+        $("#swapper").css({borderBottom:"2px solid #aaa"});
+      } else {
+        swapNav(); // tree view should be used on mobile
+      }
+    </script>
+
+
+
+<div class="g-unit" id="doc-content">
+
+<div id="api-info-block">
+
+
+
+  
+   
+  
+  
+  
+  
+
+  
+   
+  
+  
+  
+  
+
+
+<div class="sum-details-links">
+
+Summary:
+
+  <a href="#nestedclasses">Nested Classes</a>
+  
+
+
+
+
+
+
+
+
+
+  &#124; <a href="#pubctors">Ctors</a>
+  
+
+
+
+  &#124; <a href="#pubmethods">Methods</a>
+  
+
+
+
+  &#124; <a href="#inhmethods">Inherited Methods</a>
+
+&#124; <a href="#" onclick="return toggleAllClassInherited()" id="toggleAllClassInherited">[Expand All]</a>
+
+</div><!-- end sum-details-links -->
+<div class="api-level">
+  
+  
+  
+
+</div>
+</div><!-- end api-info-block -->
+
+
+<!-- ======== START OF CLASS DATA ======== -->
+
+<div id="jd-header">
+    public
+     
+     
+    
+    class
+<h1 itemprop="name">ArcGISPopupStyle</h1>
+
+
+
+  
+    extends Object<br/>
+  
+  
+  
+
+  
+  
+      implements 
+      
+        <a href="../../../../../../reference/com/esri/android/map/popup/PopupStyle.html">PopupStyle</a> 
+      
+  
+  
+
+
+</div><!-- end header -->
+
+<div id="naMessage"></div>
+
+<div id="jd-content" class="api apilevel-">
+<table class="jd-inheritance-table">
+
+
+    <tr>
+         	
+        <td colspan="2" class="jd-inheritance-class-cell">java.lang.Object</td>
+    </tr>
+    
+
+    <tr>
+        
+            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
+         	
+        <td colspan="1" class="jd-inheritance-class-cell">com.esri.android.map.popup.ArcGISPopupStyle</td>
+    </tr>
+    
+
+</table>
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Class Overview</h2>
+<p itemprop="articleBody">Default style for the popup.</p>
+
+
+
+
+
+</div><!-- jd-descr -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Summary</h2>
+
+
+
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<table id="nestedclasses" class="jd-sumtable"><tr><th colspan="12">Nested Classes</th></tr>
+
+
+  
+    <tr class="alt-color api apilevel-" >
+      <td class="jd-typecol"><nobr>
+        
+         
+         
+        
+        enum</nobr></td>
+      <td class="jd-linkcol"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.STYLE_ELEMENT.html">ArcGISPopupStyle.STYLE_ELEMENT</a></td>
+      <td class="jd-descrcol" width="100%">Types of stylable element
+&nbsp;</td>
+    </tr>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<table id="pubctors" class="jd-sumtable"><tr><th colspan="12">Public Constructors</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            </nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#ArcGISPopupStyle()">ArcGISPopupStyle</a></span>()</nobr>
+        
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="pubmethods" class="jd-sumtable"><tr><th colspan="12">Public Methods</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int[]</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#getChartColors()">getChartColors</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the chart colors.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int[]</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#getColorRamp(int)">getColorRamp</a></span>(int id)</nobr>
+        
+        <div class="jd-descrdiv">Gets the color ramp.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            View</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#getCustomFieldSeparator()">getCustomFieldSeparator</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the custom field separator.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#getEditFieldColor()">getEditFieldColor</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the edit field color.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#getFieldLabelColor()">getFieldLabelColor</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the field label color.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#getFieldLabelFontSize()">getFieldLabelFontSize</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the field label font size.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#getFieldLabelFontStyle()">getFieldLabelFontStyle</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the field label font style.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            Typeface</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#getFieldLabelFontType()">getFieldLabelFontType</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the field label font type.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#getFieldSeparatorColor()">getFieldSeparatorColor</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the field separator color.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#getFieldSeparatorWidth()">getFieldSeparatorWidth</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the field separator width.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#getFieldValueColor()">getFieldValueColor</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the field value color.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#getFieldValueFontSize()">getFieldValueFontSize</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the field value font size.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#getFieldValueFontStyle()">getFieldValueFontStyle</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the field value font style.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            Typeface</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#getFieldValueFontType()">getFieldValueFontType</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the field value font type.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#getMediaCaptionColor()">getMediaCaptionColor</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the media caption color.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#getMediaCaptionFontSize()">getMediaCaptionFontSize</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the media caption font size.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#getMediaCaptionFontStyle()">getMediaCaptionFontStyle</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the media caption font style.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            Typeface</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#getMediaCaptionFontType()">getMediaCaptionFontType</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the media caption font type.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#getMediaChartValuesColor()">getMediaChartValuesColor</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the media chart values color.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#getMediaChartValuesFontSize()">getMediaChartValuesFontSize</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the media chart values font size.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#getMediaChartValuesFontStyle()">getMediaChartValuesFontStyle</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the media chart values font style.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            Typeface</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#getMediaChartValuesFontType()">getMediaChartValuesFontType</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the media chart values font type.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#getMediaFullScreenCaptionColor()">getMediaFullScreenCaptionColor</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the media full screen caption color.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#getMediaFullScreenCaptionFontSize()">getMediaFullScreenCaptionFontSize</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the media full screen caption font size.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#getMediaFullScreenCaptionFontStyle()">getMediaFullScreenCaptionFontStyle</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the media full screen caption font style.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            Typeface</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#getMediaFullScreenCaptionFontType()">getMediaFullScreenCaptionFontType</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the media full screen caption font type.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#getMediaFullScreenTitleColor()">getMediaFullScreenTitleColor</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the media full screen title color.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#getMediaFullScreenTitleFontSize()">getMediaFullScreenTitleFontSize</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the media full screen title font size.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#getMediaFullScreenTitleFontStyle()">getMediaFullScreenTitleFontStyle</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the media full screen title font style.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            Typeface</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#getMediaFullScreenTitleFontType()">getMediaFullScreenTitleFontType</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the media full screen title font type.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            String[]</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#getPieChartColors()">getPieChartColors</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the pie chart colors.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#getPopupBackgroundColor()">getPopupBackgroundColor</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the popup background color.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#getPopupTitleColor()">getPopupTitleColor</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the popup title color.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#getPopupTitleFontSize()">getPopupTitleFontSize</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the popup title font size.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#getPopupTitleFontStyle()">getPopupTitleFontStyle</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the popup title font style.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            Typeface</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#getPopupTitleFontType()">getPopupTitleFontType</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the popup title font type.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#isShowFieldSeparator()">isShowFieldSeparator</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Checks if is show field separator.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#registerStylable(com.esri.android.map.popup.ArcGISPopupStyle.IPopupStylable)">registerStylable</a></span>(ArcGISPopupStyle.IPopupStylable popupStylable)</nobr>
+        
+        <div class="jd-descrdiv">Register stylable.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setChartColors(int[])">setChartColors</a></span>(int[] chartColors)</nobr>
+        
+        <div class="jd-descrdiv">Sets the chart colors.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setCustomFieldSeparator(android.view.View)">setCustomFieldSeparator</a></span>(View customFieldSeparator)</nobr>
+        
+        <div class="jd-descrdiv">Sets the custom field separator.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setEditFieldColor(int)">setEditFieldColor</a></span>(int editFieldColor)</nobr>
+        
+        <div class="jd-descrdiv">Sets the edit field color.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setFieldLabelColor(int)">setFieldLabelColor</a></span>(int color)</nobr>
+        
+        <div class="jd-descrdiv">Sets the field label color.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setFieldLabelFontSize(int)">setFieldLabelFontSize</a></span>(int size)</nobr>
+        
+        <div class="jd-descrdiv">Sets the field label font size.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setFieldLabelFontType(android.graphics.Typeface)">setFieldLabelFontType</a></span>(Typeface type)</nobr>
+        
+        <div class="jd-descrdiv">Sets the field label font type.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setFieldLabelFontTypeAndStyle(android.graphics.Typeface, int)">setFieldLabelFontTypeAndStyle</a></span>(Typeface type, int style)</nobr>
+        
+        <div class="jd-descrdiv">Sets the field label font type and style.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setFieldSeparatorColor(int)">setFieldSeparatorColor</a></span>(int fieldSeparatorColor)</nobr>
+        
+        <div class="jd-descrdiv">Sets the field separator color.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setFieldSeparatorWidth(int)">setFieldSeparatorWidth</a></span>(int fieldSeparatorWidth)</nobr>
+        
+        <div class="jd-descrdiv">Sets the field separator width.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setFieldValueColor(int)">setFieldValueColor</a></span>(int fieldValueColor)</nobr>
+        
+        <div class="jd-descrdiv">Sets the field value color.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setFieldValueFontSize(int)">setFieldValueFontSize</a></span>(int fieldValueFontSize)</nobr>
+        
+        <div class="jd-descrdiv">Sets the field value font size.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setFieldValueFontStyle(int)">setFieldValueFontStyle</a></span>(int fieldValueFontStyle)</nobr>
+        
+        <div class="jd-descrdiv">Sets the field value font style.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setFieldValueFontType(android.graphics.Typeface)">setFieldValueFontType</a></span>(Typeface fieldValueFontType)</nobr>
+        
+        <div class="jd-descrdiv">Sets the field value font type.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setFieldValueFontTypeAndStyle(android.graphics.Typeface, int)">setFieldValueFontTypeAndStyle</a></span>(Typeface fieldValueFontType, int fieldValueFontStyle)</nobr>
+        
+        <div class="jd-descrdiv">Sets the field value font type and style.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setMediaCaptionColor(int)">setMediaCaptionColor</a></span>(int mediaCaptionColor)</nobr>
+        
+        <div class="jd-descrdiv">Sets the media caption color.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setMediaCaptionFontSize(int)">setMediaCaptionFontSize</a></span>(int mediaCaptionFontSize)</nobr>
+        
+        <div class="jd-descrdiv">Sets the media caption font size.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setMediaCaptionFontStyle(int)">setMediaCaptionFontStyle</a></span>(int mediaCaptionFontStyle)</nobr>
+        
+        <div class="jd-descrdiv">Sets the media caption font style.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setMediaCaptionFontType(android.graphics.Typeface)">setMediaCaptionFontType</a></span>(Typeface mediaCaptionFontType)</nobr>
+        
+        <div class="jd-descrdiv">Sets the media caption font type.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setMediaCaptionFontTypeAndStyle(android.graphics.Typeface, int)">setMediaCaptionFontTypeAndStyle</a></span>(Typeface mediaCaptionFontType, int mediaCaptionFontStyle)</nobr>
+        
+        <div class="jd-descrdiv">Sets the media caption font type and style.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setMediaChartValuesColor(int)">setMediaChartValuesColor</a></span>(int mediaChartValuesColor)</nobr>
+        
+        <div class="jd-descrdiv">Sets the media chart values color.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setMediaChartValuesFontSize(int)">setMediaChartValuesFontSize</a></span>(int mediaChartValuesFontSize)</nobr>
+        
+        <div class="jd-descrdiv">Sets the media chart values font size.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setMediaChartValuesFontStyle(int)">setMediaChartValuesFontStyle</a></span>(int mediaChartValuesFontStyle)</nobr>
+        
+        <div class="jd-descrdiv">Sets the media chart values font style.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setMediaChartValuesFontType(android.graphics.Typeface)">setMediaChartValuesFontType</a></span>(Typeface mediaChartValuesFontType)</nobr>
+        
+        <div class="jd-descrdiv">Sets the media chart values font type.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setMediaChartValuesFontTypeAndStyle(android.graphics.Typeface, int)">setMediaChartValuesFontTypeAndStyle</a></span>(Typeface mediaChartValuesFontType, int mediaChartValuesFontStyle)</nobr>
+        
+        <div class="jd-descrdiv">Sets the media chart values font type and style.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setMediaFullScreenCaptionColor(int)">setMediaFullScreenCaptionColor</a></span>(int mediaFullScreenCaptionColor)</nobr>
+        
+        <div class="jd-descrdiv">Sets the media full screen caption color.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setMediaFullScreenCaptionFontSize(int)">setMediaFullScreenCaptionFontSize</a></span>(int mediaFullScreenCaptionFontSize)</nobr>
+        
+        <div class="jd-descrdiv">Sets the media full screen caption font size.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setMediaFullScreenCaptionFontStyle(int)">setMediaFullScreenCaptionFontStyle</a></span>(int mediaFullScreenCaptionFontStyle)</nobr>
+        
+        <div class="jd-descrdiv">Sets the media full screen caption font style.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setMediaFullScreenCaptionFontType(android.graphics.Typeface)">setMediaFullScreenCaptionFontType</a></span>(Typeface mediaFullScreenCaptionFontType)</nobr>
+        
+        <div class="jd-descrdiv">Sets the media full screen caption font type.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setMediaFullScreenCaptionFontTypeAndStyle(android.graphics.Typeface, int)">setMediaFullScreenCaptionFontTypeAndStyle</a></span>(Typeface mediaFullScreenCaptionFontType, int mediaFullScreenCaptionFontStyle)</nobr>
+        
+        <div class="jd-descrdiv">Sets the media full screen caption font type and style.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setMediaFullScreenTitleColor(int)">setMediaFullScreenTitleColor</a></span>(int mediaFullScreenTitleColor)</nobr>
+        
+        <div class="jd-descrdiv">Sets the media full screen title color.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setMediaFullScreenTitleFontSize(int)">setMediaFullScreenTitleFontSize</a></span>(int mediaFullScreenTitleFontSize)</nobr>
+        
+        <div class="jd-descrdiv">Sets the media full screen title font size.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setMediaFullScreenTitleFontStyle(int)">setMediaFullScreenTitleFontStyle</a></span>(int mediaFullScreenTitleFontStyle)</nobr>
+        
+        <div class="jd-descrdiv">Sets the media full screen title font style.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setMediaFullScreenTitleFontType(android.graphics.Typeface)">setMediaFullScreenTitleFontType</a></span>(Typeface mediaFullScreenTitleFontType)</nobr>
+        
+        <div class="jd-descrdiv">Sets the media full screen title font type.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setMediaFullScreenTitleFontTypeAndStyle(android.graphics.Typeface, int)">setMediaFullScreenTitleFontTypeAndStyle</a></span>(Typeface mediaFullScreenTitleFontType, int mediaFullScreenTitleFontStyle)</nobr>
+        
+        <div class="jd-descrdiv">Sets the media full screen title font type and style.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setPieChartColors(java.lang.String[])">setPieChartColors</a></span>(String[] pieChartColors)</nobr>
+        
+        <div class="jd-descrdiv">Sets the pie chart colors.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setPopupBackgroundColor(int)">setPopupBackgroundColor</a></span>(int color)</nobr>
+        
+        <div class="jd-descrdiv">Sets the popup background color.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setPopupTitleColor(int)">setPopupTitleColor</a></span>(int color)</nobr>
+        
+        <div class="jd-descrdiv">Sets the popup title color.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setPopupTitleFontSize(int)">setPopupTitleFontSize</a></span>(int size)</nobr>
+        
+        <div class="jd-descrdiv">Sets the popup title font size.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setPopupTitleFontType(android.graphics.Typeface)">setPopupTitleFontType</a></span>(Typeface type)</nobr>
+        
+        <div class="jd-descrdiv">Sets the popup title font type.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setPopupTitleFontTypeAndStyle(android.graphics.Typeface, int)">setPopupTitleFontTypeAndStyle</a></span>(Typeface type, int style)</nobr>
+        
+        <div class="jd-descrdiv">Sets the popup title font type and style.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#setShowFieldSeparator(boolean)">setShowFieldSeparator</a></span>(boolean showFieldSeparator)</nobr>
+        
+        <div class="jd-descrdiv">Sets the show field separator.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/ArcGISPopupStyle.html#unregisterStylable(com.esri.android.map.popup.ArcGISPopupStyle.IPopupStylable)">unregisterStylable</a></span>(ArcGISPopupStyle.IPopupStylable popupStylable)</nobr>
+        
+        <div class="jd-descrdiv">Unregister stylable.</div>
+  
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="inhmethods" class="jd-sumtable"><tr><th>
+  <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
+  <div style="clear:left;">Inherited Methods</div></th></tr>
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Object" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-java.lang.Object-trigger"
+          src="../../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From class
+
+  java.lang.Object
+
+<div id="inherited-methods-java.lang.Object">
+  <div id="inherited-methods-java.lang.Object-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-java.lang.Object-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            Object</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">clone</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">equals</span>(Object arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">finalize</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            Class&lt;?&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getClass</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">hashCode</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notify</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notifyAll</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            String</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">toString</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>(long arg0, int arg1)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>(long arg0)</nobr>
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-com.esri.android.map.popup.PopupStyle" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-com.esri.android.map.popup.PopupStyle-trigger"
+          src="../../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From interface
+
+  <a href="../../../../../../reference/com/esri/android/map/popup/PopupStyle.html">com.esri.android.map.popup.PopupStyle</a>
+
+<div id="inherited-methods-com.esri.android.map.popup.PopupStyle">
+  <div id="inherited-methods-com.esri.android.map.popup.PopupStyle-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-com.esri.android.map.popup.PopupStyle-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/PopupStyle.html#getPopupBackgroundColor()">getPopupBackgroundColor</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the popup background color.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/map/popup/PopupStyle.html#setPopupBackgroundColor(int)">setPopupBackgroundColor</a></span>(int color)</nobr>
+        
+        <div class="jd-descrdiv">Sets the popup background color.</div>
+  
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+</table>
+
+
+</div><!-- jd-descr (summary) -->
+
+<!-- Details -->
+
+
+
+
+
+
+
+
+<!-- XML Attributes -->
+
+
+<!-- Enum Values -->
+
+
+<!-- Constants -->
+
+
+<!-- Fields -->
+
+
+<!-- Public ctors -->
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<h2>Public Constructors</h2>
+
+
+
+<A NAME="ArcGISPopupStyle()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        
+      </span>
+      <span class="sympad">ArcGISPopupStyle</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<!-- Protected ctors -->
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+<!-- Public methdos -->
+
+<h2>Public Methods</h2>
+
+
+
+<A NAME="getChartColors()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int[]
+      </span>
+      <span class="sympad">getChartColors</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the chart colors.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the mChartColors</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getColorRamp(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int[]
+      </span>
+      <span class="sympad">getColorRamp</span>
+      <span class="normal">(int id)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the color ramp.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>id</td>
+          <td>the id</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the color ramp</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getCustomFieldSeparator()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        View
+      </span>
+      <span class="sympad">getCustomFieldSeparator</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the custom field separator.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the mCustomFieldSeparator</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getEditFieldColor()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getEditFieldColor</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the edit field color.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the mEditFieldColor</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getFieldLabelColor()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getFieldLabelColor</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the field label color.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the field label color</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getFieldLabelFontSize()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getFieldLabelFontSize</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the field label font size.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the field label font size</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getFieldLabelFontStyle()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getFieldLabelFontStyle</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the field label font style.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the field label font style</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getFieldLabelFontType()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        Typeface
+      </span>
+      <span class="sympad">getFieldLabelFontType</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the field label font type.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the field label font type</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getFieldSeparatorColor()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getFieldSeparatorColor</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the field separator color.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the mFieldSeparatorColor</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getFieldSeparatorWidth()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getFieldSeparatorWidth</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the field separator width.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the mFieldSeparatorWidth</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getFieldValueColor()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getFieldValueColor</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the field value color.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the mFieldValueColor</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getFieldValueFontSize()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getFieldValueFontSize</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the field value font size.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the mFieldValueFontSize</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getFieldValueFontStyle()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getFieldValueFontStyle</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the field value font style.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the mFieldValueFontStyle</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getFieldValueFontType()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        Typeface
+      </span>
+      <span class="sympad">getFieldValueFontType</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the field value font type.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the mFieldValueFontType</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getMediaCaptionColor()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getMediaCaptionColor</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the media caption color.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the mMediaCaptionColor</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getMediaCaptionFontSize()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getMediaCaptionFontSize</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the media caption font size.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the mMediaCaptionFontSize</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getMediaCaptionFontStyle()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getMediaCaptionFontStyle</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the media caption font style.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the mMediaCaptionFontStyle</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getMediaCaptionFontType()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        Typeface
+      </span>
+      <span class="sympad">getMediaCaptionFontType</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the media caption font type.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the mMediaCaptionFontType</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getMediaChartValuesColor()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getMediaChartValuesColor</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the media chart values color.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the mMediaChartValuesColor</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getMediaChartValuesFontSize()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getMediaChartValuesFontSize</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the media chart values font size.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the mMediaChartValuesFontSize</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getMediaChartValuesFontStyle()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getMediaChartValuesFontStyle</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the media chart values font style.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the mMediaChartValuesFontStyle</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getMediaChartValuesFontType()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        Typeface
+      </span>
+      <span class="sympad">getMediaChartValuesFontType</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the media chart values font type.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the mMediaChartValuesFontType</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getMediaFullScreenCaptionColor()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getMediaFullScreenCaptionColor</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the media full screen caption color.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the mMediaFullScreenCaptionColor</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getMediaFullScreenCaptionFontSize()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getMediaFullScreenCaptionFontSize</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the media full screen caption font size.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the mMediaFullScreenCaptionFontSize</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getMediaFullScreenCaptionFontStyle()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getMediaFullScreenCaptionFontStyle</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the media full screen caption font style.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the mMediaFullScreenCaptionFontStyle</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getMediaFullScreenCaptionFontType()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        Typeface
+      </span>
+      <span class="sympad">getMediaFullScreenCaptionFontType</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the media full screen caption font type.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the mMediaFullScreenCaptionFontType</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getMediaFullScreenTitleColor()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getMediaFullScreenTitleColor</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the media full screen title color.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the mMediaFullScreenTitleColor</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getMediaFullScreenTitleFontSize()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getMediaFullScreenTitleFontSize</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the media full screen title font size.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the mMediaFullScreenTitleFontSize</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getMediaFullScreenTitleFontStyle()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getMediaFullScreenTitleFontStyle</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the media full screen title font style.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the mMediaFullScreenTitleFontStyle</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getMediaFullScreenTitleFontType()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        Typeface
+      </span>
+      <span class="sympad">getMediaFullScreenTitleFontType</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the media full screen title font type.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the mMediaFullScreenTitleFontType</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getPieChartColors()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        String[]
+      </span>
+      <span class="sympad">getPieChartColors</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the pie chart colors.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the mPieChartColors</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getPopupBackgroundColor()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getPopupBackgroundColor</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the popup background color.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the popup background color</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getPopupTitleColor()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getPopupTitleColor</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the popup title color.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the popup title color</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getPopupTitleFontSize()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getPopupTitleFontSize</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the popup title font size.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the popup title font size</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getPopupTitleFontStyle()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getPopupTitleFontStyle</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the popup title font style.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the popup title font style</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getPopupTitleFontType()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        Typeface
+      </span>
+      <span class="sympad">getPopupTitleFontType</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the popup title font type.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the popup title font type</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="isShowFieldSeparator()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">isShowFieldSeparator</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Checks if is show field separator.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the mShowFieldSeparator</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="registerStylable(com.esri.android.map.popup.ArcGISPopupStyle.IPopupStylable)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">registerStylable</span>
+      <span class="normal">(ArcGISPopupStyle.IPopupStylable popupStylable)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Register stylable.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>popupStylable</td>
+          <td>the popup stylable</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setChartColors(int[])"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setChartColors</span>
+      <span class="normal">(int[] chartColors)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the chart colors.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>chartColors</td>
+          <td>the chartColors to set</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setCustomFieldSeparator(android.view.View)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setCustomFieldSeparator</span>
+      <span class="normal">(View customFieldSeparator)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the custom field separator.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>customFieldSeparator</td>
+          <td>the mCustomFieldSeparator to set</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setEditFieldColor(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setEditFieldColor</span>
+      <span class="normal">(int editFieldColor)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the edit field color.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>editFieldColor</td>
+          <td>the mEditFieldColor to set</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setFieldLabelColor(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setFieldLabelColor</span>
+      <span class="normal">(int color)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the field label color.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>color</td>
+          <td>the field label color</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setFieldLabelFontSize(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setFieldLabelFontSize</span>
+      <span class="normal">(int size)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the field label font size.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>size</td>
+          <td>the field label font size</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setFieldLabelFontType(android.graphics.Typeface)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setFieldLabelFontType</span>
+      <span class="normal">(Typeface type)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the field label font type.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>type</td>
+          <td>the field label font type</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setFieldLabelFontTypeAndStyle(android.graphics.Typeface, int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setFieldLabelFontTypeAndStyle</span>
+      <span class="normal">(Typeface type, int style)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the field label font type and style.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>type</td>
+          <td>the type</td>
+        </tr>
+        <tr>
+          <th>style</td>
+          <td>the style</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setFieldSeparatorColor(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setFieldSeparatorColor</span>
+      <span class="normal">(int fieldSeparatorColor)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the field separator color.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>fieldSeparatorColor</td>
+          <td>the fieldSeparatorColor to set</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setFieldSeparatorWidth(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setFieldSeparatorWidth</span>
+      <span class="normal">(int fieldSeparatorWidth)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the field separator width.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>fieldSeparatorWidth</td>
+          <td>the mFieldSeparatorWidth to set</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setFieldValueColor(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setFieldValueColor</span>
+      <span class="normal">(int fieldValueColor)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the field value color.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>fieldValueColor</td>
+          <td>the mFieldValueColor to set</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setFieldValueFontSize(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setFieldValueFontSize</span>
+      <span class="normal">(int fieldValueFontSize)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the field value font size.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>fieldValueFontSize</td>
+          <td>the mFieldValueFontSize to set</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setFieldValueFontStyle(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setFieldValueFontStyle</span>
+      <span class="normal">(int fieldValueFontStyle)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the field value font style.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>fieldValueFontStyle</td>
+          <td>the mFieldValueFontStyle to set</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setFieldValueFontType(android.graphics.Typeface)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setFieldValueFontType</span>
+      <span class="normal">(Typeface fieldValueFontType)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the field value font type.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>fieldValueFontType</td>
+          <td>the mFieldValueFontType to set</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setFieldValueFontTypeAndStyle(android.graphics.Typeface, int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setFieldValueFontTypeAndStyle</span>
+      <span class="normal">(Typeface fieldValueFontType, int fieldValueFontStyle)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the field value font type and style.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>fieldValueFontType</td>
+          <td>the field value font type</td>
+        </tr>
+        <tr>
+          <th>fieldValueFontStyle</td>
+          <td>the field value font style</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setMediaCaptionColor(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setMediaCaptionColor</span>
+      <span class="normal">(int mediaCaptionColor)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the media caption color.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>mediaCaptionColor</td>
+          <td>the mediaCaptionColor to set</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setMediaCaptionFontSize(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setMediaCaptionFontSize</span>
+      <span class="normal">(int mediaCaptionFontSize)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the media caption font size.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>mediaCaptionFontSize</td>
+          <td>the mediaCaptionFontSize to set</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setMediaCaptionFontStyle(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setMediaCaptionFontStyle</span>
+      <span class="normal">(int mediaCaptionFontStyle)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the media caption font style.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>mediaCaptionFontStyle</td>
+          <td>the mediaCaptionFontStyle to set</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setMediaCaptionFontType(android.graphics.Typeface)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setMediaCaptionFontType</span>
+      <span class="normal">(Typeface mediaCaptionFontType)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the media caption font type.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>mediaCaptionFontType</td>
+          <td>the media caption font type</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setMediaCaptionFontTypeAndStyle(android.graphics.Typeface, int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setMediaCaptionFontTypeAndStyle</span>
+      <span class="normal">(Typeface mediaCaptionFontType, int mediaCaptionFontStyle)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the media caption font type and style.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>mediaCaptionFontType</td>
+          <td>the media caption font type</td>
+        </tr>
+        <tr>
+          <th>mediaCaptionFontStyle</td>
+          <td>the media caption font style</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setMediaChartValuesColor(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setMediaChartValuesColor</span>
+      <span class="normal">(int mediaChartValuesColor)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the media chart values color.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>mediaChartValuesColor</td>
+          <td>the mediaChartValuesColor to set</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setMediaChartValuesFontSize(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setMediaChartValuesFontSize</span>
+      <span class="normal">(int mediaChartValuesFontSize)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the media chart values font size.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>mediaChartValuesFontSize</td>
+          <td>the mediaChartValuesFontSize to set</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setMediaChartValuesFontStyle(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setMediaChartValuesFontStyle</span>
+      <span class="normal">(int mediaChartValuesFontStyle)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the media chart values font style.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>mediaChartValuesFontStyle</td>
+          <td>the media chart values font style</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setMediaChartValuesFontType(android.graphics.Typeface)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setMediaChartValuesFontType</span>
+      <span class="normal">(Typeface mediaChartValuesFontType)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the media chart values font type.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>mediaChartValuesFontType</td>
+          <td>the mediaChartValuesFontType to set</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setMediaChartValuesFontTypeAndStyle(android.graphics.Typeface, int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setMediaChartValuesFontTypeAndStyle</span>
+      <span class="normal">(Typeface mediaChartValuesFontType, int mediaChartValuesFontStyle)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the media chart values font type and style.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>mediaChartValuesFontType</td>
+          <td>the media chart values font type</td>
+        </tr>
+        <tr>
+          <th>mediaChartValuesFontStyle</td>
+          <td>the media chart values font style</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setMediaFullScreenCaptionColor(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setMediaFullScreenCaptionColor</span>
+      <span class="normal">(int mediaFullScreenCaptionColor)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the media full screen caption color.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>mediaFullScreenCaptionColor</td>
+          <td>the mediaFullScreenCaptionColor to set</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setMediaFullScreenCaptionFontSize(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setMediaFullScreenCaptionFontSize</span>
+      <span class="normal">(int mediaFullScreenCaptionFontSize)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the media full screen caption font size.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>mediaFullScreenCaptionFontSize</td>
+          <td>the mediaFullScreenCaptionFontSize to set</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setMediaFullScreenCaptionFontStyle(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setMediaFullScreenCaptionFontStyle</span>
+      <span class="normal">(int mediaFullScreenCaptionFontStyle)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the media full screen caption font style.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>mediaFullScreenCaptionFontStyle</td>
+          <td>the mediaFullScreenCaptionFontStyle to set</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setMediaFullScreenCaptionFontType(android.graphics.Typeface)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setMediaFullScreenCaptionFontType</span>
+      <span class="normal">(Typeface mediaFullScreenCaptionFontType)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the media full screen caption font type.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>mediaFullScreenCaptionFontType</td>
+          <td>the mediaFullScreenCaptionFontType to set</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setMediaFullScreenCaptionFontTypeAndStyle(android.graphics.Typeface, int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setMediaFullScreenCaptionFontTypeAndStyle</span>
+      <span class="normal">(Typeface mediaFullScreenCaptionFontType, int mediaFullScreenCaptionFontStyle)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the media full screen caption font type and style.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>mediaFullScreenCaptionFontType</td>
+          <td>the media full screen caption font type</td>
+        </tr>
+        <tr>
+          <th>mediaFullScreenCaptionFontStyle</td>
+          <td>the media full screen caption font style</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setMediaFullScreenTitleColor(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setMediaFullScreenTitleColor</span>
+      <span class="normal">(int mediaFullScreenTitleColor)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the media full screen title color.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>mediaFullScreenTitleColor</td>
+          <td>the mediaFullScreenTitleColor to set</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setMediaFullScreenTitleFontSize(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setMediaFullScreenTitleFontSize</span>
+      <span class="normal">(int mediaFullScreenTitleFontSize)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the media full screen title font size.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>mediaFullScreenTitleFontSize</td>
+          <td>the mediaFullScreenTitleFontSize to set</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setMediaFullScreenTitleFontStyle(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setMediaFullScreenTitleFontStyle</span>
+      <span class="normal">(int mediaFullScreenTitleFontStyle)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the media full screen title font style.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>mediaFullScreenTitleFontStyle</td>
+          <td>the mediaFullScreenTitleFontStyle to set</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setMediaFullScreenTitleFontType(android.graphics.Typeface)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setMediaFullScreenTitleFontType</span>
+      <span class="normal">(Typeface mediaFullScreenTitleFontType)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the media full screen title font type.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>mediaFullScreenTitleFontType</td>
+          <td>the mediaFullScreenTitleFontType to set</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setMediaFullScreenTitleFontTypeAndStyle(android.graphics.Typeface, int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setMediaFullScreenTitleFontTypeAndStyle</span>
+      <span class="normal">(Typeface mediaFullScreenTitleFontType, int mediaFullScreenTitleFontStyle)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the media full screen title font type and style.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>mediaFullScreenTitleFontType</td>
+          <td>the media full screen title font type</td>
+        </tr>
+        <tr>
+          <th>mediaFullScreenTitleFontStyle</td>
+          <td>the media full screen title font style</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setPieChartColors(java.lang.String[])"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setPieChartColors</span>
+      <span class="normal">(String[] pieChartColors)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the pie chart colors.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>pieChartColors</td>
+          <td>the pieChartColors to set</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setPopupBackgroundColor(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setPopupBackgroundColor</span>
+      <span class="normal">(int color)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the popup background color.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>color</td>
+          <td>the popup background color</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setPopupTitleColor(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setPopupTitleColor</span>
+      <span class="normal">(int color)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the popup title color.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>color</td>
+          <td>the popup title color</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setPopupTitleFontSize(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setPopupTitleFontSize</span>
+      <span class="normal">(int size)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the popup title font size.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>size</td>
+          <td>the popup title font size</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setPopupTitleFontType(android.graphics.Typeface)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setPopupTitleFontType</span>
+      <span class="normal">(Typeface type)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the popup title font type.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>type</td>
+          <td>the popup title font type</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setPopupTitleFontTypeAndStyle(android.graphics.Typeface, int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setPopupTitleFontTypeAndStyle</span>
+      <span class="normal">(Typeface type, int style)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the popup title font type and style.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>type</td>
+          <td>the type</td>
+        </tr>
+        <tr>
+          <th>style</td>
+          <td>the style</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setShowFieldSeparator(boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setShowFieldSeparator</span>
+      <span class="normal">(boolean showFieldSeparator)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the show field separator.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>showFieldSeparator</td>
+          <td>the show field separator</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="unregisterStylable(com.esri.android.map.popup.ArcGISPopupStyle.IPopupStylable)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">unregisterStylable</span>
+      <span class="normal">(ArcGISPopupStyle.IPopupStylable popupStylable)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Unregister stylable.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>popupStylable</td>
+          <td>the popup stylable</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+
+
+
+<!-- ========= END OF CLASS DATA ========= -->
+<A NAME="navbar_top"></A>
+
+<div id="footer">
+
+</div> <!-- end footer -->
+
+</div> <!-- jd-content -->
+
+</div><!-- end doc-content -->
+
+</div> <!-- end body-content --> 
+
+<script type="text/javascript">
+init(); /* initialize android-developer-docs.js */
+</script>
+
+</body>
+</html>

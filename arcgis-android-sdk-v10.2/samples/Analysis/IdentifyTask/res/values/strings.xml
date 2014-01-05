@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, IdentifyTask!</string>
+    <string name="app_name">IdentifyTask</string>
+    
+    <!-- Service URL's -->
+    <string name="basemap_url">http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer</string>
+    <string name="identify_task_url">http://services.arcgisonline.com/ArcGIS/rest/services/Demographics/USA_Average_Household_Size/MapServer</string>
+</resources>

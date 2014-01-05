@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:id="@+id/offlinerdownloadlayout">
+    
+   
+        <Button android:id="@+id/loadLayers"
+	    		android:background="@drawable/offlineloadlayerselector"
+	    		android:paddingLeft="25dp"
+	    		android:layout_marginLeft="20dp"
+	    		android:layout_marginTop="4dp"
+	    		android:layout_marginBottom="4dp"
+	    		android:enabled="true"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:onClick="loadLayers"							
+				/>
+		<Button android:id="@+id/downloadGdb"
+	    		android:background="@drawable/offlinegdbdownloadselector"
+	    		android:paddingLeft="25dp"
+	    		android:layout_marginLeft="20dp"
+	    		android:layout_marginTop="4dp"
+	    		android:layout_marginBottom="4dp"	    		
+	    		android:enabled="true"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:onClick="downloadGdb" 
+				/>
+		<RelativeLayout android:layout_width="wrap_content"
+		    android:layout_height="wrap_content">
+		    <ToggleButton android:id="@+id/switchBasemap"
+		      android:paddingLeft="25dp"
+		      android:paddingRight="25dp"
+	    		android:layout_marginLeft="20dp"
+	    		android:layout_marginTop="4dp"  
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"		    
+		    android:layout_alignParentRight="true"		    
+		    android:textOn="On"
+		    android:textOff="Off"
+		    android:checked="false"
+		    android:onClick="switchLocalBasemap"/>     
+		</RelativeLayout>
+		   
+   
+</LinearLayout>

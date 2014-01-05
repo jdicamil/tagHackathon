@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent" android:layout_height="fill_parent"
+android:orientation="vertical"
+>		
+	         
+	<com.esri.android.map.MapView 
+     xmlns:android="http://schemas.android.com/apk/res/android" 
+     android:id="@+id/map" android:layout_width="fill_parent" 
+     android:layout_height="fill_parent"
+     initExtent="-1.3296373526814876E7 3930962.41823043 -1.2807176545789773E7 4201243.7502468005"/>
+     <ImageButton
+     android:layout_width="wrap_content" 
+     android:layout_height="wrap_content"
+     android:id="@+id/test"
+     android:background="@drawable/picture"
+     >
+     </ImageButton>
+<!--		<view-->
+<!--		class = "com.esri.arcgis.android.samples.maprotation.Compass"-->
+<!--		android:layout_width="wrap_content"-->
+<!--	    android:layout_height="wrap_content"-->
+<!--	    android:layout_weight="1"-->
+<!--		/>-->
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+What's new at 10.2
+
+This topic describes changes in version 10.2 of ArcGIS Runtime SDK for Android. Use the Update tool provided with the SDK to update your ArcGIS projects to the latest version.
+
+## New in the API
+
+* Simplification of the API
+* New Feature interface for working with Features (beta) and Graphics
+* New static and dynamic mode for graphics layers and feature layers for different drawing performance options
+* Build apps for the Marketplace and ArcGIS Online using OAuth with the OAuthView
+* Picture fill symbol
+* New Hardware accelerated map Magnifier
+* Support for ArcGIS Server dynamic layers
+* Coordinate conversion methods in the GeometryEngine
+* Geodesic length, offset, ellipse and sector operations in the GeometryEngine
+* ArcGIS Server Advanced symbology support for feature layers
+* Composite Symbol
+* Methods to intercept HTTP requests to add headers/cookies etc
+* Updates to the Portal API to support new properties
+* Support geometries that have Z and M values
+* Symbol classes have fluent interface
+* New CalloutPopupWindow
+* Support Portal for ArcGIS 10.2 (all security types (PKI, HTTP, Token), federated and hosted services)
+* Customize popups using XML
+* FeatureServiceInfo and MapServiceInfo in new com.esri.core.ags package (includes other stuff)
+  * lots of stuff to look server metadata
+* MessageGroupLayer has new SymbolScaleFactor in constructor
+
+## New in the API as beta
+* Take on premise tiled services offline with the TileCacheTask
+* Take operational data in hosted feature services offline with the GeodatabaseTask
+* A new FeatureLayer and FeatureTable API for working with offline features, layers and tables
+* Service defined Labels for feature layers
+* Edit offline and sync your changes back to the server with the GeodatabaseTask
+* Offline Routing and Geocoding tasks that work with your own locators and networks
+
+## New in the SDK
+* New local install of the SDK for working in IDEs other than Eclipse
+* New Samples wizard for exclusive integration with samples from ArcGIS Online
+* App framework component
+* X86 binaries/support
+
+## Changes
+* removed deprecated methods
+* moved getSymbolImage from graphics layer
+* MapOnTouchListener.OnLongPressListener return boolean
+* Renderer<V> - removed generic type
+* Portal.findSharingUrl(), doOAuthAppAuthenticate() throw exception
+
+## Issues addressed
+* OpenGL error log - still shows but don't panic.
+
+## Known limitations
+* The server does not remove replicas after a certain amount of time, which could result in the server running out of disk space. Have your clients call unregisterSyncEnabledGeodabase() to clean up replicas.

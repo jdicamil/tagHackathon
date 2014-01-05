@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- app strings -->
+    <string name="app_name">Create Json Features</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_online_map">Create Json Features</string>
+    <!-- button strings -->
+    <string name="button_startsketch_text">Start Sketch</string>
+    <string name="button_savesketch_text">Save Sketch</string>
+    <string name="button_submit_text">Query Features</string>
+    <string name="button_send">View Offline Features</string>
+    <!-- map service -->
+    <string name="basemap_url">http://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer</string>
+    <string name="featurelayer_url">http://mobilesampleserver.arcgisonline.com/ArcGIS/rest/services/DemoData/WindfarmSDKDemo/FeatureServer/0</string>
+</resources>

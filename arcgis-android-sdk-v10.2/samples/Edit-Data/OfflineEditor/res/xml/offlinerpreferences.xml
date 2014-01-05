@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <EditTextPreference
+        android:key="fsurl"
+        android:title="@string/fsurl_title"
+        android:defaultValue="@string/fsurl_default" />
+    <EditTextPreference
+        android:key="layerIds"
+        android:title="@string/layerIds_title"        
+        android:defaultValue="@string/layerIds_default" />
+    <EditTextPreference
+        android:key="gdbfilename"
+        android:title="@string/gdbfilename_title"
+        android:defaultValue="@string/gdbfilename_default" />
+     <EditTextPreference
+        android:key="returnAttachments"
+        android:title="@string/returnAttachments_title"
+        android:defaultValue="@string/returnAttachments_default" />
+     <EditTextPreference
+        android:key="syncModel"
+        android:title="@string/syncModel_title"
+        android:defaultValue="@string/syncModel_default" />
+    <EditTextPreference
+        android:key="tpkfilename"
+        android:title="@string/tpk_title"
+        android:defaultValue="@string/tpk_default" />
+    
+</PreferenceScreen>

@@ -1,0 +1,41 @@
+Developing with the ArcGIS Runtime SDK for Android and Intellij IDEA
+
+JetBrains IntelliJ IDEA Community Edition offers advanced support for development of Android applications.  Follow the instructions below to set up an IntelliJ IDEA project for ArcGIS Android development.  
+
+Create a New Android Module Project
+IntelliJ IDEA supports Android development much in the same way the ADT extends Eclipse for Android development.  It offers excellent code assistance, integrated logcat, layout preview, lint, etc.  Refer to the IntelliJ IDEA Web Help system to enable Android support (https://www.jetbrains.com/idea/webhelp/enabling-android-support.html).  Once you have Android support enabled you can create a New Android Project (http://confluence.jetbrains.com/display/IntelliJIDEA/Create+a+New+Android+Project).
+
+Add ArcGIS Android API native libraries
+1. Copy the ArcGIS API native libraries to the libs folder in your IntelliJ IDEA Android Project
+  - <arcgis-install-dir>/libs/armeabi/libruntimecore_java.so
+  - <arcgis-install-dir>/libs/armeabi-v7a/libruntimecore_java.so
+  - <arcgis-install-dir>/libs/x86/libruntimecore_java.so
+
+Create an ArcGIS Android Global Library
+Creating a global library will allow you to add ArcGIS module dependency to any valid Android project.
+
+1. Right click your Android Project and select Open Module Settings.
+2. Under Platform Settings select Global Libraries.
+3. Click the New Global Library button.
+4. Select Java from the New Global Library drop down.
+5. Navigate to the location of the <arcgis-install-dir>/libs folder from the Select Library Files dialog.
+6. Select the the following jar files.
+  - arcgis-android-api.jar
+  - jackson-core-lgpl-1.9.5.jar
+  - jackson-mapper-lgpl-1.9.5.jar
+  - jcifs-1.3.17.jar
+7. Click OK.
+8. With the Project Structure dialog still open, select Modules under Project Settings.
+9. You should see the arcgis-android-api module listed, check the Export check box to ensure the jars are included with your project during deployment.
+10. Click OK to exit the Project Structure dialog.
+
+Update the Android Manifest
+Open your Android Manifest file by double clicking on the AndroidManifest.xml file in your project directory.  Add the following elements to your projects manifest under <uses -sdk> and above the <application> elements.
+
+    <uses-feature android:glEsVersion="0x00020000" android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+Now you are ready to start programming with the ArcGIS Android API.

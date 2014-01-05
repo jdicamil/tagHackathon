@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
+<title>
+
+  com.esri.core.geometry |
+
+
+  ArcGIS Android 10.2.0 API
+
+</title>
+<link href="../../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
+<link href="../../../../../assets/customizations.css" rel="stylesheet" type="text/css" />
+<script src="../../../../../assets/search_autocomplete.js" type="text/javascript"></script>
+<script src="../../../../../assets/jquery-resizable.min.js" type="text/javascript"></script>
+<script src="../../../../../assets/doclava-developer-docs.js" type="text/javascript"></script>
+<script src="../../../../../assets/prettify.js" type="text/javascript"></script>
+<script type="text/javascript">
+  setToRoot("../../../../../");
+</script>
+<script src="../../../../../assets/doclava-developer-reference.js" type="text/javascript"></script>
+<script src="../../../../../navtree_data.js" type="text/javascript"></script>
+<script src="../../../../../assets/customizations.js" type="text/javascript"></script>
+<noscript>
+  <style type="text/css">
+    html,body{overflow:auto;}
+    #body-content{position:relative; top:0;}
+    #doc-content{overflow:visible;border-left:3px solid #666;}
+    #side-nav{padding:0;}
+    #side-nav .toggle-list ul {display:block;}
+    #resize-packages-nav{border-bottom:3px solid #666;}
+  </style>
+</noscript>
+</head>
+
+<body class="">
+
+<div id="header">
+    <div id="headerLeft">
+   		<span id="masthead-title">ArcGIS Android 10.2.0 API</span>
+    </div>
+    <div id="headerRight">
+        
+  <div id="search" >
+      <div id="searchForm">
+          <form accept-charset="utf-8" class="gsc-search-box" 
+                onsubmit="return submit_search()">
+            <table class="gsc-search-box" cellpadding="0" cellspacing="0"><tbody>
+                <tr>
+                  <td class="gsc-input">
+                    <input id="search_autocomplete" class="gsc-input" type="text" size="33" autocomplete="off"
+                      title="search developer docs" name="q"
+                      value="search developer docs"
+                      onFocus="search_focus_changed(this, true)"
+                      onBlur="search_focus_changed(this, false)"
+                      onkeydown="return search_changed(event, true, '../../../../../')"
+                      onkeyup="return search_changed(event, false, '../../../../../')" />
+                  <div id="search_filtered_div" class="no-display">
+                      <table id="search_filtered" cellspacing=0>
+                      </table>
+                  </div>
+                  </td>
+                  <td class="gsc-search-button">
+                    <input type="submit" value="Search" title="search" id="search-button" class="gsc-search-button" />
+                  </td>
+                  <td class="gsc-clear-button">
+                    <div title="clear results" class="gsc-clear-button">&nbsp;</div>
+                  </td>
+                </tr></tbody>
+              </table>
+          </form>
+      </div><!-- searchForm -->
+  </div><!-- search -->
+    </div><!-- headerRight -->
+</div><!-- header -->
+
+
+  <div class="g-section g-tpl-240" id="body-content">
+    <div class="g-unit g-first side-nav-resizable" id="side-nav">
+      <div id="swapper">
+        <div id="nav-panels">
+          <div id="resize-packages-nav">
+            <div id="packages-nav">
+              <div id="index-links"><nobr>
+                <a href="../../../../../reference/packages.html"  >Package Index</a> | 
+                <a href="../../../../../reference/classes.html" >Class Index</a></nobr>
+              </div>
+              <ul>
+                
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/android/action/package-summary.html">com.esri.android.action</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/android/map/package-summary.html">com.esri.android.map</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/android/map/ags/package-summary.html">com.esri.android.map.ags</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/android/map/bing/package-summary.html">com.esri.android.map.bing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/android/map/event/package-summary.html">com.esri.android.map.event</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/android/map/ogc/package-summary.html">com.esri.android.map.ogc</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/android/map/osm/package-summary.html">com.esri.android.map.osm</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/android/map/popup/package-summary.html">com.esri.android.map.popup</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/android/oauth/package-summary.html">com.esri.android.oauth</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/ags/package-summary.html">com.esri.core.ags</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/gdb/package-summary.html">com.esri.core.gdb</a></li>
+    <li class="selected api apilevel-">
+  <a href="../../../../../reference/com/esri/core/geometry/package-summary.html">com.esri.core.geometry</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/io/package-summary.html">com.esri.core.io</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/map/package-summary.html">com.esri.core.map</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/map/bing/package-summary.html">com.esri.core.map.bing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/map/popup/package-summary.html">com.esri.core.map.popup</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/portal/package-summary.html">com.esri.core.portal</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/renderer/package-summary.html">com.esri.core.renderer</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/symbol/package-summary.html">com.esri.core.symbol</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/symbol/advanced/package-summary.html">com.esri.core.symbol.advanced</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/table/package-summary.html">com.esri.core.table</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/tasks/package-summary.html">com.esri.core.tasks</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/tasks/ags/package-summary.html">com.esri.core.tasks.ags</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/tasks/ags/find/package-summary.html">com.esri.core.tasks.ags.find</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/tasks/ags/geocode/package-summary.html">com.esri.core.tasks.ags.geocode</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/tasks/ags/geoprocessing/package-summary.html">com.esri.core.tasks.ags.geoprocessing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/tasks/ags/identify/package-summary.html">com.esri.core.tasks.ags.identify</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/tasks/ags/na/package-summary.html">com.esri.core.tasks.ags.na</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/tasks/ags/query/package-summary.html">com.esri.core.tasks.ags.query</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/tasks/gdb/package-summary.html">com.esri.core.tasks.gdb</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/tasks/geocode/package-summary.html">com.esri.core.tasks.geocode</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/tasks/na/package-summary.html">com.esri.core.tasks.na</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/tasks/oauth/package-summary.html">com.esri.core.tasks.oauth</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/tasks/query/package-summary.html">com.esri.core.tasks.query</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/esri/core/tasks/tilecache/package-summary.html">com.esri.core.tasks.tilecache</a></li>
+              </ul><br/>
+            </div> <!-- end packages -->
+          </div> <!-- end resize-packages -->
+          <div id="classes-nav">
+            <ul>
+              
+    <li><h2>Interfaces</h2>
+      <ul>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/AngularUnit.Code.html">AngularUnit.Code</a></li>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/AreaUnit.Code.html">AreaUnit.Code</a></li>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/LinearUnit.Code.html">LinearUnit.Code</a></li>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/MgrsConversionMode.html">MgrsConversionMode</a></li>
+      </ul>
+    </li>
+              
+    <li><h2>Classes</h2>
+      <ul>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/AngularUnit.html">AngularUnit</a></li>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/AreaUnit.html">AreaUnit</a></li>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/CompositeGeographicTransformation.html">CompositeGeographicTransformation</a></li>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/CoordinateConversion.html">CoordinateConversion</a></li>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/Envelope.html">Envelope</a></li>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/GeographicTransformation.html">GeographicTransformation</a></li>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/Geometry.html">Geometry</a></li>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/GeometryEngine.html">GeometryEngine</a></li>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/Latlon.html">Latlon</a></li>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/Line.html">Line</a></li>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/LinearUnit.html">LinearUnit</a></li>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/MapGeometry.html">MapGeometry</a></li>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/MultiPath.html">MultiPath</a></li>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/MultiPoint.html">MultiPoint</a></li>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/Point.html">Point</a></li>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/Polygon.html">Polygon</a></li>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/Polyline.html">Polyline</a></li>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/ProjectionTransformation.html">ProjectionTransformation</a></li>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/Proximity2DResult.html">Proximity2DResult</a></li>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/Segment.html">Segment</a></li>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/SegmentIterator.html">SegmentIterator</a></li>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/SpatialReference.html">SpatialReference</a></li>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/Transformation2D.html">Transformation2D</a></li>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/Unit.html">Unit</a></li>
+      </ul>
+    </li>
+              
+    <li><h2>Enums</h2>
+      <ul>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/CoordinateConversion.GARSConversionMode.html">CoordinateConversion.GARSConversionMode</a></li>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/CoordinateConversion.MGRSConversionMode.html">CoordinateConversion.MGRSConversionMode</a></li>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/CoordinateConversion.UTMConversionMode.html">CoordinateConversion.UTMConversionMode</a></li>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/Geometry.Type.html">Geometry.Type</a></li>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/GeometryEngine.JoinType.html">GeometryEngine.JoinType</a></li>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/SpatialReference.Type.html">SpatialReference.Type</a></li>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/Unit.EsriUnit.html">Unit.EsriUnit</a></li>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/Unit.UnitType.html">Unit.UnitType</a></li>
+      </ul>
+    </li>
+              
+    <li><h2>Exceptions</h2>
+      <ul>
+        <li class="api apilevel-"><a href="../../../../../reference/com/esri/core/geometry/GeometryException.html">GeometryException</a></li>
+      </ul>
+    </li>
+              
+            </ul><br/>
+          </div><!-- end classes -->
+        </div><!-- end nav-panels -->
+        <div id="nav-tree" style="display:none">
+          <div id="index-links"><nobr>
+            <a href="../../../../../reference/packages.html"  >Package Index</a> | 
+            <a href="../../../../../reference/classes.html" >Class Index</a></nobr>
+          </div>
+        </div><!-- end nav-tree -->
+      </div><!-- end swapper -->
+    </div> <!-- end side-nav -->
+    <script>
+      if (!isMobile) {
+        $("<a href='#' id='nav-swap' onclick='swapNav();return false;' style='font-size:10px;line-height:9px;margin-left:1em;text-decoration:none;'><span id='tree-link'>Use Tree Navigation</span><span id='panel-link' style='display:none'>Use Panel Navigation</span></a>").appendTo("#side-nav");
+        chooseDefaultNav();
+        if ($("#nav-tree").is(':visible')) {
+          init_default_navtree("../../../../../");
+        } else {
+          addLoadEvent(function() {
+            scrollIntoView("packages-nav");
+            scrollIntoView("classes-nav");
+          });
+        }
+        $("#swapper").css({borderBottom:"2px solid #aaa"});
+      } else {
+        swapNav(); // tree view should be used on mobile
+      }
+    </script>
+
+
+
+<div class="g-unit" id="doc-content">
+
+<div id="api-info-block">
+<div class="api-level">
+  
+  
+  
+
+</div>
+</div>
+
+<div id="jd-header">
+  package
+  <h1>com.esri.core.geometry</h1>
+</div><!-- end header -->
+
+<div id="naMessage"></div>
+
+<div id="jd-content" class="api apilevel-">
+
+
+  <div class="jd-descr">
+    Provides classes for different types of geometries, such as Points, Lines or Polylines, Polygons, and for geometric calculations such as buffering, simplifying, calculating areas and lengths, and projecting.
+
+  </div>
+
+
+
+
+
+  
+    <h2>Interfaces</h2>
+    <div class="jd-sumtable">
+    
+  <table class="jd-sumtable-expando">
+        <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/AngularUnit.Code.html">AngularUnit.Code</a></td>
+              <td class="jd-descrcol" width="100%">The codes defined for the angular units.&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/AreaUnit.Code.html">AreaUnit.Code</a></td>
+              <td class="jd-descrcol" width="100%">Area unit codes.&nbsp;</td>
+          </tr>
+        <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/LinearUnit.Code.html">LinearUnit.Code</a></td>
+              <td class="jd-descrcol" width="100%">Linear Unit codes&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/MgrsConversionMode.html">MgrsConversionMode</a></td>
+              <td class="jd-descrcol" width="100%">
+      <em>This interface was deprecated
+      in API level .
+      Instead, use <code><a href="../../../../../reference/com/esri/core/geometry/CoordinateConversion.MGRSConversionMode.html">CoordinateConversion.MGRSConversionMode</a></code>.
+  </em>&nbsp;</td>
+          </tr>
+  </table>
+    </div>
+  
+
+
+  
+    <h2>Classes</h2>
+    <div class="jd-sumtable">
+    
+  <table class="jd-sumtable-expando">
+        <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/AngularUnit.html">AngularUnit</a></td>
+              <td class="jd-descrcol" width="100%">The units to measure angles.&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/AreaUnit.html">AreaUnit</a></td>
+              <td class="jd-descrcol" width="100%">The units to measure for areas.&nbsp;</td>
+          </tr>
+        <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/CompositeGeographicTransformation.html">CompositeGeographicTransformation</a></td>
+              <td class="jd-descrcol" width="100%">Transformation that contains a ordered list of <code><a href="../../../../../reference/com/esri/core/geometry/GeographicTransformation.html">GeographicTransformation</a></code>.&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/CoordinateConversion.html">CoordinateConversion</a></td>
+              <td class="jd-descrcol" width="100%">The CoordinateConversion class contains a number of static methods which are
+ for converting between Point and coordinate strings.&nbsp;</td>
+          </tr>
+        <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/Envelope.html">Envelope</a></td>
+              <td class="jd-descrcol" width="100%">Envelopes are the rectangular window that contain a specific element.&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/GeographicTransformation.html">GeographicTransformation</a></td>
+              <td class="jd-descrcol" width="100%">Transformation to project from one spatial reference to another.&nbsp;</td>
+          </tr>
+        <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/Geometry.html">Geometry</a></td>
+              <td class="jd-descrcol" width="100%">Geometries are objects that define a spatial location and an associated geometric shape.&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/GeometryEngine.html">GeometryEngine</a></td>
+              <td class="jd-descrcol" width="100%">This class provides a set of static methods to perform geometric 
+ operations on geometry instances.&nbsp;</td>
+          </tr>
+        <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/Latlon.html">Latlon</a></td>
+              <td class="jd-descrcol" width="100%">Utility class providing convenience methods to create geometries from latitude and longitude 
+ coordinates.&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/Line.html">Line</a></td>
+              <td class="jd-descrcol" width="100%">A straight line between a pair of points.&nbsp;</td>
+          </tr>
+        <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/LinearUnit.html">LinearUnit</a></td>
+              <td class="jd-descrcol" width="100%">Unit for measurement of dimensions.&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/MapGeometry.html">MapGeometry</a></td>
+              <td class="jd-descrcol" width="100%">The MapGeometry class bundles the geometry with its spatial reference together.&nbsp;</td>
+          </tr>
+        <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/MultiPath.html">MultiPath</a></td>
+              <td class="jd-descrcol" width="100%">The MulitPath class is a base class for polygons and polylines.&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/MultiPoint.html">MultiPoint</a></td>
+              <td class="jd-descrcol" width="100%">A Multipoint is a collection of points.&nbsp;</td>
+          </tr>
+        <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/Point.html">Point</a></td>
+              <td class="jd-descrcol" width="100%">A Point is a zero-dimensional object that represents a specific (X,Y) location in a two-dimensional XY-Plane.&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/Polygon.html">Polygon</a></td>
+              <td class="jd-descrcol" width="100%">A polygon is a collection of one or many interior or exterior rings.&nbsp;</td>
+          </tr>
+        <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/Polyline.html">Polyline</a></td>
+              <td class="jd-descrcol" width="100%">A polyline is a collection of one or many paths.&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/ProjectionTransformation.html">ProjectionTransformation</a></td>
+              <td class="jd-descrcol" width="100%">Class to indicate a projection transformation to transform a geometry from one
+ spatial reference to another.&nbsp;</td>
+          </tr>
+        <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/Proximity2DResult.html">Proximity2DResult</a></td>
+              <td class="jd-descrcol" width="100%">Proximity operators are used to find the distance between two geometries or the distance from a given point to the nearest point on another geometry.&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/Segment.html">Segment</a></td>
+              <td class="jd-descrcol" width="100%">A base class for segments.&nbsp;</td>
+          </tr>
+        <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/SegmentIterator.html">SegmentIterator</a></td>
+              <td class="jd-descrcol" width="100%">This class provides functionality to iterate over multipath segments.&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/SpatialReference.html">SpatialReference</a></td>
+              <td class="jd-descrcol" width="100%">An abstract class that represents the spatial reference of a geometry.&nbsp;</td>
+          </tr>
+        <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/Transformation2D.html">Transformation2D</a></td>
+              <td class="jd-descrcol" width="100%">The affine transformation class for 2D.&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/Unit.html">Unit</a></td>
+              <td class="jd-descrcol" width="100%">A base class for units.&nbsp;</td>
+          </tr>
+  </table>
+    </div>
+  
+
+
+  
+    <h2>Enums</h2>
+    <div class="jd-sumtable">
+    
+  <table class="jd-sumtable-expando">
+        <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/CoordinateConversion.GARSConversionMode.html">CoordinateConversion.GARSConversionMode</a></td>
+              <td class="jd-descrcol" width="100%">Global area System conversion options.&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/CoordinateConversion.MGRSConversionMode.html">CoordinateConversion.MGRSConversionMode</a></td>
+              <td class="jd-descrcol" width="100%">Military Grid System conversion options.&nbsp;</td>
+          </tr>
+        <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/CoordinateConversion.UTMConversionMode.html">CoordinateConversion.UTMConversionMode</a></td>
+              <td class="jd-descrcol" width="100%">Universal Transverse Mercator System conversion options.&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/Geometry.Type.html">Geometry.Type</a></td>
+              <td class="jd-descrcol" width="100%">The type of this geometry.&nbsp;</td>
+          </tr>
+        <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/GeometryEngine.JoinType.html">GeometryEngine.JoinType</a></td>
+              <td class="jd-descrcol" width="100%">Join types for the geodesic offset operation.&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/SpatialReference.Type.html">SpatialReference.Type</a></td>
+              <td class="jd-descrcol" width="100%">The spatial reference type can be local, geographic, or projected.&nbsp;</td>
+          </tr>
+        <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/Unit.EsriUnit.html">Unit.EsriUnit</a></td>
+              <td class="jd-descrcol" width="100%">&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/Unit.UnitType.html">Unit.UnitType</a></td>
+              <td class="jd-descrcol" width="100%">Unit type (linear, angular, or area)&nbsp;</td>
+          </tr>
+  </table>
+    </div>
+  
+
+
+  
+    <h2>Exceptions</h2>
+    <div class="jd-sumtable">
+    
+  <table class="jd-sumtable-expando">
+        <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/esri/core/geometry/GeometryException.html">GeometryException</a></td>
+              <td class="jd-descrcol" width="100%">A runtime exception raised when a geometry related exception occurs.&nbsp;</td>
+          </tr>
+  </table>
+    </div>
+  
+
+
+  
+
+
+<div id="footer">
+
+</div> <!-- end footer -->
+
+</div><!-- end jd-content -->
+</div><!-- doc-content -->
+
+</div> <!-- end body-content --> 
+
+<script type="text/javascript">
+init(); /* initialize android-developer-docs.js */
+</script>
+
+</body>
+</html>

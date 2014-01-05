@@ -1,0 +1,1783 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="shortcut icon" type="image/x-icon" href="../../../../../../favicon.ico" />
+<title>
+
+  MapViewHelper |
+
+
+  ArcGIS Android Application Framework 10.2.0 API
+
+</title>
+<link href="../../../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
+<link href="../../../../../../assets/customizations.css" rel="stylesheet" type="text/css" />
+<script src="../../../../../../assets/search_autocomplete.js" type="text/javascript"></script>
+<script src="../../../../../../assets/jquery-resizable.min.js" type="text/javascript"></script>
+<script src="../../../../../../assets/doclava-developer-docs.js" type="text/javascript"></script>
+<script src="../../../../../../assets/prettify.js" type="text/javascript"></script>
+<script type="text/javascript">
+  setToRoot("../../../../../../");
+</script>
+<script src="../../../../../../assets/doclava-developer-reference.js" type="text/javascript"></script>
+<script src="../../../../../../navtree_data.js" type="text/javascript"></script>
+<script src="../../../../../../assets/customizations.js" type="text/javascript"></script>
+<noscript>
+  <style type="text/css">
+    html,body{overflow:auto;}
+    #body-content{position:relative; top:0;}
+    #doc-content{overflow:visible;border-left:3px solid #666;}
+    #side-nav{padding:0;}
+    #side-nav .toggle-list ul {display:block;}
+    #resize-packages-nav{border-bottom:3px solid #666;}
+  </style>
+</noscript>
+</head>
+
+<body class="" itemscope itemtype="http://schema.org/Article">
+
+<div id="header">
+    <div id="headerLeft">
+   		<span id="masthead-title">ArcGIS Android Application Framework 10.2.0 API</span>
+    </div>
+    <div id="headerRight">
+        
+  <div id="search" >
+      <div id="searchForm">
+          <form accept-charset="utf-8" class="gsc-search-box" 
+                onsubmit="return submit_search()">
+            <table class="gsc-search-box" cellpadding="0" cellspacing="0"><tbody>
+                <tr>
+                  <td class="gsc-input">
+                    <input id="search_autocomplete" class="gsc-input" type="text" size="33" autocomplete="off"
+                      title="search developer docs" name="q"
+                      value="search developer docs"
+                      onFocus="search_focus_changed(this, true)"
+                      onBlur="search_focus_changed(this, false)"
+                      onkeydown="return search_changed(event, true, '../../../../../../')"
+                      onkeyup="return search_changed(event, false, '../../../../../../')" />
+                  <div id="search_filtered_div" class="no-display">
+                      <table id="search_filtered" cellspacing=0>
+                      </table>
+                  </div>
+                  </td>
+                  <td class="gsc-search-button">
+                    <input type="submit" value="Search" title="search" id="search-button" class="gsc-search-button" />
+                  </td>
+                  <td class="gsc-clear-button">
+                    <div title="clear results" class="gsc-clear-button">&nbsp;</div>
+                  </td>
+                </tr></tbody>
+              </table>
+          </form>
+      </div><!-- searchForm -->
+  </div><!-- search -->
+    </div><!-- headerRight -->
+</div><!-- header -->
+
+
+  <div class="g-section g-tpl-240" id="body-content">
+    <div class="g-unit g-first side-nav-resizable" id="side-nav">
+      <div id="swapper">
+        <div id="nav-panels">
+          <div id="resize-packages-nav">
+            <div id="packages-nav">
+              <div id="index-links"><nobr>
+                <a href="../../../../../../reference/packages.html"  >Package Index</a> | 
+                <a href="../../../../../../reference/classes.html" >Class Index</a></nobr>
+              </div>
+              <ul>
+                
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/android/appframework/geocode/package-summary.html">com.esri.android.appframework.geocode</a></li>
+    <li class="selected api apilevel-">
+  <a href="../../../../../../reference/com/esri/android/appframework/map/package-summary.html">com.esri.android.appframework.map</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/esri/android/appframework/util/package-summary.html">com.esri.android.appframework.util</a></li>
+              </ul><br/>
+            </div> <!-- end packages -->
+          </div> <!-- end resize-packages -->
+          <div id="classes-nav">
+            <ul>
+              
+    <li><h2>Interfaces</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/appframework/map/OnCalloutClickListener.html">OnCalloutClickListener</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/appframework/map/OnGraphicClickListener.html">OnGraphicClickListener</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/esri/android/appframework/map/PopupCreateListener.html">PopupCreateListener</a></li>
+      </ul>
+    </li>
+              
+    <li><h2>Classes</h2>
+      <ul>
+          <li class="selected api apilevel-"><a href="../../../../../../reference/com/esri/android/appframework/map/MapViewHelper.html">MapViewHelper</a></li>
+      </ul>
+    </li>
+              
+              
+              
+            </ul><br/>
+          </div><!-- end classes -->
+        </div><!-- end nav-panels -->
+        <div id="nav-tree" style="display:none">
+          <div id="index-links"><nobr>
+            <a href="../../../../../../reference/packages.html"  >Package Index</a> | 
+            <a href="../../../../../../reference/classes.html" >Class Index</a></nobr>
+          </div>
+        </div><!-- end nav-tree -->
+      </div><!-- end swapper -->
+    </div> <!-- end side-nav -->
+    <script>
+      if (!isMobile) {
+        $("<a href='#' id='nav-swap' onclick='swapNav();return false;' style='font-size:10px;line-height:9px;margin-left:1em;text-decoration:none;'><span id='tree-link'>Use Tree Navigation</span><span id='panel-link' style='display:none'>Use Panel Navigation</span></a>").appendTo("#side-nav");
+        chooseDefaultNav();
+        if ($("#nav-tree").is(':visible')) {
+          init_default_navtree("../../../../../../");
+        } else {
+          addLoadEvent(function() {
+            scrollIntoView("packages-nav");
+            scrollIntoView("classes-nav");
+          });
+        }
+        $("#swapper").css({borderBottom:"2px solid #aaa"});
+      } else {
+        swapNav(); // tree view should be used on mobile
+      }
+    </script>
+
+
+
+<div class="g-unit" id="doc-content">
+
+<div id="api-info-block">
+
+
+
+  
+   
+  
+  
+  
+  
+
+
+<div class="sum-details-links">
+
+Summary:
+
+
+
+
+
+
+
+
+
+  <a href="#pubctors">Ctors</a>
+  
+
+
+
+  &#124; <a href="#pubmethods">Methods</a>
+  
+
+
+
+  &#124; <a href="#inhmethods">Inherited Methods</a>
+
+&#124; <a href="#" onclick="return toggleAllClassInherited()" id="toggleAllClassInherited">[Expand All]</a>
+
+</div><!-- end sum-details-links -->
+<div class="api-level">
+  
+  
+  
+
+</div>
+</div><!-- end api-info-block -->
+
+
+<!-- ======== START OF CLASS DATA ======== -->
+
+<div id="jd-header">
+    public
+     
+     
+    
+    class
+<h1 itemprop="name">MapViewHelper</h1>
+
+
+
+  
+    extends Object<br/>
+  
+  
+  
+
+  
+  
+  
+
+
+</div><!-- end header -->
+
+<div id="naMessage"></div>
+
+<div id="jd-content" class="api apilevel-">
+<table class="jd-inheritance-table">
+
+
+    <tr>
+         	
+        <td colspan="2" class="jd-inheritance-class-cell">java.lang.Object</td>
+    </tr>
+    
+
+    <tr>
+        
+            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
+         	
+        <td colspan="1" class="jd-inheritance-class-cell">com.esri.android.appframework.map.MapViewHelper</td>
+    </tr>
+    
+
+</table>
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+
+
+
+
+</div><!-- jd-descr -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Summary</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<table id="pubctors" class="jd-sumtable"><tr><th colspan="12">Public Constructors</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            </nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/appframework/map/MapViewHelper.html#MapViewHelper(MapView)">MapViewHelper</a></span>(MapView mapView)</nobr>
+        
+        <div class="jd-descrdiv">Creates a MapViewHelper.</div>
+  
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="pubmethods" class="jd-sumtable"><tr><th colspan="12">Public Methods</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/appframework/map/MapViewHelper.html#addMarkerGraphic(double, double, java.lang.String, java.lang.String, java.lang.String, android.graphics.drawable.Drawable, boolean, int)">addMarkerGraphic</a></span>(double lat, double lon, String title, String snippet, String url, Drawable icon, boolean draggable, int zorder)</nobr>
+        
+        <div class="jd-descrdiv">Adds a point graphic to the map at the given location.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/appframework/map/MapViewHelper.html#addMarkerGraphic(double, double, java.lang.String, java.lang.String, int, android.graphics.drawable.Drawable, boolean, int)">addMarkerGraphic</a></span>(double lat, double lon, String title, String snippet, int resID, Drawable icon, boolean draggable, int zorder)</nobr>
+        
+        <div class="jd-descrdiv">Adds a point graphic to the map at the given location.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/appframework/map/MapViewHelper.html#addPolygonGraphic(double[][], java.lang.String, java.lang.String, int, int, int, float, int)">addPolygonGraphic</a></span>(double[][] latlon, String title, String snippet, int resID, int fillColor, int strokeColor, float width, int zorder)</nobr>
+        
+        <div class="jd-descrdiv">Adds a polygon graphic to the map at the given location.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/appframework/map/MapViewHelper.html#addPolygonGraphic(double[][], java.lang.String, java.lang.String, java.lang.String, int, int, float, int)">addPolygonGraphic</a></span>(double[][] latlon, String title, String snippet, String url, int fillColor, int strokeColor, float width, int zorder)</nobr>
+        
+        <div class="jd-descrdiv">Adds a polygon graphic to the map at the given location.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/appframework/map/MapViewHelper.html#addPolylineGraphic(double[][], java.lang.String, java.lang.String, java.lang.String, int, float, int)">addPolylineGraphic</a></span>(double[][] latlon, String title, String snippet, String url, int color, float width, int zorder)</nobr>
+        
+        <div class="jd-descrdiv">Adds a polyline graphic to the map at the given location.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/appframework/map/MapViewHelper.html#addPolylineGraphic(double[][], java.lang.String, java.lang.String, int, int, float, int)">addPolylineGraphic</a></span>(double[][] latlon, String title, String snippet, int resID, int color, float width, int zorder)</nobr>
+        
+        <div class="jd-descrdiv">Adds a polyline graphic to the map at the given location.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/appframework/map/MapViewHelper.html#createPopup(float, float, com.esri.android.appframework.map.PopupCreateListener)">createPopup</a></span>(float screenX, float screenY, <a href="../../../../../../reference/com/esri/android/appframework/map/PopupCreateListener.html">PopupCreateListener</a> listener)</nobr>
+        
+        <div class="jd-descrdiv">Creates popups for the map based on the given location.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            MapView</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/appframework/map/MapViewHelper.html#getMapView()">getMapView</a></span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/esri/android/appframework/map/OnCalloutClickListener.html">OnCalloutClickListener</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/appframework/map/MapViewHelper.html#getOnCalloutClickListener()">getOnCalloutClickListener</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the OnCalloutClickListener.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/esri/android/appframework/map/OnGraphicClickListener.html">OnGraphicClickListener</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/appframework/map/MapViewHelper.html#getOnGraphicClickListener()">getOnGraphicClickListener</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the OnGraphicClickListener listener.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/appframework/map/MapViewHelper.html#isLoaded()">isLoaded</a></span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/appframework/map/MapViewHelper.html#removeAllGraphics()">removeAllGraphics</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Removes all graphics added through the addXXXGraphic() methods.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/appframework/map/MapViewHelper.html#removeGraphic(int)">removeGraphic</a></span>(int id)</nobr>
+        
+        <div class="jd-descrdiv">Removes graphic added through the addXXXGraphic() methods using a unique ID.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/appframework/map/MapViewHelper.html#setOnCalloutClickListener(com.esri.android.appframework.map.OnCalloutClickListener)">setOnCalloutClickListener</a></span>(<a href="../../../../../../reference/com/esri/android/appframework/map/OnCalloutClickListener.html">OnCalloutClickListener</a> listener)</nobr>
+        
+        <div class="jd-descrdiv">Sets a callback that's invoked when tapping on the callout window of a graphic 
+ added through the addXXXGraphic() methods.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/appframework/map/MapViewHelper.html#setOnGraphicClickListener(com.esri.android.appframework.map.OnGraphicClickListener)">setOnGraphicClickListener</a></span>(<a href="../../../../../../reference/com/esri/android/appframework/map/OnGraphicClickListener.html">OnGraphicClickListener</a> listener)</nobr>
+        
+        <div class="jd-descrdiv">Sets a callback that's invoked when tapping on a graphic added through the addXXXGraphic() methods.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/esri/android/appframework/map/MapViewHelper.html#setShowGraphicCallout(boolean)">setShowGraphicCallout</a></span>(boolean show)</nobr>
+        
+        <div class="jd-descrdiv">Allows/disallows showing a callout window when tapping on a graphic added through the addXXXGraphic() methods.</div>
+  
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="inhmethods" class="jd-sumtable"><tr><th>
+  <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
+  <div style="clear:left;">Inherited Methods</div></th></tr>
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Object" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-java.lang.Object-trigger"
+          src="../../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From class
+
+  java.lang.Object
+
+<div id="inherited-methods-java.lang.Object">
+  <div id="inherited-methods-java.lang.Object-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-java.lang.Object-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            Object</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">clone</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">equals</span>(Object arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">finalize</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            Class&lt;?&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getClass</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">hashCode</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notify</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notifyAll</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            String</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">toString</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>(long arg0, int arg1)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>(long arg0)</nobr>
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+</table>
+
+
+</div><!-- jd-descr (summary) -->
+
+<!-- Details -->
+
+
+
+
+
+
+
+
+<!-- XML Attributes -->
+
+
+<!-- Enum Values -->
+
+
+<!-- Constants -->
+
+
+<!-- Fields -->
+
+
+<!-- Public ctors -->
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<h2>Public Constructors</h2>
+
+
+
+<A NAME="MapViewHelper(MapView)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        
+      </span>
+      <span class="sympad">MapViewHelper</span>
+      <span class="normal">(MapView mapView)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Creates a MapViewHelper.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>mapView</td>
+          <td>a MapView instance
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<!-- Protected ctors -->
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+<!-- Public methdos -->
+
+<h2>Public Methods</h2>
+
+
+
+<A NAME="addMarkerGraphic(double, double, java.lang.String, java.lang.String, java.lang.String, android.graphics.drawable.Drawable, boolean, int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">addMarkerGraphic</span>
+      <span class="normal">(double lat, double lon, String title, String snippet, String url, Drawable icon, boolean draggable, int zorder)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Adds a point graphic to the map at the given location. The graphic will be rendered using
+ the given symbol. By default a callout window with the given title, text, and an image
+ will be displayed when tapping on the graphic. This behavior can be turned on/off through 
+ setShowGraphicCallout(). If the graphic is draggable, long-clicking and then dragging the graphic 
+ moves it. However, user defined long-press listener or magnifer will take preceedence over
+ this dragging behavior.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>lat</td>
+          <td>latitude of the given location.</td>
+        </tr>
+        <tr>
+          <th>lon</td>
+          <td>longitude of the given location.</td>
+        </tr>
+        <tr>
+          <th>title</td>
+          <td>the title to show on the callout window.</td>
+        </tr>
+        <tr>
+          <th>snippet</td>
+          <td>the text to show below title on the right side of the callout window.</td>
+        </tr>
+        <tr>
+          <th>url</td>
+          <td>the url of an image to show below title on the left side of the callout window.</td>
+        </tr>
+        <tr>
+          <th>icon</td>
+          <td>the symbol used to render the point graphic. By default an Android default icon
+          which is device dependent will be used.</td>
+        </tr>
+        <tr>
+          <th>draggable</td>
+          <td>set to true if you want to allow the user to move the graphic.</td>
+        </tr>
+        <tr>
+          <th>zorder</td>
+          <td>the drawing order of the graphic.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>A unique ID representing the added Graphic if adding is successful. -1 if adding fails.</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="addMarkerGraphic(double, double, java.lang.String, java.lang.String, int, android.graphics.drawable.Drawable, boolean, int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">addMarkerGraphic</span>
+      <span class="normal">(double lat, double lon, String title, String snippet, int resID, Drawable icon, boolean draggable, int zorder)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Adds a point graphic to the map at the given location. The graphic will be rendered using
+ the given symbol. By default a callout window with the given title, text, and an image
+ will be displayed when tapping on the graphic. This behavior can be turned on/off through 
+ setShowGraphicCallout(). If the graphic is draggable, long-clicking and then dragging the graphic 
+ moves it. However, user defined long-press listener or magnifer will take preceedence over
+ this dragging behavior.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>lat</td>
+          <td>latitude of the given location.</td>
+        </tr>
+        <tr>
+          <th>lon</td>
+          <td>longitude of the given location.</td>
+        </tr>
+        <tr>
+          <th>title</td>
+          <td>the title to show on the callout window.</td>
+        </tr>
+        <tr>
+          <th>snippet</td>
+          <td>the text to show below title on the right side of the callout window.</td>
+        </tr>
+        <tr>
+          <th>resID</td>
+          <td>the resource id of an image to show below title on the left side of the callout window.</td>
+        </tr>
+        <tr>
+          <th>icon</td>
+          <td>the symbol used to render the point graphic. By default an Android default icon
+          which is device dependent will be used.</td>
+        </tr>
+        <tr>
+          <th>draggable</td>
+          <td>set to true if you want to allow the user to move the graphic.</td>
+        </tr>
+        <tr>
+          <th>zorder</td>
+          <td>the drawing order of the graphic.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>A unique ID representing the added Graphic if adding is successful. -1 if adding fails.</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="addPolygonGraphic(double[][], java.lang.String, java.lang.String, int, int, int, float, int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">addPolygonGraphic</span>
+      <span class="normal">(double[][] latlon, String title, String snippet, int resID, int fillColor, int strokeColor, float width, int zorder)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Adds a polygon graphic to the map at the given location. The graphic will be rendered using
+ the given fill color, outline color and outline width. By default a callout window with the 
+ given title, text, and an image will be displayed when tapping on the graphic. 
+ This behavior can be turned on/off through setShowGraphicCallout().</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>title</td>
+          <td>the title to show on the callout window.</td>
+        </tr>
+        <tr>
+          <th>snippet</td>
+          <td>the text to show below title on the right side of the callout window.</td>
+        </tr>
+        <tr>
+          <th>resID</td>
+          <td>the resource id of an image to show below title on the left side of the callout window.</td>
+        </tr>
+        <tr>
+          <th>fillColor</td>
+          <td>the filling color used to render the polygon.</td>
+        </tr>
+        <tr>
+          <th>strokeColor</td>
+          <td>the color of the outline of the polygon.</td>
+        </tr>
+        <tr>
+          <th>width</td>
+          <td>the width used to render the outline of the polygon.</td>
+        </tr>
+        <tr>
+          <th>zorder</td>
+          <td>the drawing order of the graphic.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>A unique ID representing the added Graphic if adding is successful. -1 if adding fails.</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="addPolygonGraphic(double[][], java.lang.String, java.lang.String, java.lang.String, int, int, float, int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">addPolygonGraphic</span>
+      <span class="normal">(double[][] latlon, String title, String snippet, String url, int fillColor, int strokeColor, float width, int zorder)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Adds a polygon graphic to the map at the given location. The graphic will be rendered using
+ the given fill color, outline color and outline width. By default a callout window with the 
+ given title, text, and an image will be displayed when tapping on the graphic. 
+ This behavior can be turned on/off through setShowGraphicCallout().</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>title</td>
+          <td>the title to show on the callout window.</td>
+        </tr>
+        <tr>
+          <th>snippet</td>
+          <td>the text to show below title on the right side of the callout window.</td>
+        </tr>
+        <tr>
+          <th>url</td>
+          <td>the url of an image to show below title on the left side of the callout window.</td>
+        </tr>
+        <tr>
+          <th>fillColor</td>
+          <td>the filling color used to render the polygon.</td>
+        </tr>
+        <tr>
+          <th>strokeColor</td>
+          <td>the color of the outline of the polygon.</td>
+        </tr>
+        <tr>
+          <th>width</td>
+          <td>the width used to render the outline of the polygon.</td>
+        </tr>
+        <tr>
+          <th>zorder</td>
+          <td>the drawing order of the graphic.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>A unique ID representing the added Graphic if adding is successful. -1 if adding fails.</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="addPolylineGraphic(double[][], java.lang.String, java.lang.String, java.lang.String, int, float, int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">addPolylineGraphic</span>
+      <span class="normal">(double[][] latlon, String title, String snippet, String url, int color, float width, int zorder)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Adds a polyline graphic to the map at the given location. The graphic will be rendered using
+ the given color and width. By default a callout window with the given title, text, and an image
+ will be displayed when tapping on the graphic. This behavior can be turned on/off through 
+ setShowGraphicCallout().</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>title</td>
+          <td>the title to show on the callout window.</td>
+        </tr>
+        <tr>
+          <th>snippet</td>
+          <td>the text to show below title on the right side of the callout window.</td>
+        </tr>
+        <tr>
+          <th>url</td>
+          <td>the url of an image to show below title on the left side of the callout window.</td>
+        </tr>
+        <tr>
+          <th>color</td>
+          <td>the color used to render the polyline.</td>
+        </tr>
+        <tr>
+          <th>width</td>
+          <td>the width used to render the polyline.</td>
+        </tr>
+        <tr>
+          <th>zorder</td>
+          <td>the drawing order of the graphic.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>A unique ID representing the added Graphic if adding is successful. -1 if adding fails.</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="addPolylineGraphic(double[][], java.lang.String, java.lang.String, int, int, float, int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">addPolylineGraphic</span>
+      <span class="normal">(double[][] latlon, String title, String snippet, int resID, int color, float width, int zorder)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Adds a polyline graphic to the map at the given location. The graphic will be rendered using
+ the given color and width. By default a callout window with the given title, text, and an image
+ will be displayed when tapping on the graphic. This behavior can be turned on/off through 
+ setShowGraphicCallout().</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>title</td>
+          <td>the title to show on the callout window.</td>
+        </tr>
+        <tr>
+          <th>snippet</td>
+          <td>the text to show below title on the right side of the callout window.</td>
+        </tr>
+        <tr>
+          <th>resID</td>
+          <td>the resource id of an image to show below title on the left side of the callout window.</td>
+        </tr>
+        <tr>
+          <th>color</td>
+          <td>the color used to render the polyline.</td>
+        </tr>
+        <tr>
+          <th>width</td>
+          <td>the width used to render the polyline.</td>
+        </tr>
+        <tr>
+          <th>zorder</td>
+          <td>the drawing order of the graphic.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>A unique ID representing the added Graphic if adding is successful. -1 if adding fails.</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="createPopup(float, float, com.esri.android.appframework.map.PopupCreateListener)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">createPopup</span>
+      <span class="normal">(float screenX, float screenY, <a href="../../../../../../reference/com/esri/android/appframework/map/PopupCreateListener.html">PopupCreateListener</a> listener)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Creates popups for the map based on the given location. In the map each layer which is visible, 
+ within current scale range and associated with popup configuration represented by PopupInfo 
+ is queried spatially based on the given location. A popup is generated for each graphic returned
+ from the query and added to a PopupContainer object. Query is performed asynchronizedly. A callback
+ is invoked when some popups have been added to the PopupContainer.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>screenX</td>
+          <td>the x coordinate of the touch pointer in screen pixels.</td>
+        </tr>
+        <tr>
+          <th>screenY</td>
+          <td>the y coordinate of the touch pointer in screen pixels.</td>
+        </tr>
+        <tr>
+          <th>listener</td>
+          <td>the callback to invoke when some popups have been added to the PopupContainer.</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getMapView()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        MapView
+      </span>
+      <span class="sympad">getMapView</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="getOnCalloutClickListener()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../../reference/com/esri/android/appframework/map/OnCalloutClickListener.html">OnCalloutClickListener</a>
+      </span>
+      <span class="sympad">getOnCalloutClickListener</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the OnCalloutClickListener.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>instance of OnCalloutClickListener
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getOnGraphicClickListener()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../../reference/com/esri/android/appframework/map/OnGraphicClickListener.html">OnGraphicClickListener</a>
+      </span>
+      <span class="sympad">getOnGraphicClickListener</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the OnGraphicClickListener listener.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>instance of OnGraphicClickListener
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="isLoaded()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">isLoaded</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="removeAllGraphics()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">removeAllGraphics</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Removes all graphics added through the addXXXGraphic() methods.</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="removeGraphic(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">removeGraphic</span>
+      <span class="normal">(int id)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Removes graphic added through the addXXXGraphic() methods using a unique ID.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>id</td>
+          <td>the unique ID of the graphic to remove.</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setOnCalloutClickListener(com.esri.android.appframework.map.OnCalloutClickListener)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setOnCalloutClickListener</span>
+      <span class="normal">(<a href="../../../../../../reference/com/esri/android/appframework/map/OnCalloutClickListener.html">OnCalloutClickListener</a> listener)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets a callback that's invoked when tapping on the callout window of a graphic 
+ added through the addXXXGraphic() methods.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>listener</td>
+          <td>the callback to invoke when tapping on a graphic.</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setOnGraphicClickListener(com.esri.android.appframework.map.OnGraphicClickListener)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setOnGraphicClickListener</span>
+      <span class="normal">(<a href="../../../../../../reference/com/esri/android/appframework/map/OnGraphicClickListener.html">OnGraphicClickListener</a> listener)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets a callback that's invoked when tapping on a graphic added through the addXXXGraphic() methods.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>listener</td>
+          <td>the callback to invoke when tapping on a graphic.</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setShowGraphicCallout(boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setShowGraphicCallout</span>
+      <span class="normal">(boolean show)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Allows/disallows showing a callout window when tapping on a graphic added through the addXXXGraphic() methods.
+ By default it is on.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>show</td>
+          <td>true to turn on the callout window.</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+
+
+
+<!-- ========= END OF CLASS DATA ========= -->
+<A NAME="navbar_top"></A>
+
+<div id="footer">
+
+</div> <!-- end footer -->
+
+</div> <!-- jd-content -->
+
+</div><!-- end doc-content -->
+
+</div> <!-- end body-content --> 
+
+<script type="text/javascript">
+init(); /* initialize android-developer-docs.js */
+</script>
+
+</body>
+</html>

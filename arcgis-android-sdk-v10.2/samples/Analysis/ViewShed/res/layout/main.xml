@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+	<!-- MapView layout and initial extent -->
+    <com.esri.android.map.MapView
+  		android:id="@+id/map"
+  		android:layout_width="fill_parent"
+  		android:layout_height="fill_parent"
+  		initExtent = "-13644840.338547781, 4529944.368315823, -13614265.527233753, 4552875.476801345">
+  	</com.esri.android.map.MapView>    
+
+	<LinearLayout
+	   android:orientation="horizontal"   
+	   android:gravity="left"   
+	   android:layout_width="wrap_content"
+	   android:layout_height="wrap_content"
+	   >
+	    
+		    <ImageButton 
+		    	android:id="@+id/gobutton"
+		    	android:text="@string/go_button_text"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:src="@drawable/go" 
+		    	android:contentDescription="@string/image_desc"
+		    	/>
+		   	<ImageButton 
+		    	android:id="@+id/deletebutton"
+		    	android:text="@string/delete_button_text"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:src="@drawable/delete" 
+		    	android:contentDescription="@string/image_desc"
+		    	/>
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+
+ 
+

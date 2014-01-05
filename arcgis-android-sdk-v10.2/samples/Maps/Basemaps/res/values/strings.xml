@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Basemaps</string>
+    <!-- basemap urls -->
+    <string name="WORLD_STREET_MAP">http://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer</string>
+    <string name="WORLD_TOPO_MAP">http://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer</string>
+    <string name="WORLD_NATGEO_MAP">http://services.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer</string>
+    <string name="OCEAN_BASEMAP">http://services.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer</string>
+    <!-- basemap menu items -->
+    <string name="StreetMapMenu">World Street Map</string>
+    <string name="TopoMenu">World Topo</string>
+    <string name="NatGeoMenu">NatGeo World Map</string>
+	<string name="OceanMenu">Ocean Basemap</string>
+</resources>

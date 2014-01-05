@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+	<!-- MapView layout and initial extent -->
+    <com.esri.android.map.MapView
+  		android:id="@+id/map"
+  		android:layout_width="fill_parent"
+  		android:layout_height="fill_parent">
+  	</com.esri.android.map.MapView>    
+
+	<LinearLayout
+	   android:orientation="horizontal"   
+	   android:gravity="left"   
+	   android:layout_width="wrap_content"
+	   android:layout_height="wrap_content"
+	   >
+	    
+        <Button android:id="@+id/geometrybutton"
+	    		android:text="Select Geometry"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+				
+		<TextView android:id="@+id/label"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:maxLength="25"
+				android:singleLine="false" 
+				android:editable="false"
+				android:gravity="center_horizontal"/>		
+		
+		<Button android:id="@+id/clearbutton"
+	    		android:text="Clear"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>	
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="#FF66FFCC"
+	>
+	<ImageView android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:id="@+id/family_photo"
+		android:src="@drawable/icon"/>
+	<TextView android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:id="@+id/county_name"
+		android:layout_toRightOf="@id/family_photo" android:textSize="16dip" android:textColor="#FF000000"
+		android:paddingBottom="5dip"/>
+	<TextView android:layout_height="wrap_content"
+		android:layout_width="wrap_content" 
+		android:id="@+id/pop_sqmi" android:layout_below="@id/county_name"
+		android:layout_toRightOf="@id/family_photo" android:textSize="14dip" android:textColor="#FF000000"/>
+</RelativeLayout>
